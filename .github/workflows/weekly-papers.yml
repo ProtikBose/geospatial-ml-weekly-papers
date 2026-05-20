@@ -1,0 +1,44 @@
+name: Weekly Geospatial ML Papers
+
+on:
+  schedule:
+    - cron: "17 15 * * 1"  # Every Monday 8:17 AM Phoenix time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect-papers:
+    runs-on: ubuntu-latest
+
+    env:
+      SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+      DAYS_BACK: "7"
+      MAX_TOP_PAPERS: "10"
+      SEMANTIC_SCHOLAR_SLEEP_SECONDS: "5"
+      ARXIV_SLEEP_SECONDS: "1"
+      ALLOW_ARXIV_PREPRINTS: "true"
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly paper search
+        run: python weekly_papers.py
+
+      - name: Commit updated paper digest
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add output/
+          git commit -m "Update weekly geospatial ML paper digest" || echo "No changes to commit"
+          git push
