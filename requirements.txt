@@ -1,0 +1,3 @@
+requests
+arxiv
+python-dotenv
