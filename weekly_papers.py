@@ -1256,7 +1256,18 @@ def main() -> None:
             paper.get("score", 0) > 0
             and is_relevant_geospatial_paper(paper)
             and not is_excluded_paper(paper)
-            and is_top_venue_paper(paper)
+            and (
+                is_top_venue_paper(paper)
+                or (
+                    "Semantic Scholar" in paper.get("sources", [])
+                    and paper.get("score", 0) >= 40
+                )
+                or (
+                    "arXiv" in paper.get("sources", [])
+                    and paper.get("score", 0) >= 40
+                    and ALLOW_ARXIV_PREPRINTS
+                )
+            )
         )
     ]
 
