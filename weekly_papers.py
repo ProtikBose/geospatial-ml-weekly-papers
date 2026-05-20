@@ -41,6 +41,11 @@ ARXIV_SLEEP_SECONDS = float(
     os.getenv("ARXIV_SLEEP_SECONDS", "1.0")
 )
 
+# Strict by default:
+# Only papers from selected top venues are kept.
+# If you later want to keep recent arXiv-only preprints, set this to "true" in .env.
+ALLOW_ARXIV_PREPRINTS = os.getenv("ALLOW_ARXIV_PREPRINTS", "false").lower() == "true"
+
 
 # ============================================================
 # Search terms
@@ -284,6 +289,166 @@ NEGATIVE_TERMS = {
 
 
 # ============================================================
+# Top venue list
+# Every venue/workshop/conference below gives +10 points.
+# Papers are kept only if venue_score > 0,
+# unless ALLOW_ARXIV_PREPRINTS=true.
+# ============================================================
+
+TOP_VENUES = {
+    # Top AI / ML / CV venues
+    "neurips": 10,
+    "neural information processing systems": 10,
+    "icml": 10,
+    "international conference on machine learning": 10,
+    "iclr": 10,
+    "international conference on learning representations": 10,
+    "cvpr": 10,
+    "computer vision and pattern recognition": 10,
+    "iccv": 10,
+    "international conference on computer vision": 10,
+    "eccv": 10,
+    "european conference on computer vision": 10,
+    "aaai": 10,
+    "ijcai": 10,
+    "kdd": 10,
+    "www": 10,
+    "the web conference": 10,
+
+    # Geospatial / GIS / spatial computing
+    "acm sigspatial": 10,
+    "sigspatial": 10,
+    "ijgis": 10,
+    "international journal of geographical information science": 10,
+    "transactions in gis": 10,
+    "cartography and geographic information science": 10,
+    "geoinformatica": 10,
+
+    # Remote sensing / Earth observation
+    "remote sensing of environment": 10,
+    "isprs journal of photogrammetry and remote sensing": 10,
+    "ieee transactions on geoscience and remote sensing": 10,
+    "tgrs": 10,
+    "ieee journal of selected topics in applied earth observations and remote sensing": 10,
+    "jstars": 10,
+    "remote sensing": 10,
+    "international journal of remote sensing": 10,
+
+    # Urban planning / urban studies / built environment
+    "landscape and urban planning": 10,
+    "cities": 10,
+    "computers, environment and urban systems": 10,
+    "ceus": 10,
+    "environment and planning b": 10,
+    "urban climate": 10,
+    "sustainable cities and society": 10,
+    "building and environment": 10,
+
+    # Transportation / infrastructure
+    "transportation research part c": 10,
+    "transportation research part d": 10,
+    "journal of transport geography": 10,
+    "transportation research record": 10,
+
+    # Workshops / applied AI venues
+    "ai for science": 10,
+    "climate change ai": 10,
+    "earthvision": 10,
+    "ai for good": 10,
+    "urban ai": 10,
+    "geoai": 10,
+
+    # Additional GIScience / spatial computing venues
+    "giscience": 10,
+    "geographic information science": 10,
+    "spatial cognition and computation": 10,
+    "international conference on geographic information science": 10,
+    "computers and geosciences": 10,
+    "applied geography": 10,
+    "international journal of applied earth observation and geoinformation": 10,
+    "jag": 10,
+
+    # Additional remote sensing / photogrammetry venues
+    "ieee geoscience and remote sensing letters": 10,
+    "grsl": 10,
+    "photogrammetric engineering and remote sensing": 10,
+    "pe&rs": 10,
+    "isprs annals of the photogrammetry, remote sensing and spatial information sciences": 10,
+    "isprs archives": 10,
+    "igarss": 10,
+    "international geoscience and remote sensing symposium": 10,
+    "earth system science data": 10,
+    "environmental modelling and software": 10,
+
+    # Urban analytics / planning / built environment
+    "journal of urban technology": 10,
+    "urban studies": 10,
+    "environment and planning b: urban analytics and city science": 10,
+    "urban analytics and city science": 10,
+    "journal of planning education and research": 10,
+    "journal of the american planning association": 10,
+    "planning theory and practice": 10,
+    "habitat international": 10,
+    "land use policy": 10,
+    "npj urban sustainability": 10,
+    "nature cities": 10,
+
+    # Climate / environment / sustainability
+    "nature climate change": 10,
+    "nature sustainability": 10,
+    "npj climate and atmospheric science": 10,
+    "environmental research letters": 10,
+    "global environmental change": 10,
+    "climatic change": 10,
+    "science of the total environment": 10,
+    "sustainable cities and society": 10,
+    "landscape ecology": 10,
+
+    # Transportation / mobility / infrastructure
+    "transportation research part a": 10,
+    "transportation research part b": 10,
+    "transportation research part e": 10,
+    "transportation research part f": 10,
+    "transportation": 10,
+    "transportmetrica a": 10,
+    "transportmetrica b": 10,
+    "journal of intelligent transportation systems": 10,
+    "ieee transactions on intelligent transportation systems": 10,
+    "itsc": 10,
+    "intelligent transportation systems conference": 10,
+
+    # Computer vision / AI venues useful for geospatial CV
+    "wacv": 10,
+    "winter conference on applications of computer vision": 10,
+    "bmvc": 10,
+    "british machine vision conference": 10,
+    "acm multimedia": 10,
+    "emnlp": 10,
+    "acl": 10,
+    "naacl": 10,
+
+    # Data mining / web / applied ML venues
+    "cikm": 10,
+    "wsdm": 10,
+    "sdm": 10,
+    "icdm": 10,
+    "pakdd": 10,
+
+    # AI-for-climate / AI-for-earth / workshop-style venues
+    "ai for earth": 10,
+    "ai for climate": 10,
+    "machine learning for the physical sciences": 10,
+    "ml4ps": 10,
+    "tackling climate change with machine learning": 10,
+    "climatechangeai": 10,
+    "neurips workshop": 10,
+    "icml workshop": 10,
+    "iclr workshop": 10,
+    "cvpr workshop": 10,
+}
+
+
+# ============================================================
 # Utility functions
 # ============================================================
 
@@ -479,6 +644,40 @@ def is_relevant_geospatial_paper(paper: Dict[str, Any]) -> bool:
     return has_geospatial_anchor and has_method_or_problem
 
 
+def venue_score(paper: Dict[str, Any]) -> int:
+    venue = paper.get("venue", "").lower()
+
+    if not venue:
+        return 0
+
+    for venue_name, weight in TOP_VENUES.items():
+        if venue_name in venue:
+            return weight
+
+    return 0
+
+
+def is_top_venue_paper(paper: Dict[str, Any]) -> bool:
+    """
+    Keep papers only if they are from selected top journals,
+    conferences, or workshops.
+
+    By default, arXiv-only preprints are NOT kept because they are not
+    published in a top venue yet.
+
+    To keep arXiv preprints, set:
+    ALLOW_ARXIV_PREPRINTS=true
+    in your .env file or GitHub Actions environment.
+    """
+    venue = paper.get("venue", "").lower()
+    sources = [source.lower() for source in paper.get("sources", [])]
+
+    if ALLOW_ARXIV_PREPRINTS and ("arxiv" in venue or "arxiv" in sources):
+        return True
+
+    return venue_score(paper) > 0
+
+
 def score_paper(paper: Dict[str, Any]) -> int:
     text = paper_text(paper)
 
@@ -491,6 +690,10 @@ def score_paper(paper: Dict[str, Any]) -> int:
     for term, penalty in NEGATIVE_TERMS.items():
         if term in text:
             score += penalty
+
+    # Venue-quality bonus.
+    # This is included in My Score.
+    score += venue_score(paper)
 
     # Metadata bonus
     if paper.get("doi"):
@@ -669,9 +872,23 @@ def search_semantic_scholar(
             continue
 
         if response.status_code == 429:
-            print("[Semantic Scholar] Rate limited. Sleeping 60 seconds...")
+            print("[Semantic Scholar] Rate limited. Sleeping 60 seconds and retrying...")
             time.sleep(60)
-            continue
+
+            try:
+                response = requests.get(
+                    url,
+                    params=params,
+                    headers=headers,
+                    timeout=30,
+                )
+            except requests.RequestException as error:
+                print(f"[Semantic Scholar] Retry failed for '{term}': {error}")
+                continue
+
+            if response.status_code == 429:
+                print("[Semantic Scholar] Still rate limited after retry. Skipping this query.")
+                continue
 
         if response.status_code != 200:
             print(
@@ -798,6 +1015,11 @@ def why_relevant(paper: Dict[str, Any]) -> str:
 
     reasons = []
 
+    if venue_score(paper) > 0:
+        reasons.append(
+            "It appears in one of the selected top journals, conferences, or workshops."
+        )
+
     if "foundation model" in text:
         reasons.append(
             "It may help track foundation-model directions for "
@@ -900,6 +1122,12 @@ def write_markdown_report(
             "self-supervised learning, and related methods.\n\n"
         )
 
+        file.write(
+            "Only papers from the selected top journals, conferences, or workshops "
+            "are included by default. The venue importance score is included in "
+            "**My Score**.\n\n"
+        )
+
         if not papers:
             file.write("No matching papers found this week.\n")
             return
@@ -921,7 +1149,11 @@ def write_markdown_report(
             if paper.get("sources"):
                 file.write(f"**Found via:** {', '.join(paper['sources'])}\n\n")
 
-            file.write(f"** My Score:** {paper.get('score', 0)}\n\n")
+            file.write(f"**My Score:** {paper.get('score', 0)}\n\n")
+            file.write(
+                f"**Venue importance score included:** "
+                f"{paper.get('venue_score', 0)}\n\n"
+            )
 
             if paper.get("citation_count") is not None:
                 file.write(
@@ -1008,6 +1240,7 @@ def main() -> None:
     print(f"\nTotal unique papers before scoring: {len(all_papers)}")
 
     for paper in all_papers.values():
+        paper["venue_score"] = venue_score(paper)
         paper["score"] = score_paper(paper)
 
     ranked_papers = sorted(
@@ -1023,6 +1256,7 @@ def main() -> None:
             paper.get("score", 0) > 0
             and is_relevant_geospatial_paper(paper)
             and not is_excluded_paper(paper)
+            and is_top_venue_paper(paper)
         )
     ]
 
@@ -1052,7 +1286,12 @@ def main() -> None:
 
     print("\nTop selected papers:")
     for index, paper in enumerate(top_papers, start=1):
-        print(f"{index}. [{paper.get('score', 0)}] {paper.get('title')}")
+        print(
+            f"{index}. "
+            f"[score={paper.get('score', 0)}, "
+            f"venue_score={paper.get('venue_score', 0)}] "
+            f"{paper.get('title')}"
+        )
 
 
 if __name__ == "__main__":
