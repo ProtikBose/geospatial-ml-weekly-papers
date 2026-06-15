@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-06-01 to 2026-06-08
+**Search window:** 2026-06-08 to 2026-06-15
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,241 +12,87 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. Textual Supervision Enhances Geospatial Representations in Vision-Language Models
+### 1. Investigating the Generalizability of Segment Anything Model for Large-Scale Geospatial Segmentation
 
-**Authors:** M. S. Locatelli, Fernando Tonucci, Jea Kwon, L. Vecchietti, Bryan Nathanael Wijaya, Cheng Yaw Low, Virgílio Almeida, Meeyoung Cha
+**Authors:** Wejdene Mansour, Paul Walther, Hao Li, Martin Werner
 
-**Published:** 2026-06-05
+**Published:** 2026-06-10
 
-**Venue:** arXiv
+**Venue:** AGILE: GIScience Series
 
-**Found via:** Semantic Scholar, arXiv
+**Found via:** Semantic Scholar
 
-**My Score:** 54
+**My Score:** 87
+
+**Venue importance score included:** 10
+
+**Semantic Scholar citations:** 0
+
+**DOI:** 10.5194/agile-giss-7-14-2026
+
+**Paper link:** https://www.semanticscholar.org/paper/916c475b1d554d02981877627dedd6d7eee25211
+
+**Abstract:**
+
+Abstract. Foundation Models (FMs) are promising approaches in multimodal artificial intelligence as they provide foundational task knowledge across computer vision, language understanding, and related domains. Despite their success, the extent to which FMs generalize to domain-specific tasks remains unclear, especially in Earth System Sciences (ESS). In this work, we investigate the geographical and task-level generalizability of Segment Anything Model (SAM) and the vision–language FMs CLIP and Grounding DINO, across two distinct vision tasks: 1) building footprint segmentation from high-quality airborne images at 40cm ground sampling distance (GSD) and 2) surface water segmentation from Sentinel-2 imagery at about 10m GSD. Herein, we explore strategies to improve the zero-shot applicability of the general-purpose SAM by combining it with other pre-trained FMs for detection and classification, and we evaluate the potential performance gains achievable with minimal computational overhead through few-shot adapters on the datasets. Furthermore, we assess whether remote-sensing-specific training in RemoteCLIP and RemoteSAM leads to meaningful improvements over their general-purpose counterparts in large-scale geospatial segmentation. Overall, we conclude that domain-specific FMs can provide performance gains in certain settings, but are neither required nor always useful when compared with lightweight adaptation strategies and mixtures of different general models. This suggests that a more economical pathway might be to increase the remote sensing data used in the training of general FMs instead of training dedicated models specifically for ESS.
+
+**Why this may be relevant:**
+
+It appears in one of the selected top journals, conferences, or workshops. It may help track foundation-model directions for Earth observation or geospatial AI. It is directly related to remote sensing or Earth observation workflows.
+
+---
+
+### 2. GeoNatureAgent Benchmark: Benchmarking LLM Agents for Environmental Geospatial Analysis Across Frontier and Open-Weight Foundation Models
+
+**Authors:** Gabriel Díaz-Ireland, D. Prieto-Herráez, Mario Garc'ia Peces, Javier Velázquez, Devika Jain
+
+**Published:** 2026-06-11
+
+**Found via:** Semantic Scholar
+
+**My Score:** 69
 
 **Venue importance score included:** 0
 
 **Semantic Scholar citations:** 0
 
-**arXiv ID:** 2606.07172
+**arXiv ID:** 2606.12821
 
-**Paper link:** https://www.semanticscholar.org/paper/195de72a60b5e4912d101edfd1a8115ad89f09bd
-
-**PDF link:** https://arxiv.org/pdf/2606.07172v1
+**Paper link:** https://www.semanticscholar.org/paper/89a6cfb59d73ebfd2568af0c7834a8d640d32317
 
 **Abstract:**
 
-Geospatial understanding is a critical yet underexplored dimension in the development of machine learning systems for tasks such as image geolocation and spatial reasoning. In this work, we analyze the geospatial representations acquired by three model families: vision-only architectures (e.g., ViT), vision-language models (e.g., CLIP), and large-scale multimodal foundation models (e.g., LLaVA, Qwen, and Gemma). By evaluating across image clusters, including people, landmarks, and everyday objects, grouped based on the degree of localizability, we reveal systematic gaps in spatial accuracy and show that textual supervision enhances the learning of geospatial representations. Our findings suggest the role of language as an effective complementary modality for encoding spatial context and multimodal learning as a key direction for advancing geospatial AI.
+Environmental scientists spend disproportionate effort on data wrangling rather than analysis, and AI agents that automate geospatial workflows remain unvalidated: no benchmark evaluates agents operating through structured tool calling against real APIs. We introduce the GeoNatureAgent Benchmark, the first benchmark for environmental analysis agents that operate via structured tool calls to a production-style geospatial API. It comprises 93 tasks across 18 categories, covering municipality analysis, multi-turn conversation, spatial reasoning, cross-indicator synthesis, error handling and recovery, ranking, comparison, multilingual understanding, habitat analysis, and task rejection. Tasks are evaluated against an open, self-hostable API serving three environmental indicators across Spain and Portugal via sixteen tools. We evaluate seven LLMs (Claude Sonnet 4, DeepSeek V3.2, GLM-5, Gemini 2.5 Pro, Qwen3-235B, GPT-OSS-120B, Llama 4 Scout) under three temperature-1.0 seeds, reporting capability and per-case cost as orthogonal axes. We find: (1) Claude Sonnet 4 leads at 60.8% +/- 0.8%, followed by DeepSeek V3.2 at 56.3% +/- 3.1%, with no other model above 51%; (2) the cost-accuracy Pareto frontier is occupied mostly by open-weight models, with DeepSeek V3.2 offering 93% of Claude's capability at 11x lower cost ($0.011/case); (3) comparison tasks remain universally unsolved (0% on close-value comparisons), exposing systematic reasoning limits; and (4) structured tool calling against a real API is more discriminative than general-purpose GIS benchmarks, with accuracies 25-35 points lower. We further show extensibility by integrating BigEarthNet V2 land cover for Portugal alongside Spanish CO2 and erosion indicators. The benchmark, harness, and self-hostable API are publicly available.
 
 **Why this may be relevant:**
 
-It may help track foundation-model directions for Earth observation or geospatial AI.
+It may help track foundation-model directions for Earth observation or geospatial AI. It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
 
 ---
 
-### 2. OPENPATH: A Supervisor--Specialist Agent System for Personalized, Accessible, and Multi-stop Urban Trip Planning
+### 3. RepFusion: Leveraging Multimodal Priors for Denoising in Representation Space
 
-**Authors:** Ziyang Xiong, He Zong, Zhiyuan Xue, Manxi Wu
+**Authors:** Xichen Pan, Aashu Singh, Satya Narayan Shukla, Xiangjun Fan, Shlok Kumar Mishra, Saining Xie
 
-**Published:** 2026-06-05
+**Published:** 2026-06-12
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 31
+**My Score:** 34
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2606.07486v1
+**arXiv ID:** 2606.14700v1
 
-**Paper link:** http://arxiv.org/abs/2606.07486v1
+**Paper link:** http://arxiv.org/abs/2606.14700v1
 
-**PDF link:** https://arxiv.org/pdf/2606.07486v1
-
-**Abstract:**
-
-Urban trip-planning systems are commonly optimized for travel time and cost, but they offer limited support for the heterogeneous needs that real travelers bring, such as personalized preferences, multi-stop itinerary construction, and end-to-end wheelchair accessibility. We present openpaths, a supervisor-specialist multi-agent system that handles all of these tasks within a single architecture. openpaths adopts a deliberate division of labor: LLM agents parse natural-language input, classify request intent, and orchestrate execution, while classical algorithms perform route optimization over curated mobility and accessibility data. This design ensures that the resulting trip honors heterogeneous user preferences and enforces strict accessibility requirements when requested. Beyond per-user planning, openpaths doubles as a measurement instrument for city-scale accessibility analysis: applied to NYC, the system reveals substantial ADA infrastructure gaps and quantifies their effect on job accessibility for wheelchair users. Overall, this study shows how a supervisor-specialist LLM agentic framework can support heterogeneous trip planning and transparent, equitable transportation analysis in real urban environments.
-
-**Why this may be relevant:**
-
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It is related to urban planning, infrastructure, or built-environment analysis.
-
----
-
-### 3. Does Appearance Help? A Systematic Study of Image-Based Re-Identification in Online 3D Multi-Pedestrian Tracking
-
-**Authors:** Eduardo Borges, Luís Garrote, Urbano J. Nunes
-
-**Published:** 2026-06-05
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 30
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2606.07233v1
-
-**Paper link:** http://arxiv.org/abs/2606.07233v1
-
-**PDF link:** https://arxiv.org/pdf/2606.07233v1
+**PDF link:** https://arxiv.org/pdf/2606.14700v1
 
 **Abstract:**
 
-LiDAR-based 3D Multi-Object Tracking (MOT) typically relies solely on geometric information, which is often insufficient to distinguish between targets during prolonged occlusions or in crowded human-populated environments. While integrating RGB-based Re-Identification (ReID) offers a theoretical solution for preserving identity context, existing approaches often rely on computationally expensive parallel detectors that hinder real-time robot responsiveness. This work presents a systematic study of image-based ReID in online 3D MOT, utilizing a lightweight projection-based framework to decouple geometric and appearance modeling for mobile robots. A comprehensive analysis of feature extraction architectures is conducted, employing lightweight CNNs and Vision Transformers, and evaluating various multi-modal data association strategies to balance computational latency with robust tracking. Experiments on the Pedestrian class of the KITTI dataset reveal that naive linear fusion, of appearance and motion costs, degrades performance due to visual noise. Conversely, a cascaded matching strategy successfully recovers occluded tracks without compromising overall precision, effectively preventing identity switches to maintain human-robot interaction continuity. We show that lightweight architectures can offer an optimal trade-off between the low latency required for safe navigation and the discriminative power needed for social awareness.
-
-**Why this may be relevant:**
-
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It may connect to pedestrian infrastructure, road extraction, transportation infrastructure, or walkability mapping.
-
----
-
-### 4. Reconstructing Multi-Decadal Forest Disturbances: A Spatio-Temporal Transformer Approach
-
-**Authors:** Linus Scheibenreif, Anton Raichuk, Maxim Neumann
-
-**Published:** 2026-06-05
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 26
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2606.07249v1
-
-**Paper link:** http://arxiv.org/abs/2606.07249v1
-
-**PDF link:** https://arxiv.org/pdf/2606.07249v1
-
-**Abstract:**
-
-Accurate monitoring of forest disturbances is essential for understanding carbon dynamics and land management, yet traditional approaches typically rely on pixel-wise analysis of satellite time-series, ignoring spatial context. We present a deep learning framework that maps 38 years (1984-2022) of forest disturbance across the contiguous United States by modeling temporal trajectories and spatial neighborhoods simultaneously. By leveraging a vision transformer architecture, our approach effectively filters noise from weak supervision signals to produce spatially coherent disturbance maps. We perform exhaustive evaluations across multiple satellites (Landsat, Sentinel-1, Sentinel-2) and temporal windows (38 years and the more recent 6 years), validating performance against a novel, manually annotated validation dataset (n=300) and independent fire perimeter dataset (n=706). The results highlight the complexity of the task: while our spatio-temporal model demonstrates high precision (up to 98.2% for +-1 year detection on MTBS and up to 71.3% on the CONUS validation datasets, with F1-scores up to 75.8% and 47.3%, respectively) and effectively reduces spatial artifacts, it exhibits performance trade-offs across different disturbance regimes compared to pixel-wise baselines. Our method offers a promising foundation for consistent forest monitoring.
-
-**Why this may be relevant:**
-
-It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 5. RhinoVLA Technical Report
-
-**Authors:** Huixi Intelligence, :, Chen Zhang, Chenyang Zhou, Guanglei Ding, Guanghui He, Haibin Gao, Jiajia Chen
-
-**Published:** 2026-06-05
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 25
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2606.07383v1
-
-**Paper link:** http://arxiv.org/abs/2606.07383v1
-
-**PDF link:** https://arxiv.org/pdf/2606.07383v1
-
-**Abstract:**
-
-Vision-Language-Action (VLA) models have shown strong potential for robotic manipulation, but real-time deployment on edge hardware remains challenging. In this work, we identify VLM visual and context tokens as a major source of deployment latency: for GEMM-dominated projection operators, computation grows linearly with the number of input tokens when model dimensions are fixed. Motivated by this observation, we propose RhinoVLA, a deployment-oriented VLA model co-designed with the Huixi R1 edge SoC. RhinoVLA adopts a token-efficient Qwen3-VL backbone and a continuous Action Expert, reducing the VLM-side token and computation burden while preserving pretrained multimodal capability. To support cross-robot learning, RhinoVLA further introduces a unified interface that combines View Registry, 72D physical state-action slot space, and robotinstance LoRA, allowing heterogeneous robot observations and action schemas to be aligned under a shared policy. On the deployment side, RhinoVLA is optimized through hardware-aware compilation, mixed-precision execution, and parallel visual encoding. Experiments show that RhinoVLA achieves downstream performance comparable to π0.5 at a similar parameter scale, while reaching 11.69 Hz end-to-end inference on Huixi R1, meeting the 10 Hz real-time closedloop control target. The project will be open-sourced at https://github.com/HuixiAI/RhinoVLA.
-
-**Why this may be relevant:**
-
-It may be useful for multimodal geospatial understanding using image-text models.
-
----
-
-### 6. Geometric-Aware Hypergraph Reasoning for Novel Class Discovery in Point Cloud Segmentation
-
-**Authors:** Zihao Zhang, Aming Wu, Yang Li, Yahong Han, Jialie Shen
-
-**Published:** 2026-06-05
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 22
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2606.07280v1
-
-**Paper link:** http://arxiv.org/abs/2606.07280v1
-
-**PDF link:** https://arxiv.org/pdf/2606.07280v1
-
-**Abstract:**
-
-Novel class discovery in point cloud segmentation aims to transfer knowledge from known classes to automatically identify and segment unlabeled novel classes in point clouds. Existing methods mainly rely on pairwise associations for class assignment and novel class reasoning, which limits their ability to capture complex relationships among known and novel classes and may lead to inaccurate semantic segmentation. To address this issue, we introduce a hypergraph-based framework that models high-order associations among classes and enables collaborative reasoning from known classes to novel classes beyond traditional pairwise relations. Moreover, existing methods tend to focus on semantic feature extraction while paying insufficient attention to geometric information in point clouds. To better exploit spatial structure, we propose Geometric-Aware Prototypes to enhance the representation of class-level geometric cues. By propagating geometric information through hyperedges, the proposed method improves the understanding of spatial distributions across classes and leads to more accurate segmentation. Experiments on the SemanticKITTI and SemanticPOSS datasets demonstrate the effectiveness and superiority of our method.
-
-**Why this may be relevant:**
-
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
-
----
-
-### 7. RadiusFPS: Efficient Farthest Point Sampling on CPUs and GPUs via Spherical Voxel Pruning
-
-**Authors:** Ziyang Yu, Xiang Li, Qiong Chang, Jun Miyazaki
-
-**Published:** 2026-06-04
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 22
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2606.06255v1
-
-**Paper link:** http://arxiv.org/abs/2606.06255v1
-
-**PDF link:** https://arxiv.org/pdf/2606.06255v1
-
-**Abstract:**
-
-Point clouds are a primary sensory representation for robotic perception, underpinning LiDAR-based autonomous driving, simultaneous localization and mapping (SLAM), and navigation. Within these pipelines, Farthest Point Sampling (FPS) is the most well-known downsampling operator, as its uniform coverage preserves the geometric structure on which downstream perception relies. However, the large time complexity of classical FPS scales poorly with the million-point-per-second rates of modern 3D sensors, making it a dominant latency bottleneck that conflicts with the real-time and limited onboard compute budgets of robotic systems. Therefore, we propose RadiusFPS, an FPS acceleration framework based on spherical voxel pruning that preserves the standard FPS update rule under the same initialization and tie-breaking policy. By indexing the point cloud with spherical voxels, RadiusFPS derives a conservative geometric bound that prunes redundant distance computations in each iteration, complemented by a coordinate-wise point-skip test that removes residual updates. We further introduce RadiusFPS-G, a warp-level GPU implementation that fuses voxel selection, pruning, and distance update into memory-coalesced kernels, eliminating costly global-memory round-trips. On indoor (S3DIS, ScanNet) and outdoor LiDAR (SemanticKITTI) benchmarks, RadiusFPS-G attains up to 2.5x speedup over GPU-based FPS and matches or exceeds QuickFPS among the evaluated methods while using roughly half its GPU memory, with comparable segmentation accuracy. When coupled with the learning-based FastPoint sampler, the resulting pipeline achieves the fastest End-to-End inference among all evaluated configurations. These properties make high-quality FPS-style sampling practical for latency- and memory-constrained robotic vision.
-
-**Why this may be relevant:**
-
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
-
----
-
-### 8. Sparse Subspace-to-Expert Sharing for Task-Agnostic Continual Learning
-
-**Authors:** Fatema Siddika, Md Anwar Hossen, Tanwi Mallick, Ali Jannesari
-
-**Published:** 2026-06-05
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 21
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2606.07500v1
-
-**Paper link:** http://arxiv.org/abs/2606.07500v1
-
-**PDF link:** https://arxiv.org/pdf/2606.07500v1
-
-**Abstract:**
-
-Continual learning in Large Language Models (LLMs) is hindered by the plasticity-stability dilemma, where acquiring new capabilities often leads to catastrophic forgetting of previous knowledge. Existing methods typically treat parameters uniformly, failing to distinguish between specific task knowledge and shared capabilities. We introduce Mixture of Sparse Experts for Task Agnostic Continual Learning (SETA), a framework that resolves the plasticity-stability conflict through adaptive sparse subspace decomposition into task-specific expert modules. Unlike standard updates, where tasks compete for the same parameters, SETA separates knowledge into unique experts, designed to isolate task-specific patterns, and shared experts, responsible for capturing common features. This structure is maintained through adaptive elastic anchoring and a routing-aware regularization that jointly protect shared knowledge at both the weight and routing levels and enable a unified gating network to automatically retrieve the correct expert combination during inference. Extensive experiments across diverse domain-specific benchmarks demonstrate that SETA achieves competitive or superior overall performance relative to state-of-the-art continual learning baselines, with particularly strong retention of early-task knowledge and improved backward transfer on LLaMA-2 7B and Qwen3-4B.
+Large language models (LLMs) are widely used in text-to-image (T2I) systems, but they are typically limited to text encoding, while denoising is handled by newly trained generative backbones. The emergence of representation autoencoders (RAEs) shifts the generation target toward semantically structured visual representations, creating a latent space that is more compatible with pretrained LLM priors. Inspired by multimodal LLMs (MLLMs), where an MLP projector is sufficient to align clean visual representations with a pretrained LLM, we repurpose the MLLM itself as a noisy representation encoder, extending this mechanism from clean to noisy inputs. We present RepFusion, which uses the resulting MLLM outputs as the conditioning signal for a diffusion transformer. In controlled comparisons at similar inference budgets, RepFusion outperforms baselines that devote comparable capacity to newly initialized denoisers. These results demonstrate that MLLMs provide strong priors for denoising visual representations and that, by conditioning on evolving noisy representations, test-time compute can be productively spent on repeated MLLM conditioning in modern T2I systems.
 
 **Why this may be relevant:**
 
@@ -254,11 +100,161 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 ---
 
-### 9. Beyond Backscatter: InSAR coherence from detected SAR images
+### 4. GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge
 
-**Authors:** Francescopaolo Sica, Andrea Pulella, Michael Schmitt
+**Authors:** Pavan C Shekar, Abhishek H S, Aswanth Krishnan
 
-**Published:** 2026-06-05
+**Published:** 2026-06-12
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 32
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2606.14470v1
+
+**Paper link:** http://arxiv.org/abs/2606.14470v1
+
+**PDF link:** https://arxiv.org/pdf/2606.14470v1
+
+**Abstract:**
+
+Large language model (LLM) reasoning is ephemeral: chains of thought vanish with the context window, pruned search branches leave no record, and memory buffers cannot be diffed, merged, or audited. Every other complex software process (code, infrastructure, data, experiments) is version-controlled; reasoning is not. We introduce GitOfThoughts, which stores an agent's reasoning tree as a git repository: every scored thought is a commit, scores are notes, outcomes are tags, and retrieval is "git log" over the agent's own history. This makes reasoning replayable, auditable, and mergeable across agents at near-zero engineering cost. We then ask the harder question: does memory, in any substrate, actually improve accuracy? Across five substrates (none, markdown, vector, graph, git), two benchmarks, two model scales, and pre-registered replications, the answer for novel problems is no. No memory format reliably helps, and a promising early result collapsed under its own pre-registered replication. Memory pays only above what we call the copyability threshold: when the retrieved case is a near-duplicate of the current problem (similarity >~ 0.8), accuracy jumps sharply; below it, nothing. The gain is answer retrieval, not method transfer: a 4.5x larger model doubles the near-duplicate payoff yet still cannot extract a transferable method from a worked example. The only general lever we find is test-time sampling. The case for git-as-substrate is therefore auditability, provenance, and mergeability at accuracy parity. We document a retracted result and a refuted hypothesis to model the evaluation standard we hold ourselves to.
+
+**Why this may be relevant:**
+
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis. It is related to urban planning, infrastructure, or built-environment analysis.
+
+---
+
+### 5. RATS! Patches Talk Through Registers: Emergent Parts in Register Attention Transformers
+
+**Authors:** Timing Yang, Predrag Neskovic, Jansen Seheult, Wenchao Han, Anand Bhattad, Alan Yuille, Feng Wang
+
+**Published:** 2026-06-12
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 27
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2606.14701v1
+
+**Paper link:** http://arxiv.org/abs/2606.14701v1
+
+**PDF link:** https://arxiv.org/pdf/2606.14701v1
+
+**Abstract:**
+
+When humans see a bird, they recognize far more than just "bird" -- they see a head, wings, and talons, a structured assembly of reusable parts that can be identified across every bird they have ever seen. We ask whether a self-supervised visual model can discover the same compositional structure on its own. To this end, we propose RATS (Register Attention Transformers), which decomposes the classification token into N learnable register tokens that route patch information through an L->N->N->L bottleneck via a three-step compress-communicate-broadcast attention. The N registers are partitioned across the H attention heads, so that registers assigned to different heads do not interact with each other. Without auxiliary losses or part annotations, each register spontaneously specializes into a proto-semantic region whose emerging structure resembles object parts. RATS surpasses all baselines by +12 mIoU on average across five segmentation benchmarks, with consistent gains on ADE20K (+1.11 mIoU) and COCO (+0.2 AP^m). Its register dictionary further exhibits part-level consistency and semantic proximity across related categories. Our results suggest that RATS may provide a useful architectural prior for structured and interpretable visual representation learning.
+
+**Why this may be relevant:**
+
+It matched the geospatial machine learning search criteria and may be worth screening.
+
+---
+
+### 6. Y-BotFrame: An Extensible Embodied Agent Framework for Quadruped Robot Assistants
+
+**Authors:** Luyao Zhang, Ke Li, Yuan Ding, Xulong Zhao, Guo Yu, Chengwei Yan, Fuyu Dong, Jiawei Hu
+
+**Published:** 2026-06-11
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 27
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2606.13049v1
+
+**Paper link:** http://arxiv.org/abs/2606.13049v1
+
+**PDF link:** https://arxiv.org/pdf/2606.13049v1
+
+**Abstract:**
+
+Quadruped robots are capable of traversing a wide range of complex terrains with high flexibility. As highly mobile ground-based intelligent platforms, they can be equipped with modules for navigation control, environmental perception, and intelligent interaction, thereby serving as real-world mobile deployment platforms for various algorithms. In this paper, we introduce Y-BotFrame, an extensible embodied platform that turns a robot into an intelligent ground assistant. Y-BotFrame integrates multimodal perception capabilities, including speech, vision, and LiDAR, and employs a large language model as the cognitive core for environmental understanding, contextual reasoning, and task planning. The system maps user natural-language instructions into executable embodied task units that can be carried out by the robot. Y-BotFrame supports natural interaction through voice commands and visual feedback, removing the need for a remote controller and enabling efficient human-robot collaboration. With a highly extensible framework, Y-BotFrame supports plug-and-play integration of new functional modules as well as modular upgrades and iterative development, offering a reference implementation for the real-world deployment of general-purpose, instruction-driven embodied agents.The supplementary video is available at https://xdei-group.github.io/Y-BotFrame/.
+
+**Why this may be relevant:**
+
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+
+---
+
+### 7. Instruct-Particulate: Scaling Feed-Forward 3D Object Articulation with Kinematic Control
+
+**Authors:** Ruining Li, Yuxin Yao, Matt Zhou, Chuanxia Zheng, Christian Rupprecht, Joan Lasenby, Shangzhe Wu, Andrea Vedaldi
+
+**Published:** 2026-06-12
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 20
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2606.14699v1
+
+**Paper link:** http://arxiv.org/abs/2606.14699v1
+
+**PDF link:** https://arxiv.org/pdf/2606.14699v1
+
+**Abstract:**
+
+Reconstructing articulated 3D objects is important for animation, gaming, and robotic simulations. Recent neural networks can estimate the articulated structure of 3D objects, but their generalization remains limited by the scarcity of annotated data for this task. To address this gap, we introduce Instruct-Particulate, a model that takes a 3D mesh together with a target kinematic specification, including part descriptions, connectivity, joint types, and optional point prompts, and predicts the corresponding kinematic part segmentation and joint motion parameters. The kinematic specification disambiguates the task and allows the model to target annotations of different granularity, thereby making it possible to use more abundant heterogeneous training data. At test time, the kinematic specification can be obtained automatically from large-scale vision-language models, so the model can be applied to any input mesh. To train our model at scale, we construct a heterogeneous dataset of more than 150,000 articulated 3D objects, extending existing publicly available collections with data obtained by partially labelling other 3D models (monolithic or already decomposed into parts) with kinematic labels by means of vision-language models. Experiments show that our model generalizes better across categories and to AI-generated meshes, enabling articulated asset reconstruction from real-world images via image-to-3D models.
+
+**Why this may be relevant:**
+
+It may help with cross-city, cross-region, or cross-sensor generalization.
+
+---
+
+### 8. A Longitudinal Attribute-Conditioned Neural Network for Modeling Health-State Transition Probabilities in Temporally Irregular Data: The LANTERN Framework
+
+**Authors:** Bright Kwaku Manu, Beckett Sterner, Petar Jevtic
+
+**Published:** 2026-06-11
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 20
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2606.13880v1
+
+**Paper link:** http://arxiv.org/abs/2606.13880v1
+
+**PDF link:** https://arxiv.org/pdf/2606.13880v1
+
+**Abstract:**
+
+Accurate estimation of long-term care transition probabilities is central to disability insurance pricing, reserving, and solvency assessment. Classical actuarial multi-state models commonly rely on Markov, semi-Markov, or proportional-hazard specifications, which provide a direct connection to cohort projection but may be restrictive for irregular longitudinal health data with nonlinear aging patterns and heterogeneous covariate histories. This paper develops a well-calibrated estimator of multi-state transition probabilities for irregular longitudinal health data. The model learns from individual health history, incorporates the time elapsed between observations, and conditions transition probabilities on demographic and socioeconomic attributes. It produces a valid probability distribution over the next observed health state, with four possible states: healthy, mild disability, severe disability, and death. Individual probabilities are aggregated by age group and origin state to form transition matrices compatible with actuarial cohort projection. Using longitudinal data from the Health and Retirement Study, we compare the proposed estimator with logistic regression, gradient-boosted trees, a recurrent neural network, and a last-state persistence benchmark. The evaluation considers probabilistic accuracy, endpoint discrimination and calibration for severe disability and death, risk concentration, and transition matrix error after aggregation. The proposed estimator improves severe disability discrimination relative to logistic regression and gradient-boosted tree benchmarks, maintains strong calibration, and yields the lowest transition matrix error among the evaluated models in the held-out test analysis. Results show that a structured machine learning estimator can support long-term care transition modeling when judged by calibration and projection fidelity, beyond discrimination.
+
+**Why this may be relevant:**
+
+It connects to urban tree detection, canopy mapping, or vegetation analysis.
+
+---
+
+### 9. Agon: A Semi-Supervised Framework for Robust Satellite Interference Detection
+
+**Authors:** Boyu Yang, Chunyu Yang, Zhe Chen, Kun Qiu, Yue Gao
+
+**Published:** 2026-06-12
 
 **Venue:** arXiv
 
@@ -268,49 +264,49 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2606.07374v1
+**arXiv ID:** 2606.14147v1
 
-**Paper link:** http://arxiv.org/abs/2606.07374v1
+**Paper link:** http://arxiv.org/abs/2606.14147v1
 
-**PDF link:** https://arxiv.org/pdf/2606.07374v1
+**PDF link:** https://arxiv.org/pdf/2606.14147v1
 
 **Abstract:**
 
-In this work, we propose a deep learning framework for coherence regression directly from detected SAR images, without the need for accurate coregistration. A Residual U-Net is trained using coherence maps derived from precisely coregistered Sentinel-1 SLC data to learn the relationship between backscatter magnitudes and coherence. The model is trained on 12-day SLC pairs and evaluated across different datasets, including coregistered SLC products and open access analysis-ready data, covering diverse radiometric properties, geometries, and locations. Experimental results demonstrate that the proposed method achieves high-resolution coherence regression with improved accuracy compared to existing intensity-based approaches. The network generalizes well across diverse geographical locations and even across different temporal baselines that were never seen at training time. Additionally, the ability to operate on globally available analysis-ready data, such as ground range detected data, e.g., distributed through Google Earth Engine, enables its large-scale application in mission design, change monitoring, and diverse mapping tasks.
+The rapid expansion of non-geostationary orbit (NGSO) satellites alongside existing geostationary orbit (GSO) systems has intensified spectrum congestion and inter-system interference, placing stringent demands on real-time interference management to sustain reliable coexistence in next-generation communication networks. While existing machine learning (ML)-based reconstruction models have made strides, they remain constrained to an area under the curve (AUC) of 0.83 due to fixed thresholds, causing unacceptable false alarm rates that undermine critical link reliability. Additionally, their decoupled training paradigm neglects cross-domain dependencies, limiting time and frequency-domain AUCs to 0.83 and 0.71, respectively. To address these limitations, this paper introduces a semi-supervised satellite interference detection framework named Agon, employing a novel two-stage hybrid learning paradigm. Agon integrates masked autoencoder (MAE) pre-training of a dual attention transformer (DAT) with multi-task fine-tuning to optimize a direct binary classifier, effectively eliminating unstable thresholds. Furthermore, it incorporates high-order statistics (HOS)-augmented attention and wavelet regularization to bolster noise robustness and structural fidelity. Extensive validation on public NGSO-GSO dataset and a high-fidelity NGSO-NGSO dataset demonstrates that Agon achieves state-of-the-art (SOTA) detection performance, with a 25.3% improvement in AUC. Moreover, the multi-task learning (MTL) framework facilitates accurate modulation classification with accuracies exceeding 90%, while simultaneously maintaining optimal detection performance across diverse scenarios characterized by varying off-axis angles and interference-to-noise ratios (INRs).
 
 **Why this may be relevant:**
 
-It matched the geospatial machine learning search criteria and may be worth screening.
+It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
-### 10. An Integrated Roadside Sensing and Communication Framework for Vulnerable Road User Safety at Signalized Intersections
+### 10. ShearFuse-UNet: Hadamard, DCT, and Shearlet Transform Fusion for Next-Day Wildfire Spread Prediction
 
-**Authors:** Parvez Anowar
+**Authors:** Ene Meco, Yingyi Luo, Emadeldeen Hamdan, Adam Watts, Ahmet Enis Cetin
 
-**Published:** 2026-06-05
+**Published:** 2026-06-12
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 18
+**My Score:** 19
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2606.07016v1
+**arXiv ID:** 2606.14071v1
 
-**Paper link:** http://arxiv.org/abs/2606.07016v1
+**Paper link:** http://arxiv.org/abs/2606.14071v1
 
-**PDF link:** https://arxiv.org/pdf/2606.07016v1
+**PDF link:** https://arxiv.org/pdf/2606.14071v1
 
 **Abstract:**
 
-Vulnerable road users (VRUs) account for approximately half of urban traffic deaths globally, with intersections concentrating a disproportionate share of these casualties. Recent reviews of sensing technology for VRU protection have cataloged dozens of single-sensor and dual-sensor deployments, yet none of the surveyed systems couples multi-modal sensing with edge-side near-miss analytics and bidirectional vehicle-to-everything (V2X) and pedestrian-to-everything (P2X) messaging in a single intersection cabinet. This paper presents an integrated framework for VRU protection at signalized intersections, combining LiDAR, radar, RGB camera, and thermal camera at the perception layer, edge-based prediction and surrogate-safety analytics at the computation layer, V2X and P2X messaging at the communication layer, and adaptive signal control at the actuation layer. The framework is grounded in an empirical case study using R-LiViT, the first publicly released roadside LiDAR-Visual-Thermal dataset, which provides 200 multi-modal sequences and 2,400 annotated RGB-T frames at three German intersections. Analysis of 53,319 detection annotations reveals that VRUs comprise approximately 49% of all road-user observations, that day-to-night density drops by 38% for pedestrians and 45% for vehicles while the night distribution shows a higher close-proximity share, that per-frame close-proximity event counts vary approximately 10-fold across the eight unique locations at three intersections, and that 83% of pedestrian bounding boxes are small in image space, indicating that VRUs are typically far from any single sensor. These findings support multi-modal sensing, edge-side analytics, and adaptive context-sensitive deployment rather than uniform single-sensor solutions.
+We propose ShearFuse-UNet, a lightweight and computationally efficient deep learning model for next-day wildfire spread prediction from multi-modal satellite data. The model integrates three complementary transform-domain branches inside each encoder block of a U-Net backbone: a 2D Fast Walsh-Hadamard Transform (WHT) branch, a 2D Discrete Cosine Transform (DCT) branch, and a cone-adapted digital Shearlet residual branch. The WHT and DCT branches establish orthogonal latent spaces with learnable spectral scaling and fixed soft-thresholding, while the Shearlet branch provides anisotropic, multi-directional feature decomposition that explicitly encodes the elongated edge structures characteristic of fire fronts. A learned SpectralFusion gate adaptively combines the WHT and DCT responses, and the Shearlet reconstruction is added as a residual. This three-branch design bears a loose structural analogy to transformer self-attention: the WHT and DCT branches provide complementary spectral representations that are adaptively fused, while the Shearlet branch contributes directional content through a residual pathway. Unlike self-attention, the proposed design relies on fixed mathematical transforms rather than learned projection operators, reducing parameter count and computational cost. Evaluated on the WildfireSpreadTS dataset, ShearFuse-UNet achieves an F1 score of 0.596 with only 267k parameters, outperforming a ResNet18-based U-Net (14M parameters, F1 = 0.589) and demonstrating a highly favorable accuracy-efficiency trade-off. Results on the Google Next-Day Wildfire Spread dataset further validate these findings across a different benchmark.
 
 **Why this may be relevant:**
 
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It may connect to pedestrian infrastructure, road extraction, transportation infrastructure, or walkability mapping.
+It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
