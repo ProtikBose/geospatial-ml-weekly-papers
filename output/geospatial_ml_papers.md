@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-06-29 to 2026-07-06
+**Search window:** 2026-07-06 to 2026-07-13
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,123 +12,29 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. Multi-scale vegetation cooling assessments for urban climate adaptation: a MAUP-informed NDVI–LST analysis in Shanghai
+### 1. Promptable Concept Segmentation from Above: Evaluating SAM 3's Zero-Shot and One-Shot Capabilities in Remote Sensing
 
-**Authors:** Ting Zhang, Jienan Ye, Ran Xu
+**Authors:** Mohammad Dabaja, Turgay Celik
 
-**Published:** 2026-06-30
-
-**Venue:** International Journal of Climate Change Strategies and Management
-
-**Found via:** Semantic Scholar
-
-**My Score:** 85
-
-**Venue importance score included:** 0
-
-**Semantic Scholar citations:** 0
-
-**DOI:** 10.1108/ijccsm-02-2026-0083
-
-**Paper link:** https://www.semanticscholar.org/paper/9f60249f6352dc6e0d56eaee642ed35d6192d575
-
-**PDF link:** https://doi.org/10.1108/ijccsm-02-2026-0083
-
-**Abstract:**
-
-As climate warming and urban heat exposure continue to intensify, accurately identifying the cooling effect of vegetation is essential for developing effective urban climate adaptation strategies. However, the relationship between the Normalized Difference Vegetation Index (NDVI) and Land Surface Temperature (LST) is highly sensitive to spatial scale. Inappropriate scale selection may lead to misjudgments of urban cooling potential due to the Modifiable Areal Unit Problem (MAUP). This study aims to reveal the scale dependency of the NDVI–LST relationship and assess its implications for urban green space planning and climate adaptation decision-making. Taking Shanghai as a case study, this research constructs multi-scale grids while maintaining consistent spatial resolution of remote sensing data. Land use change information from 2000 to 2024 is integrated into the analysis. By combining the Random Forest model with the SHAP interpretation method, this study examines the statistical relationship, nonlinear response structure and variations in cooling turning points of NDVI–LST across different scales and land use contexts. This approach enables a systematic assessment of how spatial aggregation methods influence the identification of vegetation cooling effects. The results show that as the analysis scale shifts from coarse to fine, local heterogeneity and contextual effects are significantly enhanced. The nonlinear response structure of NDVI–LST and its cooling thresholds undergo systematic changes with scale. At coarse scales, local fluctuations are smoothed out and the overall response becomes more stable. At fine scales, nonlinear characteristics become more pronounced and spatial differences more prominent. From the MAUP perspective, scale selection not only affects the assessment of statistical correlations but may also introduce biases in evaluating the cooling efficiency of green spaces within climate adaptation planning. This study proposes a reusable multi-scale assessment framework from the MAUP perspective. It reveals the scale sensitivity of the NDVI–LST relationship and its contextual dependency across different land use backgrounds. The findings highlight the critical value of multi-scale information in urban green infrastructure planning and heat risk management. This provides methodological innovation and practical references for developing evidence-based urban climate adaptation strategies.
-
-**Why this may be relevant:**
-
-It is directly related to remote sensing or Earth observation workflows. It connects to urban tree detection, canopy mapping, or vegetation analysis. It is relevant to urban climate and heat-resilience research. It is related to urban planning, infrastructure, or built-environment analysis.
-
----
-
-### 2. From Raw EO Data to AI-Ready Datasets: Lowering the Barrier to Geospatial Foundation Model Fine-Tuning
-
-**Authors:** M. Santoro, E. Boldrini, S. Nativi, P. Mazzetti
-
-**Published:** 2026-07-02
-
-**Venue:** Remote Sensing
-
-**Found via:** Semantic Scholar
-
-**My Score:** 72
-
-**Venue importance score included:** 10
-
-**Semantic Scholar citations:** 0
-
-**DOI:** 10.3390/rs18132152
-
-**Paper link:** https://www.semanticscholar.org/paper/50f7e63b9fae24b226612ab1a27f634d0c513d07
-
-**PDF link:** https://doi.org/10.3390/rs18132152
-
-**Abstract:**
-
-Geospatial foundation models are a new frontier in artificial intelligence, designed to understand and analyze spatial data at scale. Trained on huge sets of EO data, these models can support a wide range of applications—from monitoring natural disasters to guiding urban development and tracking climate change. To this aim, researchers and practitioners need to fine-tune the foundation models for specific tasks, utilizing a relatively small amount of additional data. As a result, geospatial foundation models are reshaping how we observe, manage, and protect our planet. Fine-tuning a geospatial foundation model requires carefully curated training datasets that reflect specific regions, time periods, or tasks—such as detecting deforestation or mapping urban growth. Yet preparing these datasets is often labor-intensive, involving steps like selecting relevant imagery, aligning spatial formats, and generating accurate labels. In practice, this means that the effectiveness of GFMs hinges on the availability of AI-ready data. This bottleneck limits the accessibility and scalability of GFMs for scientific and operational applications. In this work, we introduce a software library designed to automate these preparatory steps, streamlining the transformation of geospatial datasets into consistent, high-quality inputs for GFM fine-tuning. By reducing technical overhead and ensuring data readiness, the library enables faster, more reliable, and more inclusive adaptation of foundation models to local environmental challenges and specialized domain needs.
-
-**Why this may be relevant:**
-
-It appears in one of the selected top journals, conferences, or workshops. It may help track foundation-model directions for Earth observation or geospatial AI. It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 3. TerraDiT-$Ω$: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive
-
-**Authors:** Brian Wei, Srikumar Sastry, Daniel Cher, Eric Xing, Nathan Jacobs
-
-**Published:** 2026-06-30
+**Published:** 2026-07-10
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 52
+**My Score:** 84
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2606.31029v1
+**arXiv ID:** 2607.09583v1
 
-**Paper link:** http://arxiv.org/abs/2606.31029v1
+**Paper link:** http://arxiv.org/abs/2607.09583v1
 
-**PDF link:** https://arxiv.org/pdf/2606.31029v1
-
-**Abstract:**
-
-Generative models have achieved remarkable progress, yet applying them to satellite imagery remains challenging. Unlike natural imagery, satellite scenes are structured by spatially complex and semantically distinct geometries. Prior work addresses this complexity by adapting natural image frameworks using dense rasters or sparse prompts, trading off annotation cost and fidelity while breaking compatibility with vector primitives commonly used to represent geographic information. We introduce TerraDiT-$Ω$, a unified spatial control framework that generates satellite imagery directly from any native geospatial primitive. By jointly leveraging precise annotations (polygons, polylines) and coarser ones (bounding boxes, points), the model supports controllable layouts across varying annotation budgets, broadening applicability to design tasks such as urban planning while remaining naturally compatible with end-to-end GeoAI workflows. To effectively leverage these primitives during generation, we propose Geometry-Aware Local Attention, a conditioning mechanism that injects explicit geometric cues into the attention space. Across all conditioning formats, our approach consistently outperforms both dense-control and sparse-control baselines. Furthermore, this flexibility enables controllable synthetic data augmentation using a single generative model, improving downstream performance on land-cover segmentation, object detection, road graph extraction, and scene classification. Code, data, and weights are available at https://github.com/mvrl/TerraDiT.
-
-**Why this may be relevant:**
-
-It is directly related to remote sensing or Earth observation workflows. It is related to urban planning, infrastructure, or built-environment analysis.
-
----
-
-### 4. Interpretation-Oriented Cloud Removal via Observation-Anchored Residual Flow with Geo-Contextual Alignment
-
-**Authors:** Ziyao Wang, Maonan Wang, Yucheng He, Xianping Ma, Ziyi Wang, Hongyang Zhang, Yirong Cheng, Man-on Pun
-
-**Published:** 2026-07-02
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 51
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2607.02471v1
-
-**Paper link:** http://arxiv.org/abs/2607.02471v1
-
-**PDF link:** https://arxiv.org/pdf/2607.02471v1
+**PDF link:** https://arxiv.org/pdf/2607.09583v1
 
 **Abstract:**
 
-Cloud removal (CR) is essential for optical remote sensing, serving as a prerequisite for reliable downstream interpretation, such as semantic segmentation and change detection. However, existing CR approaches often prioritize visual realism while overlooking their impact on subsequent analytical tasks, leading to semantic drift and degraded downstream performance. To address this issue, we propose Geo-Anchored Cloud Removal (GACR), a unified framework that jointly ensures faithful reconstruction and robust interpretability. At its core, GACR incorporates Observation-Anchored Residual Flow (OAR-Flow), which reformulates CR as a physically grounded residual inversion process. By anchoring the generative trajectory to the cloudy observation rather than pure noise, OAR-Flow enables fast, stable, and faithful reconstruction. To further preserve semantic structures critical for downstream interpretation, GACR integrates Geo-Contextual Prior Alignment (GCPA) to constrain the reconstruction within a semantic manifold induced by a Vision Foundation Model (VFM). Consequently, GACR strictly maintains the spatial-semantic integrity of complex landscapes. Extensive experiments across six CR datasets and twelve downstream tasks demonstrate that GACR produces superior reconstruction quality while consistently improving downstream task accuracy. The code is available at https://github.com/wzy6055/GACR.
+The deployment of large-scale foundation models, such as the Segment Anything Model 3 (SAM 3), promises a transition toward open-vocabulary, training-free computer vision. However, their capacity to generalize out-of-distribution to the complex, top-down geometric structures of Earth Observation imagery remains largely unquantified. Driven by SAM 3's performance disparities in highly specialized domains, we present a comprehensive, multi-task empirical evaluation across remote sensing scene classification, object detection, and instance segmentation under strict zero-shot and one-shot constraints. To achieve this, we introduce a structural adaptation of SAM 3 by repurposing its decoupled binary presence head into a standalone zero-shot classifier. Furthermore, by systematically isolating textual and visual prompt modalities across five configurations, we explicitly diagnose the alignment mechanics within the model's multimodal decoder. Our findings reveal severe cross-modal interference: while visual prompts successfully align the decoder to complex remote sensing geometry, textual prompts inject misaligned, ground-level semantic bias, actively degrading coordinate regression. To benchmark these capabilities without resource-intensive training, we formulate a novel training-free proxy evaluation protocol for Generalized Zero-Shot tasks (scene classification and instance segmentation). Ultimately, our results demonstrate that SAM 3 avoids the overfitting commonly seen in legacy domain-adapted models, achieving high Harmonic Mean scores in segmentation tasks. However, it remains fundamentally constrained by sub-pixel resolution limits and overhead semantic blind spots, charting a definitive mandate for parameter-efficient geospatial fine-tuning of its multimodal decoder.
 
 **Why this may be relevant:**
 
@@ -136,151 +42,211 @@ It may help track foundation-model directions for Earth observation or geospatia
 
 ---
 
-### 5. Physics-Informed Machine Learning for Agricultural Drought Prediction in Vidarbha, Maharashtra: A Multimodal Geospatial Fusion Framework for ESG
+### 2. Stereo Matching in Satellite Imagery: A Depth Estimation Foundation Model-Assisted Iterative Approach
 
-**Authors:** Anirudh Khajuria
+**Authors:** Kunpeng Hu, Wei Zhao
 
-**Published:** 2026-06-30
+**Published:** 2026-07-07
 
-**Venue:** International Journal of Science and Research (IJSR)
+**Venue:** Remote Sensing
 
 **Found via:** Semantic Scholar
 
-**My Score:** 43
+**My Score:** 62
 
-**Venue importance score included:** 0
+**Venue importance score included:** 10
 
 **Semantic Scholar citations:** 0
 
-**DOI:** 10.21275/sr26629131639
+**DOI:** 10.3390/rs18132245
 
-**Paper link:** https://www.semanticscholar.org/paper/8efd2985b82091ee131afe3a7a23df53a58c852f
+**Paper link:** https://www.semanticscholar.org/paper/1247d2d6d62925de32ac9964c499e57fb499b1c7
 
-**PDF link:** https://www.ijsr.net/archive/v15i6/SR26629131639.pdf
+**PDF link:** https://doi.org/10.3390/rs18132245
 
 **Abstract:**
 
-: Vidarbha is one of the most drought-stricken areas of South Asia. This semi-arid agricultural belt in Maharashtra, India is characterised by extreme deficits in annual rainfall (up to 55% in some districts) and ongoing depletion of the groundwater supply, which poses a significant threat to the livelihoods of millions of small farmers. Drought monitoring methods currently used in traditional systems are based on large statistical indices that do not reflect the multi-scale localised variations in soil moisture, crop stress and aquifer depletion at the scale of the farm. In this work we present a Physics-Informed Neural Network (PINN) algorithm that integrates different forms of geospatial data (Sentinel-2 satellite imagery (at 10m resolution), India-WRIS piezometer time-series data, and IMD gridded rainfall fields) through a novel water-balance-constrained loss function, in an effort to produce accurate estimates of soil moisture and drought indices, at a recent time. Using this approach, we validate the model across five vulnerable districts in Vidarbha (Yavatmal, Amravati, Akola, Buldhana and Washim) over the time frame of 2018-2026 at the tehsil level. By providing a framework for transferability of this method, we anticipate that this approach can be adopted globally using large datasets acquired from the ERA5-Land and Copernicus Open Access Hub.
+In optical remote sensing 3D reconstruction, high-resolution satellite stereo matching is a critical task, yet it is challenged by extreme imaging geometries, texture-less and repetitive patterns, occlusions, and scene variations caused by spatio-temporal heterogeneity. To address these issues, we propose IFMA-Stereo, an innovative binocular disparity estimation method that leverages a monocular depth foundation model. Our approach constructs a multi-scale spatial information pyramid to jointly integrate the foundation model with a disparity extraction network. At the feature level, an attention interaction mechanism captures multi-dimensional contextual dependencies and transforms general scene understanding priors into long-range associative features suitable for stereo cost volume construction. At the pixel level, a cyclic iterative refinement module embeds depth information from the foundation model throughout the iteration process and performs joint optimization, enhancing the model’s adaptability in geometrically complex regions. Experiments on the US3D and GaoFen-7 datasets demonstrate that IFMA-Stereo achieves superior performance in challenging areas (texture-less regions, disparity discontinuities, repetitive patterns) and effectively mitigates prediction errors caused by spatio-temporal heterogeneity, albeit at the cost of increased inference time compared to baseline methods. Quantitatively, the method achieves an end-point error (EPE) of 1.347 and a D1 error of 7.26% on the US3D dataset, and an EPE of 1.585 and a D1 error of 13.41% on the GaoFen-7 dataset. Notably, the method also yields precise predictions for unseen urban areas, indicating strong generalization. These results confirm that IFMA-Stereo achieves state-of-the-art accuracy in remote sensing disparity estimation.
 
 **Why this may be relevant:**
 
-It is directly related to remote sensing or Earth observation workflows.
+It appears in one of the selected top journals, conferences, or workshops. It may help track foundation-model directions for Earth observation or geospatial AI. It is directly related to remote sensing or Earth observation workflows. It may help with cross-city, cross-region, or cross-sensor generalization.
 
 ---
 
-### 6. pykci: A Compact Urban Knowledge Graph for Semantic and Spatial Queries using LLMs
+### 3. Hydra++: Real-Time Hierarchical 3D Scene Graph Construction With Object-Level Shape Estimation
 
-**Authors:** Huynh Duc An Son Nguyen, Lukas Arzoumanidis, Youness Dehbi
+**Authors:** Hyungtae Lim, Nathan Hughes, Xihang Yu, Ruihan Xu, Yun Chang, Jingnan Shi, Rajat Talak, Luca Carlone
 
-**Published:** 2026-07-02
+**Published:** 2026-07-10
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 42
+**My Score:** 33
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.01605v1
+**arXiv ID:** 2607.09455v1
 
-**Paper link:** http://arxiv.org/abs/2607.01605v1
+**Paper link:** http://arxiv.org/abs/2607.09455v1
 
-**PDF link:** https://arxiv.org/pdf/2607.01605v1
+**PDF link:** https://arxiv.org/pdf/2607.09455v1
 
 **Abstract:**
 
-CityGML, the OGC standard for modeling, storage, and exchange of semantic 3D city models, describes urban objects with detailed semantics, geometry, and topology. Yet this richness is difficult to query directly: CityGML's XML encoding is designed for exchange rather than analysis, and relational mappings expose it through schemas requiring expert knowledge. We present pykci (Python Knowledge Graph for Cities), an open-source system that transforms CityGML 2.0 datasets into a compact urban knowledge graph in Neo4j and makes it queryable in natural language. The graph schema covers all thematic feature modules of CityGML 2.0 across all levels of detail and is spatially indexed with an R-tree for efficient geometric retrieval. A complete end-to-end Python pipeline ingests CityGML datasets into the knowledge graph, exports them to OGC 3D Tiles for interactive visualization, and supports lossless round-trip export of all content back to CityGML. For querying, the graph is paired with a large language model through a model-agnostic text-to-Cypher mechanism: the graph schema is supplied as context, and the model translates natural-language questions into Cypher queries executed against the graph. We evaluate both a locally running open-weight model, which keeps sensitive city data on-premise, and a state-of-the-art commercial model for the most demanding spatial and semantic queries. Answers are grounded in exact city data rather than the model's parametric memory, reducing hallucination and providing auditable provenance for every response. We demonstrate the system on open-government CityGML LoD2 datasets from Hamburg, Germany, including complex semantic and spatial queries such as identifying roof surfaces suitable for greening. pykci enables urban planners, GIS practitioners, and citizens to interact with semantic 3D city models without expertise in query languages and database schemas.
+3D scene graphs provide a hierarchical abstraction of environments by encoding spatial entities, such as objects and places, and their relationships. However, existing scene graph systems model object geometry coarsely, relying on partial point clouds or class-level CAD templates, which limits instance-specific shape detail. This paper presents Hydra++, a system-level investigation into how learning-based object shape estimators can be integrated into a hierarchical 3D scene graph pipeline. Hydra++ incorporates category-agnostic shape estimation and a reprojection-mask consistency check to reject degenerate predictions from partial observations or imprecise segmentation. In its default CRISP-based configuration, Hydra++ performs online scene graph construction; slower estimators such as SAM3D are evaluated as modular alternatives to demonstrate generalization-latency trade-offs. Furthermore, to address the challenges of sparse and noisy depth measurements in outdoor environments, Hydra++ supports a hybrid LiDAR-camera configuration for large-scale operation, improving scene-level reconstruction quality. Experiments in both simulation and real-world outdoor campus scenarios demonstrate that Hydra++ improves object- and scene-level reconstruction quality. Project page is available at https://hydra-plusplus.github.io/.
 
 **Why this may be relevant:**
 
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis.
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It may help with cross-city, cross-region, or cross-sensor generalization.
 
 ---
 
-### 7. DemoPSD: Disagreement-Modulated Policy Self-Distillation
+### 4. On Exploring Input Resolution Scaling For Anytime LiDAR Object Detection
 
-**Authors:** Yunhe Li, Hao Shi, Wenhao Liu, Mengzhe Ruan, Hanxu Hou, Zhongxiang Dai, Shuang Qiu, Linqi Song
+**Authors:** Ahmet Soyyigit, Shuochao Yao, Heechul Yun
 
-**Published:** 2026-07-02
+**Published:** 2026-07-09
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 35
+**My Score:** 22
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.02502v1
+**arXiv ID:** 2607.08391v1
 
-**Paper link:** http://arxiv.org/abs/2607.02502v1
+**Paper link:** http://arxiv.org/abs/2607.08391v1
 
-**PDF link:** https://arxiv.org/pdf/2607.02502v1
+**PDF link:** https://arxiv.org/pdf/2607.08391v1
 
 **Abstract:**
 
-On-policy self-distillation (OPSD) has emerged as a practical method for training large language models (LLMs) to reason, where a single model acts as both the teacher and the student with different levels of information access. However, recent studies have found that the teacher's dense token-level supervision, conditioned on privileged information, can lead to overfitting to in-domain patterns, suppress exploration, and hurt cross-domain generalization, while also introducing a more fundamental issue: *privileged information leakage*, where the student encodes answer-dependent shortcuts that are unavailable at test time. We introduce **DemoPSD**, a novel framework that resolves such problems through the idea of *selective adoption of teacher guidance*. Instead of fitting the full teacher distribution, DemoPSD steers the student toward a *reverse-KL barycenter target*, a weighted geometric combination of the teacher and student distributions, that naturally balances learning from the teacher with preserving the student's own reasoning capacity. We measure the difference between their distributions and use such a discrepancy to adaptively control the blending at each token position. We provably show that DemoPSD achieves **(1)** *leakage attenuation*, i.e., effective mitigation of privileged information leakage; and **(2)** *exploration preservation*, i.e., preservation of exploration capacity under dense token-level distillation. Extensive experiments on SciKnowEval across four scientific fields show that DemoPSD outperforms both GRPO and SDPO while maintaining higher training entropy and robustly generalizing to out-of-distribution GPQA benchmarks.
+Making tradeoffs between execution latency and result utility (i.e., anytime computing) for adapting to dynamic operational requirements has been shown to enhance the performance of cyber-physical systems. In this work, we focus on enabling anytime computing for deep neural networks (DNNs) that process LiDAR point clouds for 3D object detection. We propose a novel method that enables multi-resolution inference for models that process point clouds as pillars or voxels, allowing the input to be dynamically scaled and processed at the resolution needed to meet timing requirements. Importantly, our memory-efficient approach requires the deployment of only a single DNN model, avoiding the need to deploy multiple models, each trained for a different input resolution. We also introduce a deadline-aware scheduler that selects the highest possible resolution for any given input by accurately predicting the execution time for all possible resolutions at runtime, which is challenging due to the irregularity of LiDAR point clouds. Experimental results on the nuScenes autonomous driving dataset demonstrate that our method significantly outperforms existing anytime computing approaches for LiDAR object detection. Finally, we deploy our approach in a simulated autonomous driving system, where it consistently enables collision-free navigation while avoiding unnecessary stalls caused by environmental complexity.
 
 **Why this may be relevant:**
 
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It may help with cross-city, cross-region, or cross-sensor generalization.
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
 
 ---
 
-### 8. Bringing Agentic Search to Earth Observation Data Discovery
+### 5. Is sub-metre resolution necessary for cocoa mapping? A landscape-stratified evaluation of very high resolution imagery, decametric Earth Observation inputs, and operational products in Cote d'Ivoire
 
-**Authors:** Minghan Yu, Youran Sun, Chugang Yi, Yixin Wen, Haizhao Yang
+**Authors:** Kasimir Orlowski, Filip Sabo, Michele Meroni, Astrid Verhegghen, Mariana Belgiu, Felix Rembold
 
-**Published:** 2026-07-02
+**Published:** 2026-07-09
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 28
+**My Score:** 21
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.02387v1
+**arXiv ID:** 2607.08945v1
 
-**Paper link:** http://arxiv.org/abs/2607.02387v1
+**Paper link:** http://arxiv.org/abs/2607.08945v1
 
-**PDF link:** https://arxiv.org/pdf/2607.02387v1
+**PDF link:** https://arxiv.org/pdf/2607.08945v1
 
 **Abstract:**
 
-NASA and its data centers hold thousands of geoscience datasets and tools like Worldview, Giovanni, the Science Discovery Engine, and Harmony. Finding the right one is hard even for domain experts. We present an agentic search system, deployed as a public service for the geoscience community, that takes a natural-language research query and returns the matching datasets and tools. We demonstrate that, in the era of large language models, the latent value of knowledge graphs (KGs) can be substantially amplified through agentic search. From the NASA Earth Observation Knowledge Graph (NASA EO-KG) we derive NASA-EO-Bench, an open benchmark of 47k query-dataset pairs (21k task-based queries). A neural scorer fine-tuned on NASA-EO-Bench beats cosine and BM25 baselines. Further combining it with BM25 via score fusion raises both Recall@10 (R@10) and MRR by over 5x. On top of this supervised pipeline, we add a zero-shot agentic reranking stage that, without any additional training, lifts MRR by 28% on a stratified N=200 subset, showing that LLM reasoning is complementary to supervised retrieval.
+Accurate cocoa mapping is increasingly important for deforestation monitoring, supply-chain transparency, and regulatory applications. Spatial aggregation in conventional medium-resolution Earth observation (EO) imagery may limit cocoa detection in heterogeneous smallholder landscapes. In Cote d'Ivoire, we therefore evaluated how mapping performance varies across landscape conditions, whether very high resolution (VHR) imagery provides a meaningful advantage, and whether foundation-model embeddings improve decametric cocoa mapping. We developed models using 0.5 m Pleiades VHR imagery, a 10 m Sentinel-2 annual composite, and embeddings from TESSERA and AlphaEarth Foundations (AEF), and additionally assessed four publicly available cocoa mapping products. Performance was evaluated through a landscape-stratified accuracy assessment using 2,821 independently interpreted reference points distributed across gradients of tree cover density and landscape fragmentation. The VHR model achieved the highest performance (F1 = 0.92) and maintained F1-scores above 0.90 across all strata. Among the decametric inputs, TESSERA performed best (F1 = 0.86), followed by AEF (F1 = 0.82) and Sentinel-2 (F1 = 0.76). Of the existing cocoa products, the Kalischek product performed best (F1 = 0.83), comparable to the internally trained AEF model. Performance differences between VHR and decametric approaches increased with fragmentation and under low and high tree cover density conditions. Targeted VHR acquisition may therefore be particularly beneficial in complex cocoa landscapes, while foundation-model embeddings offer a scalable alternative for large-area mapping.
 
 **Why this may be relevant:**
 
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It is directly related to remote sensing or Earth observation workflows.
+It is directly related to remote sensing or Earth observation workflows. It connects to urban tree detection, canopy mapping, or vegetation analysis.
 
 ---
 
-### 9. Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs
+### 6. Hamiltonicity of Cartesian products of trees with odd paths
 
-**Authors:** Junhao Shi, Siyin Wang, Xiaopeng Yu, Li Ji, Jingjing Gong, Xipeng Qiu
+**Authors:** Irena Hrastnik Ladinek, Tjasa Paj Erker, Simon Spacapan
 
-**Published:** 2026-07-02
+**Published:** 2026-07-10
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 16
+**My Score:** 9
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.02466v1
+**arXiv ID:** 2607.09270v1
 
-**Paper link:** http://arxiv.org/abs/2607.02466v1
+**Paper link:** http://arxiv.org/abs/2607.09270v1
 
-**PDF link:** https://arxiv.org/pdf/2607.02466v1
+**PDF link:** https://arxiv.org/pdf/2607.09270v1
 
 **Abstract:**
 
-Vision-Language-Action (VLA) models are fundamentally bottlenecked by the scarcity of expert demonstrations -- triplets of observations, instructions, and actions that are costly to collect at scale. We argue that this bottleneck stems from conflating two distinct learning objectives: acquiring physical competence (how to move) and acquiring semantic alignment (what to do). Crucially, only the latter requires language supervision. Building on this Decomposition Hypothesis, we propose Task-Agnostic Pretraining (TAP), a two-stage framework that first learns transferable motor priors from cheap, unlabeled interaction data -- including discarded off-task trajectories and autonomous robot play -- via a self-supervised Inverse Dynamics objective. A lightweight second stage then grounds these priors in language using minimal expert data. On the SIMPLER benchmark, TAP matches models trained on over 1M expert trajectories while using orders of magnitude less labeled data, yielding a 10% absolute gain over standard behavior cloning. On a real-world WidowX platform, TAP retains 25% success under camera perturbations where internet-scale baselines collapse to 0%, demonstrating that task-agnostic pretraining produces robust, transferable physical representations and offers a scalable path forward for Embodied AI.
+A $\{P_2,P_3\}$-factor in a graph $G$ is a factor of $G$ in which every component is a path on two or three vertices. Let $T\Box P_n$ be the Cartesian product of a tree $T$ and a path on $n$ vertices. Kao and Weng proved that $T\Box P_n$ is hamiltonian if $T$ has a path factor and $n$ is a sufficiently large even integer. In this article we prove that, for every odd $n$, there exists a tree $T$ of maximum degree 4 that has a $\{P_2,P_3\}$-factor such that $T\Box P_n$ is not hamiltonian, thereby refuting a conjecture by Kao and Weng.
+
+**Why this may be relevant:**
+
+It connects to urban tree detection, canopy mapping, or vegetation analysis.
+
+---
+
+### 7. Multiplicity of negative one of independence polynomials of graphs
+
+**Authors:** Om Prakash Bhardwaj, Trung Chau, Sayeed Ikram, Gargi Lather, Vasudeva Nanjangud, Chitra Venugopal
+
+**Published:** 2026-07-09
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 9
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2607.08480v1
+
+**Paper link:** http://arxiv.org/abs/2607.08480v1
+
+**PDF link:** https://arxiv.org/pdf/2607.08480v1
+
+**Abstract:**
+
+We initiate the study of the multiplicity of negative one of independence polynomials of graphs. In this article, we simply refer to this as the \emph{multiplicity} of a graph. As applications, we provide a graph-theoretic description of trees whose independence complexes are contractible, give a new sufficient condition for independence polynomials of graphs to be log-concave, and finally, determine possible pairs $(\operatorname{mult}_{-1}P_G, α(G))$, where $P_G$ denotes the independence polynomial of $G$, and $α(G)$ the independence number. The study of the pairs $(\operatorname{mult}_{-1}P_G, α(G))$ is equivalent to finding all pairs of the numerator degree and denominator degree of the Hilbert series of the edge ideal of $G$. We also use spectral graph theory to obtain results on the multiplicity of line graphs of forests. Finally, we give some translations and applications in combinatorial commutative algebra.
+
+**Why this may be relevant:**
+
+It connects to urban tree detection, canopy mapping, or vegetation analysis.
+
+---
+
+### 8. PHINN-EEG: Topological Time-Series Analysis of Dream-State EEG -- Dynamic Betti Curves for Dream Content Classification and Topology-Conditioned Neural Signal Synthesis
+
+**Authors:** Ren Takahashi, Emre Yusuf, Jayabrata Bhaduri
+
+**Published:** 2026-07-10
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 8
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2607.09662v1
+
+**Paper link:** http://arxiv.org/abs/2607.09662v1
+
+**PDF link:** https://arxiv.org/pdf/2607.09662v1
+
+**Abstract:**
+
+Current electroencephalography (EEG)-based dream detection relies on power spectral density (PSD) and statistical moment features, achieving a state-of-the-art area under the receiver operating characteristic curve (AUC) of approximately 0.70 on the DREAM database (Wong et al., 2025, Nature Communications). We introduce PHINN-EEG (Persistent Homology Inspired Neural Network for EEG), the first topological time-series framework for dream mentation analysis. Using sliding-window Takens delay embeddings and Vietoris-Rips filtrations on multichannel pre-awakening EEG epochs, we extract Dynamic Betti Curves that characterize the geometric architecture of neural activity, not merely its energy. These topological invariants, combined with topology-conditioned flow matching, are analytically projected to outperform existing PSD and catch22 benchmarks, targeting AUC = 0.82-0.90 on the 1,462-awakening open-access subset of the DREAM database (drawn from a full registry of 3,191 total awakenings from 263 participants across 20 independent laboratories). We further introduce a topology-conditioned rectified flow model for dream-state EEG synthesis-with a spectral-conditioned flow model of comparable feature dimensionality as an additional ablation baseline to isolate the value of topological conditioning specifically-and propose a set of candidate Betti transition archetypes linking topology to phenomenological dream report categories, presented as an exploratory hypothesis space pending empirical validation. If validated, this work represents a paradigm shift from spectral energy to phase-space geometry in neural rare-event detection, with potential future implications for wearable BCI dream monitoring.
 
 **Why this may be relevant:**
 
@@ -288,33 +254,63 @@ It matched the geospatial machine learning search criteria and may be worth scre
 
 ---
 
-### 10. Open-Weather Robust 3D Detection via Dual-Critic Diffusion Alignment
+### 9. 4DR360: State Reasoning for Joint 3D Detection and Occupancy Prediction in 4D Radar-Camera Full-Scene Perception
 
-**Authors:** Shuyao Li, Chuanxing Geng, Heyang Sun, Qiang Zhou, Jingjing Gu
+**Authors:** Xiaokai Bai, Lianqing Zheng, Runwei Guan, Songkai Wang, Siyuan Cao, Hui-liang Shen
 
-**Published:** 2026-07-02
+**Published:** 2026-07-10
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 16
+**My Score:** 8
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.01983v1
+**arXiv ID:** 2607.09629v1
 
-**Paper link:** http://arxiv.org/abs/2607.01983v1
+**Paper link:** http://arxiv.org/abs/2607.09629v1
 
-**PDF link:** https://arxiv.org/pdf/2607.01983v1
+**PDF link:** https://arxiv.org/pdf/2607.09629v1
 
 **Abstract:**
 
-Robust 3D object detection under adverse weather remains a critical hurdle for autonomous driving. Despite progress with LiDAR-4D radar fusion, most methods are constrained by a closed-world assumption, implicitly requiring training and test weather to align in both type and severity. This premise fails in practice: the open-ended nature of weather, and even variations within a single type like rain, cause dramatically different LiDAR degradation patterns, leading to significant performance drops in unseen conditions. To address this, we present Dual-Critic Guided Diffusion Alignment (DCDA), a weather-agnostic framework that learns to recover degraded LiDAR features toward a clean manifold. Rather than modeling specific weather types, DCDA employs a 4D radar-conditioned diffusion process to progressively refine features, guided by two complementary critics. (i) A detection-guided critic, anchored by a pre-trained clean-weather model, ensures that the refined features retain object-level discriminability and localization accuracy. (ii) A weather adversarial critic enforces holistic distributional consistency with clean-weather representations. By aligning features through semantic and distributional constraints rather than explicit weather modeling, DCDA generalizes effectively to unseen weather types and severities without requiring paired data or weather labels. We further introduce a structured open-weather benchmark with held-out type-severity combinations and extensive experiments verify DCDA's advantages.
+Reliable autonomous driving requires full-scene perception that couples foreground objects with dense semantic layout. Recently, 4D millimeter-wave radar has emerged as a robust and affordable sensor, yet its sparse returns make radar-camera fusion necessary for comprehensive scene understanding. Existing radar-camera methods mainly optimize detection, while dual-task systems usually decode boxes and occupancy with limited interaction. To address this gap and advance radar-based multi-task learning, we propose \method, a 4D radar-camera framework for 360$^\circ$ full-scene perception, which models semantic occupancy as a persistent scene state rather than a terminal output. \method{} follows a cross-modal state reasoning paradigm, where the occupancy state is modeled and propagated through stages for coarse-to-fine feature aggregation. Specifically, State-guided BEV Enhancement (SBE) strengthens intra-frame BEV representation, while Doppler-guided Temporal Fusion (DTF) preserves state evidence over longer temporal horizons. Beyond the model, we further extend ManTruckScenes with satellite-map-based generated occupancy labels and pair it with OmniHD-Scenes in a unified cross-dataset detection-and-occupancy protocol. The resulting experiments cover accuracy, robustness, ablation, and efficiency under one radar-camera multi-task evaluation framework. Code and labels will be released upon acceptance.
 
 **Why this may be relevant:**
 
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+It is directly related to remote sensing or Earth observation workflows.
+
+---
+
+### 10. FreyaTTS Technical Report
+
+**Authors:** Ahmet Erdem Pamuk, Ömer Yentür, Ahmet Tunga Bayrak, Yavuz Alp Sencer Öztürk, Mustafa Yavuz
+
+**Published:** 2026-07-10
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 8
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2607.09530v1
+
+**Paper link:** http://arxiv.org/abs/2607.09530v1
+
+**PDF link:** https://arxiv.org/pdf/2607.09530v1
+
+**Abstract:**
+
+We introduce Freya-TTS, a compact, tokenizer-free, Turkish-first text-to-speech model designed for highly reliable and efficient conversational synthesis. Freya-TTS is a 183.2M-parameter non-autoregressive conditional flow-matching Diffusion Transformer (DiT) that operates in the frozen continuous latent space of AudioVAE2 (16 kHz encode, 48 kHz decode), allowing the model to focus its capacity on text-to-latent mapping while inheriting high-quality 48 kHz reconstruction. We advance the framework along three key dimensions: (1) rule-free end-to-end modeling from a 92-symbol Turkish character vocabulary without a phonemizer, grapheme-to-phoneme frontend, or discrete speech tokenizer; (2) non-autoregressive parallel denoising, which predicts the entire latent sequence simultaneously over a predicted duration; and (3) a production-oriented two-stage post-training recipe consisting of single-speaker voice locking and short-utterance coverage, improving speaker consistency and robustness on short inputs. On the Freya-TR-Eval benchmark, Freya-TTS achieves a band-matched word error rate (WER) of 8.0% and character error rate (CER) of 3.0%, outperforming substantially larger open-source systems while using a fraction of their parameters. The model achieves a real-time factor of 0.11 on consumer GPUs and runs faster than real time on a laptop CPU, making it well suited for resource-constrained edge deployment. We release the model weights, training and inference code, and evaluation benchmark under the Apache-2.0 license.
+
+**Why this may be relevant:**
+
+It matched the geospatial machine learning search criteria and may be worth screening.
 
 ---
 
