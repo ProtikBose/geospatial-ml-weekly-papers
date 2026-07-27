@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-07-13 to 2026-07-20
+**Search window:** 2026-07-20 to 2026-07-27
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,43 +12,43 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. AgentFAIR: A Multi-Agent Collaborative Framework for FAIRness Evaluation of Geospatial Datasets
+### 1. Beyond Binary Rooftop Mapping: A Four-Class Deep Learning Framework for Green Roof Potential Assessment from Open Swiss Geospatial Data
 
-**Authors:** Ming Chen, Pranav Pai
+**Authors:** Htet Yamin Ko Ko
 
-**Published:** 2026-07-17
+**Published:** 2026-07-24
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 66
+**My Score:** 81
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.15781v1
+**arXiv ID:** 2607.22342v1
 
-**Paper link:** http://arxiv.org/abs/2607.15781v1
+**Paper link:** http://arxiv.org/abs/2607.22342v1
 
-**PDF link:** https://arxiv.org/pdf/2607.15781v1
+**PDF link:** https://arxiv.org/pdf/2607.22342v1
 
 **Abstract:**
 
-Geospatial datasets support applications from urban planning to climate modeling, yet consistent assessment of FAIR compliance is difficult. Existing evaluators use different rubrics and evidence sources and may fail on JavaScript-rendered pages or repository-specific identifiers. For 50 datasets from 10 repositories, the standard deviation of normalized scores across available tools averages 15.0 percentage points and reaches 30.3 for one dataset. Because these outputs are not equivalent measurements, we use them to characterize disagreement and failure modes, not comparative accuracy. We present AgentFAIR, a multi-agent framework combining structured metadata extraction with 13 sub-principle-specific LLM evaluators. Each produces a 0-3 maturity score, cited evidence, and recommendations; a critic checks evidence and consistency and can request targeted re-evaluation. Mean Findability, Accessibility, Interoperability, and Reusability scores are 79.7%, 70.4%, 45.3%, and 72.0%. Rank correlations with four baseline tools range from 0.31 to 0.61; the FAIR-enough comparison is not statistically significant. On a 10-dataset repeated-run subset, sub-principle agreement averages 89% (standard deviation: 3 percentage points), versus 71% without the critic. A preliminary 15-dataset expert study yields Fleiss' kappa of 0.71 and 82% alignment with expert consensus. API cost is approximately USD 0.054 per dataset. These results support auditability and feasibility, while the limited benchmark, incomplete ablations, and single-model-family validation constrain claims about accuracy and generalization.
+The development of effective urban climate adaptation strategies requires comprehensive spatial information on rooftops and buildings, since such information underpins the assessment of ecosystem services provided by green infrastructure, particularly for urban heat island (UHI) mitigation. Although green roofs are widely acknowledged as a promising measure for improving urban thermal comfort, most existing research maps either current green rooftops or rooftops with greening potential, but not both. This study presents a modified deep convolutional neural network rooftop classification framework based on Roofpedia, developed by the Urban Analytics Lab at the National University of Singapore. The proposed model combines high resolution aerial imagery with rooftop slope information derived from a digital surface model and relies entirely on publicly available Swisstopo datasets: SWISSIMAGE orthophotos, swissSURFACE3D elevation data, and swissTLM3D building footprints. Applied to Bern, Switzerland, the model labels rooftops into four categories: existing green roofs, rooftops suitable for green roof installation, rooftops with solar panels, and flat rooftops unsuitable for greening. The framework identifies realistic opportunities for green roof expansion and supplies urban planners with evidence-based information for green infrastructure deployment in Bern and other Swiss cities. Because it is fully open source, the framework is transferable to cities worldwide.
 
 **Why this may be relevant:**
 
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It is related to urban planning, infrastructure, or built-environment analysis. It may help with cross-city, cross-region, or cross-sensor generalization.
+It is relevant to urban climate and heat-resilience research. It is related to urban planning, infrastructure, or built-environment analysis.
 
 ---
 
-### 2. Establishment and Application of Natural Hazards Database Based on Remote Sensing and GIS : From Hazard Modeling to Risk‐Informed Decision Making
+### 2. Scalable machine learning for urban thermal morphology classification: clustering high-resolution microclimate and dynamic mapping of radiant temperature
 
-**Authors:** Chong Xu, Xiangli He
+**Authors:** Michele Baia, Carla Balocco, Franco Bagnoli
 
-**Published:** 2026-07-15
+**Published:** 2026-07-22
 
-**Venue:** Transactions on GIS
+**Venue:** Computational Urban Science
 
 **Found via:** Semantic Scholar
 
@@ -58,135 +58,45 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 **Semantic Scholar citations:** 0
 
-**DOI:** 10.1111/tgis.70355
+**DOI:** 10.1007/s43762-026-00278-1
 
-**Paper link:** https://www.semanticscholar.org/paper/d3bbac9ed01dc529cd7c5c971dd73f907a7a79a2
+**Paper link:** https://www.semanticscholar.org/paper/6b0f59db4a099d25011586bdfb35f1c1cd8dbd8c
+
+**PDF link:** https://link.springer.com/content/pdf/10.1007/s43762-026-00278-1.pdf
 
 **Abstract:**
 
-Natural hazards databases are valuable not only because they record past events, but also because they provide the foundation for modeling, assessment, prediction, and risk‐informed decision‐making. This editorial focuses on the application of natural hazards databases based on remote sensing and Geographic Information Systems (GIS), shifting attention from database establishment to their use in hazard mechanisms, susceptibility assessment, exposure analysis, resilience evaluation, systemic impact assessment, and operational prediction. The papers discussed in this virtual issue cover diverse hazards and methods, including landslide‐dammed lake outburst floods, snow‐ and ice‐related hazards, earthquake–rainfall coupled landslides, debris flows, floods, urban heat islands, water quality degradation, railway network disruption, and flash flood prediction. Together, these studies demonstrate how geospatial databases can support process reconstruction, scenario analysis, socioeconomic loss assessment, infrastructure network analysis, environmental monitoring, and uncertainty‐aware forecasting. This editorial argues that future applications should place greater emphasis on exposure integration, model robustness, uncertainty communication, interpretability, transferability, and practical usability. As climate change, urbanization, infrastructure expansion, and social interdependence continue to reshape disaster risks, natural hazards databases will become increasingly important bridges between disaster observation, scientific interpretation, and risk‐informed action.
+Recent advances in ultra-fine and ultra-fast urban climate modelling have improved the identification and representation of complex urban environments. However, their practical application of Mean Radiant Temperature (MRT) time series generated by these tools remain difficult to interpret for non-expert stakeholders, necessitating a transduction of complex numerical data into actionable spatial information. Leveraging LUCIDiT—an ultra-fast simulation tool enabling high-resolution MRT maps across continuous urban domain—this research proposes a scalable, automated framework for classifying different “thermal morphologies” based on the MRT time series analysis. The capacity of unsupervised machine learning to capture the nonlinear relationships of urban morphology is investigated trough a rigorous comparison between a physics-based heuristic approach, a shape-based algorithm (K-Shape), and K-Means clustering applied to both engineered thermal features and MRT time series. Results demonstrate that applying K-Means directly to the raw time series outperforms the other methods in terms of both computational efficiency and mathematical robustness, as confirmed by the Silhouette Score and Davies-Bouldin Index. Furthermore, the physical accuracy and interpretability of the data-driven clusters are successfully validated by projecting the spatial outputs into a novel 2D Thermal Phase Space. This computationally efficient methodology, applicable at different urban scales, converts the physical complex and synergistic dynamics of the urban microclimate into intuitive and easy-to-use spatial thermal maps. It connects advanced numerical simulations to practical urban design, providing a compact representation of urban thermal behaviour and enables the large-scale identification of recurrent microclimatic patterns fundamental for urban heat mitigation strategies.
 
 **Why this may be relevant:**
 
-It is directly related to remote sensing or Earth observation workflows. It is relevant to urban climate and heat-resilience research. It is related to urban planning, infrastructure, or built-environment analysis.
+It is relevant to urban climate and heat-resilience research.
 
 ---
 
-### 3. Knowing the Self, Understanding the World: A Dual-Cognition Benchmark for UAV Spatio-temporal Reasoning with MLLMs
+### 3. Filling Before Advancing: Capability-Gap-Driven Post-Training for Scenario-Specialized Remote Sensing MLLMs
 
-**Authors:** Like Liu, Zhengzheng Xu, Haitao He, Hongzhe Li, Shuchang Zhang, Dian Shao
+**Authors:** Yuheng Zong, Minghua Wang, Xin Zhao, Zhi-Hui Zhan, Antonio Plaza, Jon Atli Benediktsson
 
-**Published:** 2026-07-17
+**Published:** 2026-07-24
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 55
+**My Score:** 53
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.16193v1
+**arXiv ID:** 2607.22205v1
 
-**Paper link:** http://arxiv.org/abs/2607.16193v1
+**Paper link:** http://arxiv.org/abs/2607.22205v1
 
-**PDF link:** https://arxiv.org/pdf/2607.16193v1
-
-**Abstract:**
-
-Multimodal large language models have achieved strong performance across diverse vision-language tasks, yet their capabilities in UAV scenarios remain insufficiently explored. Recent UAV-oriented benchmarks have begun to evaluate MLLMs in aerial scenarios, but they typically focus on scene understanding, event recognition, or navigation completion, rather than jointly assessing the dual-cognition capability required for UAV agents: reasoning about both the UAV's own state and the external environment in multiview spatio-temporal contexts. To address this gap, we present UAV-DualCog, a benchmark for aerial multiview spatio-temporal reasoning built on this dual-cognition perspective. UAV-DualCog includes both image and video tasks to jointly evaluate self-state and environment-state reasoning, while requiring spatial or temporal grounding beyond discrete answer prediction. We also develop an automated pipeline that constructs data from scene-level semantic point clouds, yielding a scalable benchmark with diverse scenes, hundreds of landmarks, and thousands of QA samples. Extensive evaluations show that current MLLMs remain far from reliable in UAV dual cognition. Self-state reasoning, viewpoint transformation, precise spatial grounding, and temporal interval localization are persistent bottlenecks, and additional validation with thinking/frontier models and a human baseline confirms that the benchmark is understandable to humans but challenging for existing models. We further construct UAV-DualCog-Train from disjoint scenes and show through a lightweight optimization probe that it provides useful structured supervision, suggesting its value not only as an evaluation benchmark but also as a data resource for advancing MLLM-based UAV agents. Project website and supplementary materials: https://uav-dualcog.lozumi.com
-
-**Why this may be relevant:**
-
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
-
----
-
-### 4. More with Less: a Large Scale Remote Sensing VLM with a Simple Recipe
-
-**Authors:** Stefan Maria Ailuro, Mario Markov, Mohammad Mahdi, L. V. Gool, D. Paudel
-
-**Published:** 2026-07-17
-
-**Venue:** arXiv
-
-**Found via:** Semantic Scholar, arXiv
-
-**My Score:** 45
-
-**Venue importance score included:** 0
-
-**Semantic Scholar citations:** 0
-
-**arXiv ID:** 2607.15942
-
-**Paper link:** https://www.semanticscholar.org/paper/44172ea66643d4a69a7dad0a157dc5b8a845e063
-
-**PDF link:** https://arxiv.org/pdf/2607.15942v1
+**PDF link:** https://arxiv.org/pdf/2607.22205v1
 
 **Abstract:**
 
-Remote sensing vision-language models are increasingly expected to support open-ended reasoning over Earth Observation data and a variety of tasks. Most recent progress in this area has been driven by remote-sensing-specific architectural designs, often introducing new encoders, alignment modules, or task-specific fusion mechanisms. In this work, we challenge the necessity of such architectural specialization. We show that a generally capable vision-language model can achieve competitive or state-of-the-art performance at challenging remote sensing benchmarks, provided that it is trained at sufficient scale across diverse data and tasks. Our model uses a single language policy that can either answer directly in text or invoke a localization tool for segmentation and grounding. To train this heterogeneous behaviour, we employ a multi-task reinforcement learning framework with adaptive task rewards covering multiple-choice VQA, free-form VQA, captioning, detection, and segmentation across a large variety of input types. Our approach achieves competitive results across a broad set of benchmarks, including high-resolution, multi-temporal, multi-modal and multi-view tasks. Further, as training data scales, our experiments show consistent improvements across most tasks both in and out of distribution, which correlate with per-task data diversity. These findings suggest that, for remote sensing VLMs, data scale is more important than architectural novelty.
-
-**Why this may be relevant:**
-
-It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 5. DPNeXt: A Lightweight Multi-Scale Feature Fusion Framework for Efficient ViT-Based Multi-Task Dense Prediction
-
-**Authors:** Jehun Kang, Jungha Wang, Youngjun Hwang, David Hyunchul Shim
-
-**Published:** 2026-07-17
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 36
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2607.16012v1
-
-**Paper link:** http://arxiv.org/abs/2607.16012v1
-
-**PDF link:** https://arxiv.org/pdf/2607.16012v1
-
-**Abstract:**
-
-Multi-Task Learning (MTL) in robotics perception systems supports comprehensive 3D spatial scene understanding by integrating semantic segmentation and depth estimation. While Vision Foundation Models (VFMs) are increasingly adopted as robust feature encoders, existing decoding strategies present a critical bottleneck. To address this, we propose DPNeXt, a streamlined multi-scale feature fusion decoder and efficient alternative to the standard Dense Prediction Transformer (DPT). DPNeXt uses dual depthwise separable inverted bottlenecks to improve frozen VFM utilization through fusion-centric decoding and independent task modularization. To further mitigate negative inductive transfer between tasks, we introduce the Multi-Task Boundary Guidance (MTBG) strategy. Unlike prior boundary-aware methods that add fusion modules or gating, MTBG applies symmetric boundary-focused supervision to encourage geometric consistency without extra annotation or inference cost. Experiments on Cityscapes show that DPNeXt-S outperforms prior state-of-the-art (SOTA) MTL models, while DPNeXt-B further improves the overall performance and achieves the best results among the compared methods. On NYUv2, DPNeXt-B also achieves the best semantic segmentation and depth estimation results among the compared methods while requiring substantially fewer trainable parameters than prior large-scale MTL models. Compared with the standard DPT, DPNeXt-S reduces trainable parameters by 78.6% and achieves the fastest inference speed among the compared models on resource-constrained laptop hardware. The source code, model checkpoints, and a demo video will be made available at https://github.com/kangjehun/DPNeXt.
-
-**Why this may be relevant:**
-
-It may help track foundation-model directions for Earth observation or geospatial AI.
-
----
-
-### 6. GeoChrono: Benchmarking and Rethinking Long-Term Temporal Understanding in Remote Sensing
-
-**Authors:** Yujie Li, Jiancheng Pan, Zhiwei Wei, Jiuniu Wang, Mugen Peng, Wenjia Xu
-
-**Published:** 2026-07-17
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 36
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2607.15768v1
-
-**Paper link:** http://arxiv.org/abs/2607.15768v1
-
-**PDF link:** https://arxiv.org/pdf/2607.15768v1
-
-**Abstract:**
-
-Remote sensing offers an unparalleled vantage point for observing the Earth's long-term surface evolution, yet it demands that a model not only perceive land cover at isolated moments, but also track changes, memorize evolution histories, and reason across time and space. However, existing studies lack a systematic evaluation that dissects these distinct competencies. To fill this gap, we introduce ChronoBench, a multidimensional benchmark that decomposes this task into four progressive cognitive levels (i.e., Land Cover Perception, Temporal Recognition, Long-Term Memory, and Spatio-Temporal Reasoning). The ChronoBench comprises 12 sub-tasks and 17,689 rigorously validated QA (Question-Answer) pairs. Extensive evaluations reveal that mainstream MLLMs fall drastically behind human experts, with Long-Term Memory emerging as the most critical bottleneck. Motivated by this finding, we further propose GeoChrono, an MLLM with enhanced capabilities for tracing, memorizing, and reasoning about long-term geographic evolution. Leveraging the physical prior that geographic parcels remain spatially fixed while their semantics evolve, we design a Temporal Trajectory Encoder~(TempEnc) that constructs per-location temporal trajectories for dedicated land cover evolution modeling, and we introduce a Coarse-to-Fine Token Compressor~(C2FComp) that adaptively preserves dynamic regions while compressing the static background. To support training, we also construct ChronoInstruct, a 104K-sample instruction-tuning dataset spanning all competency levels for training. GeoChrono achieves state-of-the-art performance on ChronoBench, surpassing the leading commercial MLLMs by over 20%, while C2FComp reduces visual tokens by over 56% while retaining GeoChrono's 94.6% performance. The code and data will be available at https://github.com/IntelliSensing/GeoChrono
+Remote sensing multimodal large language models (RS-MLLMs) have improved general aerial-image understanding. However, Earth observation applications require fine-grained scenario specialization, constrained by scarce high-quality scenario data and incomplete capability coverage. We formulate this adaptation as a capability-gap-driven post-training problem and propose filling before advancing (FBA). Rather than relying on single-stage supervised fine-tuning (SFT) over target-domain samples, FBA first fills prerequisite capability gaps before advancing toward scenario specialization. We instantiate FBA for coastal harbor understanding, a representative multi-source scenario, by constructing CPRS (Coastal-Port Remote Sensing), a three-layer supervision dataset coupled with three ordered stages: (1) RS semantic anchoring for overhead-view visual-language alignment; (2) domain-bridge convergence for shared RS priors across target and bridging scenarios under different modalities; and (3) evidence-grounded scenario tuning for downstream performance. We construct HarborEval, an eight-track diagnostic benchmark covering perception, spatial understanding, robustness, and generation. Under comparable training budgets, HarborEval increases from 57.95 with Direct-SFT to 70.29 with FBA on LLaVA-v1.5, and from 81.09 to 83.37 on Qwen3-VL. FBA also outperforms Collapsed-SFT and leads on harbor-related VRSBench/RSVQA subsets and OpenEval. Stage-wise and role-replacement analyses validate progressive gap filling and stage-specific roles. Public examples and release updates for CPRS, HarborEval, code, and trained weights are available at https://github.com/Z0ngL1ng/filling-before-advancing.
 
 **Why this may be relevant:**
 
@@ -194,89 +104,121 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 ---
 
-### 7. From Continuous Deployment to Queryable Dataset: Terabyte-Scale AIS-Aligned Passive Acoustic Labelling
+### 4. Transforming National Air Photo Archives into Analysis-Ready Geospatial Products
 
-**Authors:** Wayne Renaud, Priyanka Aravindan, Gabriel Spadon
+**Authors:** Mozhdeh Shahbazi, E. Bousias Alexakis, Mikhail Sokolov, Ella Mahoro, Pierre Gravel
 
-**Published:** 2026-07-15
+**Published:** 2026-07-22
 
-**Venue:** arXiv
+**Venue:** The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences
 
-**Found via:** arXiv
+**Found via:** Semantic Scholar
 
-**My Score:** 35
+**My Score:** 42
 
-**Venue importance score included:** 0
+**Venue importance score included:** 10
 
-**arXiv ID:** 2607.13840v1
+**Semantic Scholar citations:** 0
 
-**Paper link:** http://arxiv.org/abs/2607.13840v1
+**DOI:** 10.5194/isprs-archives-xlix-b2-2026-71-2026
 
-**PDF link:** https://arxiv.org/pdf/2607.13840v1
+**Paper link:** https://www.semanticscholar.org/paper/a918c5d429248bcc59cc95d83a5fe435b8bae262
+
+**PDF link:** https://isprs-archives.copernicus.org/articles/XLIX-B2-2026/71/2026/isprs-archives-XLIX-B2-2026-71-2026.pdf
 
 **Abstract:**
 
-Long-duration passive acoustic deployments produce large archives of recordings that are not linked to vessel tracks or encounter structure, leaving range and contact conditions unavailable as variables and requiring manual selection for analysis. To address this limitation, we propose a database-native workflow that aligns hydrophone recordings with Automatic Identification System (AIS) position reports to produce distance-resolved data. Fixed-duration recording windows and AIS messages are stored as persistent geospatial tables and associated through an indexed spatiotemporal join, replacing in-memory nested iteration with a single scalable set-based database process capable of handling continuous, multi-year, million-window archival deployments without exhausting available memory. In this study, the approach processes approximately 9.5x10e5 recording windows and 6.9x10e6 AIS position reports, producing a structured table that separates no-contact, single-contact, and two-contact windows, with the closest point of approach computed directly where applicable and background conditions characterized via deterministic spectral ranking. This formulation enables a GeoAI framework in which spatially indexed, queryable data become directly usable for machine learning. The resulting data product reveals predominantly noise-dominated conditions, with vessel contributions emerging mainly at shorter ranges, indicating that the task lies in extracting structure under background-limited regimes. Spectrogram and quantitative analyses show weak tonal signatures embedded in noise and a consistent decay of signal-to-noise ratio with distance, supporting the use of this representation for scalable machine learning, similarity analysis, and predictive acoustic modelling in real maritime environments.
+Abstract. Historical images provide invaluable time series for long‑term environmental monitoring and change analysis, particularly in the context of climate‑change research. Consequently, growing interest in accessing and exploiting archival airborne imagery has been observed worldwide in recent years. In Canada, the federal government manages the National Air Photo Library, which preserves an extensive collection of historical aerial imagery spanning more than a century. Although this archive is highly valuable, historical photographs in their raw form, whether printed or digitally scanned, are not directly suitable for modern data‑driven analytics. Recent advances in computer vision, photogrammetry, and artificial intelligence have created new opportunities to consolidate disparate historical imagery into high‑quality digital map products suitable for large‑scale automated observations and spatio‑temporal analyses. This paper presents solutions applied at Natural Resources Canada for generating analysis‑ready mapping products from the National Air Photo Library, focusing on two main workflows: 1) The photogrammetric processing of historical photos with an emphasis on the more challenging automated georeferencing component; 2) Enhancing interpretability through generative artificial intelligence models for super-resolution and deep colorization.
 
 **Why this may be relevant:**
 
-It matched the geospatial machine learning search criteria and may be worth screening.
+It appears in one of the selected top journals, conferences, or workshops. It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
-### 8. Examining the Associations between Visual and Non-Visual Elements and Cyclists' Route Choices for Various Trip Purposes
+### 5. Flight-Ready LiDAR-Inertial Odometry for Embedded Drone Platforms
 
-**Authors:** Heyang Hua, Koichi Ito, Filip Biljecki
+**Authors:** Alvaro J. Gaona, David Perez-Saura, Francisco J. Anguita, Pascual Campoy
 
-**Published:** 2026-07-17
+**Published:** 2026-07-24
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 34
+**My Score:** 36
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.15808v1
+**arXiv ID:** 2607.22145v1
 
-**Paper link:** http://arxiv.org/abs/2607.15808v1
+**Paper link:** http://arxiv.org/abs/2607.22145v1
 
-**PDF link:** https://arxiv.org/pdf/2607.15808v1
+**PDF link:** https://arxiv.org/pdf/2607.22145v1
 
 **Abstract:**
 
-Understanding cyclist preferences for the characteristics of the built environment is important in promoting sustainable urban transportation and active mobility. Despite previous studies on cyclists' route choices, the influence of visual and non-visual factors on these choices for different trip purposes remains unclear; thus, this paper fills this gap through a data-driven case study in Montreal, Canada. Non-visual factors include socioeconomic factors and two-dimensional environments, while visual factors involve visual perception during cycling and are computed using street view images. The study consists of two parts: one part analyzes spatiotemporal information to explore the non-visual factors between the start and end points of cycling trips, and the other part investigates the discrepancies in distributions of these factors between the shortest path and the actual one. The findings reveal the spatiotemporal characteristics that influence active riding choices, such as increased greenery and lower levels of motorization. These insights can inform the planning of street networks and the development of infrastructure to improve the use of active transportation.
+Open-source LiDAR-inertial odometry (LIO) systems have achieved remarkable benchmark accuracy, yet current state-of-the-art implementations are primarily optimized for evaluation performance rather than the requirements of real-time closed-loop aerial control. When deployed onboard UAVs, this can introduce limitations that degrade flight performance. In this work, we identify five architectural deficiencies in a representative tightly coupled IESKF-based LIO implementation: odometry publishing tied to the LiDAR rate (10 Hz instead of the IMU's 200 Hz), missing velocity outputs, execution bottlenecks that block IMU processing, mutex contention, and synchronization race conditions. We introduce corresponding modifications including IMU-rate forward propagation, direct body-frame velocity publishing, SLERP-based smoothing, dual-executor isolation, and explicit synchronization protection. The resulting system increases odometry output from ~10 Hz to a stable 200 Hz, provides a complete Twist state at every IMU sample, and preserves continuity during transient LiDAR loss. Experiments on a Livox Mid-360 / Pixhawk 4 Mini autonomous UAV with motion-capture ground truth validate the approach. Since the underlying estimator (IESKF + ikd-Tree) remains unchanged, the proposed improvements can be directly applied to FAST-LIO2-derived implementations.
 
 **Why this may be relevant:**
 
-It connects to urban tree detection, canopy mapping, or vegetation analysis. It is related to urban planning, infrastructure, or built-environment analysis.
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis.
 
 ---
 
-### 9. DELUGE: Towards Continental-Scale Daily Pluvial Flood Damage Prediction via Interpretable Conditioning on Foundation Model Embeddings
+### 6. Offline Vision-Language Navigation with Geometric Goal Localization for Outdoor Environments
 
-**Authors:** Yuya Kawakami, Daniel Cayan, Dongyu Liu, Kwan-Liu Ma, Tom Corringham
+**Authors:** Ali Salmasi, Xianjia Yu, Tomi Westerlund
 
-**Published:** 2026-07-17
+**Published:** 2026-07-24
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 26
+**My Score:** 32
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.16050v1
+**arXiv ID:** 2607.22226v1
 
-**Paper link:** http://arxiv.org/abs/2607.16050v1
+**Paper link:** http://arxiv.org/abs/2607.22226v1
 
-**PDF link:** https://arxiv.org/pdf/2607.16050v1
+**PDF link:** https://arxiv.org/pdf/2607.22226v1
 
 **Abstract:**
 
-Pluvial (rainfall-driven) flooding accounts for 45% of National Flood Insurance Program (NFIP) claims in the United States and is harder to predict than its riverine and coastal counterparts, with existing approaches limited to coarse resolution, regional domains, or computationally intensive process-based models unsuitable for daily continental-scale use. We present DELUGE, a multimodal deep learning framework for daily pluvial flood damage prediction at ~1 km resolution and national scale, trained on spatially and temporally corrected NFIP claims (2017-2022) and structured around the hazard, exposure, and vulnerability components of disaster risk. Rather than blanket coverage of the Conterminous United States (CONUS), we model the top 100 highest-claim 75 km cells, distributed nationwide and accounting for ~81% of total pluvial flood claims. Our architectural novelty is a pair of parametric modules in the hydrometeorology branch, a Value Modulator and a Temporal Modulator, conditioned on terrain descriptors and AlphaEarth foundation-model embeddings, that expose directly inspectable hydrological response parameters and provide architecture-level interpretability-by-design. Under a spatial block holdout, DELUGE outperforms tuned Random Forest, XGBoost, and LightGBM baselines by 9% to 30% on a dollar-weighted area under the precision-recall curve (PR-AUC), a metric that emphasizes the rare, high-cost claims of greatest operational interest. Beyond DELUGE, we argue this interpretable conditioning scheme is a transferable pattern for integrating foundation-model embeddings into other geospatial prediction tasks.
+Foundation-model-based vision-language navigation (VLN) has advanced autonomous robot navigation by enabling robots to interpret natural-language instructions, identify semantic goals, and follow user-specified behavioral rules. However, existing VLN systems rely heavily on cloud-hosted foundation models for language understanding and semantic grounding, limiting their applicability where network connectivity is unavailable and reliable metric goal localization is required. Although recent small language models (SLMs) enable fully onboard inference, their suitability for navigation instruction decomposition has not been systematically evaluated. This paper makes three contributions toward fully onboard VLN for outdoor environments. First, we present the first systematic benchmark of 17 edge-deployable SLMs against 4 online APIs for robotic navigation instruction decomposition, evaluating accuracy and latency on human-annotated instructions across three computing platforms and providing practical guidance for selecting onboard language models. Second, we propose a lightweight hybrid semantic-geometric goal localization framework that combines open-vocabulary object detection, prompted segmentation, and LiDAR geometry to estimate metric goals, while maintaining visual bearing guidance when reliable geometric observations are unavailable. Third, we integrate these advances into Edge-BehAV, a fully onboard extension of the BehAV architecture that enables cloud-independent behavior-guided navigation. Experimental results show that the best offline SLM matches the instruction decomposition performance of the strongest cloud API while running approximately 9x faster and without network connectivity. The proposed goal localization framework reduces mean goal-distance error from 2.05 m to 0.20 m at lower computational cost, and the complete system succeeds in 31 of 32 closed-loop outdoor trials.
+
+**Why this may be relevant:**
+
+It may help track foundation-model directions for Earth observation or geospatial AI. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+
+---
+
+### 7. LunarFM: A Shared Multimodal Representation of the Moon's Surface
+
+**Authors:** Marc Girona-Mata, Jakob Gawlikowski, Sumit Goski, Gautier Bardi de Fourtou, Valentin T. Bickel, Ben Moseley, Abigail Calzada-Diaz, Sylvester Kaczmarek
+
+**Published:** 2026-07-24
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 31
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2607.22408v1
+
+**Paper link:** http://arxiv.org/abs/2607.22408v1
+
+**PDF link:** https://arxiv.org/pdf/2607.22408v1
+
+**Abstract:**
+
+The renewed global focus on lunar exploration, driven by the prospect of in-situ resource utilization and a sustained human presence on the Moon, has created growing demand for accurate, large-scale characterization of the lunar surface. Although vast quantities of orbital remote-sensing data have been collected, scientific analysis and resource mapping remain fragmented by heterogeneous multiinstrument observations, sparse labels, and bespoke task-specific modelling workflows. Here we introduce LunarFM, a multimodal foundation model that learns a general representation of the lunar surface from diverse orbital measurements. LunarFM assimilates observations from six instruments across three lunar missions, mapping 18 input channels to a shared embedding space. We demonstrate that this embedding space supports a diverse range of downstream applications, including similarity search, few-shot resource mapping, mineral abundance regression, and geological unit classification, enabling efficient scientific investigation and resource-oriented analysis. We provide a machine-learning-ready dataset of co-registered multimodal observations spanning latitudes from 70°S to 70°N, a pretrained multimodal masked autoencoder, and a companion embedding dataset providing a joint 768-dimensional representation of lunar surface properties. All code and data are available at https://lunarfm.trillium.tech/
 
 **Why this may be relevant:**
 
@@ -284,33 +226,93 @@ It may help track foundation-model directions for Earth observation or geospatia
 
 ---
 
-### 10. Hardware-triggered Time Synchronization of Roadside Multi-lidar, Multi-camera Measurement System for Accurate Data Alignment
+### 8. A Framework for Individual Tree Growth Reconstruction Using Multi-Platform Laser Scanning
 
-**Authors:** Shiva Agrawal, Savankumar Bhanderi, Zhiran Yan, Gordon Elger
+**Authors:** Daniella Tavi, Valtteri Soininen, Lassi Ruoppa, Jesse Muhojoki, Juha Hyyppä
 
-**Published:** 2026-07-17
+**Published:** 2026-07-24
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 22
+**My Score:** 27
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.15889v1
+**arXiv ID:** 2607.22129v1
 
-**Paper link:** http://arxiv.org/abs/2607.15889v1
+**Paper link:** http://arxiv.org/abs/2607.22129v1
 
-**PDF link:** https://arxiv.org/pdf/2607.15889v1
+**PDF link:** https://arxiv.org/pdf/2607.22129v1
 
 **Abstract:**
 
-Accurate temporal alignment of heterogeneous sensors is necessary for reliable environment perception in roadside multi-lidar, multi-camera systems, particularly in dense urban traffic. For this purpose, an open-source, simple, modular, and configurable hardware-triggered time-synchronization circuit is presented in this work to perform temporal alignment or accurate time synchronization between a lidar and multiple cameras. In the designed circuit, a lidar synchronization pulse is used as a reference input, and independently programmable, time-delayed trigger pulses are generated for each camera, allowing flexible adaptation to varying sensor setups and mounting geometries. A series of experiments is conducted on a roadside-mounted perception system comprised of lidar and three cameras, in which the trigger delay is systematically varied, and its impact on spatial-temporal alignment is evaluated. For different classes of road users, the overlap between lidar point cloud measurements and camera measurements is quantified to identify delay configurations that maximize cross-sensor consistency. The proposed circuit is shown to achieve robust and repeatable synchronization while remaining straightforward to deploy, reconfigure, and extend due to its simple and open-source design. Following validation on a three-camera roadside system, the circuit is extended to a vehicle platform with seven cameras and a lidar, providing a low-cost, extensible solution for multi-sensor synchronization across infrastructure and vehicle setups. All hardware circuit design files and source codes are available at https://github.com/shiva-THI/hardware-trigger-time-sync-lidar-cameras.
+Accurate tree-level forest monitoring using laser scanning data requires reliable tree delineation, consistent tree correspondence across multitemporal point clouds, and accurate estimation of tree attributes and their change. Reconstructing tree growth in boreal forests is challenging due to the scarcity of historical stem-level data, propagation of errors from older sensors into change estimation, and growth rates with a magnitude of measurement uncertainty. This study investigates a framework for estimating individual tree diameter at breast height (DBH) and stem volume growth using 136 point clouds acquired between 2014--2025 with 11 scanners on airborne (ALS), mobile (MLS), and terrestrial laser scanning (TLS) platforms across boreal forest test sites. Trees were delineated from an MLS point cloud using deep learning-based segmentation which was transferred to the remaining point clouds, resulting in reliable multitemporal tree correspondence. Stem curves were derived from MLS/TLS data, with ALS data used for height estimation, enabling DBH and volume estimation and time series. A height growth-based scaling model was used to reconstruct stem attributes across time and estimate growth. Results showed that modeled growth achieved higher agreement with manual growth estimates than differencing independently estimated attributes from point clouds. The modeled-manual 5- and 10-year growth RMSEs were 55--111\% and 26--67\% for DBH, and 31--87\% and 21--67\% for volume, respectively, depending on plot difficulty. The scaling model was temporally robust, with errors remaining stable or stabilizing after 5--6 years, reaching maximum RMSEs of 8--12\% for DBH and 12--23\% for volume after 12 years. Combining MLS/TLS-derived stem measurements with multitemporal ALS-derived heights provided a robust framework for individual tree growth estimation without requiring multiple under-canopy scans.
 
 **Why this may be relevant:**
 
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It is related to urban planning, infrastructure, or built-environment analysis.
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis.
+
+---
+
+### 9. CommandLM: Data driven behavior level descriptor for ego vehicles
+
+**Authors:** Boris Tokic, Constantin Selzer, Fabian B. Flohr
+
+**Published:** 2026-07-24
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 27
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2607.22078v1
+
+**Paper link:** http://arxiv.org/abs/2607.22078v1
+
+**PDF link:** https://arxiv.org/pdf/2607.22078v1
+
+**Abstract:**
+
+As autonomous driving systems move toward real-world deployment, interpretable, behavior-level decision-making is essential for safety, trust, and regulation. We introduce CommandLM, a multimodal large language model that generates concise, human-readable behavior descriptions for ego vehicles from fused multi-sensor data. Our model processes temporally fused bird's-eye view representations from LiDAR and multi-camera inputs via a Q-Former adapter connected to a quantized, LoRA-fine-tuned large language model. Trained on our CommandLM-nuScenes dataset, CommandLM produces intent-aware, interpretable captions suitable for planner supervision and safety auditing. Experiments demonstrate strong linguistic and behavioral alignment, achieving CIDEr 0.67, and BERT-F1 0.88, substantially outperforming the BLIP-2 baseline (CIDEr 0.52, BERT-F1 0.86). In human evaluation, 58% of the generated descriptions were rated accurate, efficient and rule-compliant, confirming their real-world plausibility. While the remaining descriptions may not always select the most efficient, goal-oriented behavior, CommandLM's interpretable outputs enable downstream validation systems to identify and correct such cases, making it an effective tool for transparent behavior auditing. These results show that integrating multimodal fusion with language reasoning yields efficient and transparent behavior-level understanding for autonomous driving. We release our code and dataset at: https://github.com/b-tok/CommandLM
+
+**Why this may be relevant:**
+
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+
+---
+
+### 10. Gridnberg: A Topography-Aware Pedestrian Routing Dataset for New York City
+
+**Authors:** Ariel Noyman
+
+**Published:** 2026-07-24
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 23
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2607.22523v1
+
+**Paper link:** http://arxiv.org/abs/2607.22523v1
+
+**PDF link:** https://arxiv.org/pdf/2607.22523v1
+
+**Abstract:**
+
+Cities are rarely flat, yet urban network analysis usually represents streets as planar graphs. This simplification affects modeled impedance, route choice, and the interpretation of accessibility, particularly where alternative paths differ in grade. This paper introduces Gridnberg ('grid-n-berg', grid and mountain), a topography-aware pedestrian routing dataset for New York City. The dataset enriches the NYCWalks network with vertex-level elevations derived from the New York City Planimetric Database. For each pedestrian-network geometry vertex, the workflow averages selected elevation observations within a 50 m radius, retains segments with complete vertex support, and uses direction-specific cumulative ascent and descent to calculate three routing costs: horizontal distance, a comfort-oriented slope score, and an accessibility-sensitive slope score. The release retains 313184 of 315577 source segments (99.24%). Gridnberg supports reproducible terrain-aware analysis, transparent scenario comparison, and improved pedestrian-network representations in New York and other cities.
+
+**Why this may be relevant:**
+
+It connects to urban tree detection, canopy mapping, or vegetation analysis. It may connect to pedestrian infrastructure, road extraction, transportation infrastructure, or walkability mapping.
 
 ---
 
