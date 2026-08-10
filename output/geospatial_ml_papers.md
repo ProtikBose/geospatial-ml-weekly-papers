@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-07-27 to 2026-08-03
+**Search window:** 2026-08-03 to 2026-08-10
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,131 +12,221 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. Analyzing the impact of urban form on land surface temperature in arid cities, using machine learning algorithms (Case: Isfahan, Iran)
+### 1. Multi-index remote sensing assessment of Urban heat risk and vegetation cooling effects for sustainable planning in Errachidia a Pre-Saharan City in Southeastern Morocco
 
-**Authors:** M. Suleimany
+**Authors:** Rachid Ouachoua, Hamid Benssi
 
-**Published:** 2026-08-01
+**Published:** 2026-08-08
 
-**Venue:** Urban Climate
+**Venue:** Discover Cities
 
 **Found via:** Semantic Scholar
 
-**My Score:** 53
+**My Score:** 127
 
 **Venue importance score included:** 10
 
 **Semantic Scholar citations:** 0
 
-**DOI:** 10.1016/j.uclim.2026.103053
+**DOI:** 10.1007/s44327-026-00343-8
 
-**Paper link:** https://www.semanticscholar.org/paper/909790dca9eba273a8380e31a00ab017e6607242
+**Paper link:** https://www.semanticscholar.org/paper/be218be67991f8f6733f64c2db1d91332e459eed
+
+**PDF link:** https://doi.org/10.1007/s44327-026-00343-8
 
 **Abstract:**
 
-No abstract available.
+Extreme heat in dryland cities represents one of the most undercharacterized risks in urban climate science, yet spatially explicit heat risk frameworks for pre-Saharan environments remain largely absent from the literature. This study addresses this gap by developing and applying an integrated Heat Risk Index (HRI) for Errachidia, Morocco, a rapidly urbanizing oasis city in the pre-Saharan zone during the record-breaking summer of July 2023. A multi-sensor remote sensing approach combining Landsat-8 thermal data and Sentinel-2 multispectral imagery was employed alongside a deep learning U-Net architecture (ResNet34 backbone) for land use/land cover (LULC) classification, achieving an overall accuracy of 94.0% (Kappa = 0.925). Land surface temperature (LST) ranged from 33.8 °C to 50.1 °C, with bare soil surfaces recording the highest mean LST (47.2 °C), representing a 9.4 °C thermal contrast with water bodies. The HRI derived from normalized LST, NDBI, and inverse SAVI ranged from 0.153 to 0.844 (mean = 0.653), classifying the majority of the urban area as high-to-very-high risk. Cooling distance analysis quantified a rapid thermal decay of 5.39 °C within 25 m of dense vegetation, diminishing to below 1 °C beyond 150 m, suggesting an approximate distance threshold for green infrastructure placement under the analyzed conditions. A marginal negative daytime Surface Urban Heat Island Intensity (SUHII = − 1.08 °C) indicated that suburban bare soil surfaces recorded slightly higher daytime land surface temperatures than the urban core; however, mean urban LST remained at 45.3 °C, underscoring that absolute heat stress in the urban area is extreme regardless of this differential. These findings provide the first quantitative heat risk framework for a pre-Saharan oasis city, offering spatially explicit, indicative insights to inform climate-adaptive urban planning aligned with SDG 11 and SDG 13.
 
 **Why this may be relevant:**
 
-It appears in one of the selected top journals, conferences, or workshops. It is relevant to urban climate and heat-resilience research.
+It appears in one of the selected top journals, conferences, or workshops. It is directly related to remote sensing or Earth observation workflows. It connects to urban tree detection, canopy mapping, or vegetation analysis. It is relevant to urban climate and heat-resilience research. It is related to urban planning, infrastructure, or built-environment analysis.
 
 ---
 
-### 2. TerraNova: A Foundation Model for the Anthropocene
+### 2. How Infrastructure and Streetscape Shape E-Scooter Route Choice: Evidence from Washington, DC
 
-**Authors:** Carlos Rodriguez-Pardo, Massimo Tavoni
+**Authors:** Yiheng Qian, Duanya Lyu, Wenwen Zhang, Steven Hankey, M. Qi, Xiang Yan
 
-**Published:** 2026-07-31
+**Published:** 2026-08-05
+
+**Found via:** Semantic Scholar
+
+**My Score:** 64
+
+**Venue importance score included:** 0
+
+**Semantic Scholar citations:** 0
+
+**arXiv ID:** 2608.05465
+
+**Paper link:** https://www.semanticscholar.org/paper/22932e9b46cea66ab34825df4f0302b82b516607
+
+**Abstract:**
+
+E-scooters have emerged as an important micromobility mode for short urban trips, yet evidence on route choice behavior remains limited. This study examines e-scooter route choice in Washington, DC using GPS trajectory data and a Path Size Logit model. In addition to roadway and infrastructure characteristics, the model incorporates visual streetscape features extracted from Google Street View imagery using computer vision techniques. The results show that the effectiveness of cycling infrastructure depends strongly on roadway context. On major roads, only protected bicycle facilities significantly increase route attractiveness, whereas on minor roads both protected and designated lanes provide utility gains. Sidewalks constitute the most frequently used riding environment, yet only asphalt-paved sidewalks are associated with positive utility, suggesting that sidewalk riding may reflect the absence of attractive on-street alternatives rather than a preference for pedestrian infrastructure. Tree coverage, particularly during summer, as well as building and wall coverage, are positively associated with route choice. Likelihood ratio tests and value-of-distance analysis indicate that roadway infrastructure exerts a stronger influence on route choice than visual streetscape features, although the latter provide additional explanatory power. These findings support targeted infrastructure investment and the integration of streetscape improvements as a complementary strategy for enhancing micromobility route attractiveness.
+
+**Why this may be relevant:**
+
+It connects to urban tree detection, canopy mapping, or vegetation analysis. It is related to urban planning, infrastructure, or built-environment analysis. It may connect to pedestrian infrastructure, road extraction, transportation infrastructure, or walkability mapping.
+
+---
+
+### 3. Walkable to Whom? Capturing Subjective Variability in Walkability Perception Using Multimodal Deep Learning
+
+**Authors:** Moloud Damandeh, Meead Saberi
+
+**Published:** 2026-08-07
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 43
+**My Score:** 59
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.29527v1
+**arXiv ID:** 2608.06934v1
 
-**Paper link:** http://arxiv.org/abs/2607.29527v1
+**Paper link:** http://arxiv.org/abs/2608.06934v1
 
-**PDF link:** https://arxiv.org/pdf/2607.29527v1
+**PDF link:** https://arxiv.org/pdf/2608.06934v1
 
 **Abstract:**
 
-A defining problem of the Anthropocene is to model the physical Earth and human societies as one coupled system, yet no learned representation spans their observational breadth. We argue the obstacle is geometric: the physical Earth is measured as continuous fields that ignore political borders, whereas societies are reported for administrative units. Earth-system foundation models serve the first geometry; coupling it to the second has required lossy averaging over borders. We introduce TerraNova, a foundation model trained on 1,024 physical and societal records in their native geometries: 512 gridded Earth-system fields and 512 national indicators. Dedicated encoders represent location, country, time and task, cross-modal transformers fuse them into a shared spatiotemporal state, and a hypernetwork generates a per-query decoder whose evidential head returns a predictive distribution. Two contrastive objectives couple the representation: a population-weighted alignment between each country and coordinates in its territory, and one to pretrained geospatial embeddings carrying image-derived semantics. Read out through that decoder, the representation is competitive with purpose-built geospatial encoders while spanning axes they do not represent (time, oceans and uncertainty) and supporting country-level capabilities. The frozen backbone reconstructs dense fields from sparse observations and adapts to unseen variables in minutes on consumer hardware.
+Visual perception of walkability varies substantially across individuals, reflecting differences in personal characteristics, experiences, and preferences. Existing studies, however, often reduce these diverse judgements to aggregated scores, implicitly assuming uniform perception, and commonly rely on vehicle-mounted street-view imagery that does not reflect the pedestrian's visual experience. This paper introduces a dataset of 29,870 walkability ratings from 1,196 respondents, linking sidewalk-view imagery across urban, suburban, and regional Australian environments with individual rater attributes, and proposes the first user-conditioned multimodal deep learning framework for walkability perception, fusing visual features with respondent-level representations. A viewpoint-comparison study shows that sidewalk-view images receive significantly higher walkability ratings than matched street-view images, indicating that imagery source is a substantive design decision in perception surveys. The user-conditioned model improves rank agreement with observed ratings by 65% over an image-only baseline (quadratic weighted kappa 0.47 vs. 0.29), demonstrating that who is evaluating an environment carries predictive indication beyond image content alone. These findings support moving from aggregated, observer-independent walkability scores toward models that represent diverse users, enabling more inclusive assessment of pedestrian environments.
 
 **Why this may be relevant:**
 
-It may help track foundation-model directions for Earth observation or geospatial AI.
+It connects to urban tree detection, canopy mapping, or vegetation analysis. It may connect to pedestrian infrastructure, road extraction, transportation infrastructure, or walkability mapping.
 
 ---
 
-### 3. Locally Consistent Transductive Information Maximization for Few-Shot Remote Sensing Scene Classification
+### 4. Summarize First, Download Later: Onboard VLMs for Bandwidth-Efficient Earth Observation
 
-**Authors:** Karim El Khoury, Benoît Gérin, Benoît Macq, Christophe De Vleeschouwer
+**Authors:** Junghwan Park, Sangcheol Sim, Woojin Cho, Darongsae Kwon
 
-**Published:** 2026-07-31
+**Published:** 2026-08-07
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 37
+**My Score:** 41
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.29192v1
+**arXiv ID:** 2608.06959v1
 
-**Paper link:** http://arxiv.org/abs/2607.29192v1
+**Paper link:** http://arxiv.org/abs/2608.06959v1
 
-**PDF link:** https://arxiv.org/pdf/2607.29192v1
+**PDF link:** https://arxiv.org/pdf/2608.06959v1
 
 **Abstract:**
 
-Remote sensing scene classification is increasingly relying on foundation models pre-trained on large-scale Earth-observation data. Moreover, transductive inference, which exploits the collective statistical structure of the entire unlabeled query set, appears to naturally match remote sensing pipelines where large images are routinely split into patches and inferred as a batch. In this work, we introduce LC-TIM (Locally Consistent Transductive Information Maximization), which extends the state-of-the-art Transductive Information Maximization for Few-Shot CLIP (TIM++) objective with a local consistency regularizer that enforces prediction agreement between each query sample and its $κ$ nearest feature-space neighbors. The regularizer enters as a single multiplicative factor in the closed-form $q$-update, adding negligible computational overhead. We further propose a multi-source extension that fuses the affinity graph from multiple remote sensing foundation model, further boosting classification accuracy. To assess these methods, we establish the first comprehensive, open-source benchmark for transductive few-shot RS scene classification, evaluating LP++, TransCLIP, TIM++, and LC-TIM across ten diverse datasets, two remote sensing vision-language models, and across various few-shot settings. Our experiments show that transductive methods consistently outperform zero-shot baselines, and that LC-TIM achieves state-of-the-art accuracy, with the largest gains in the low-shot regime where neighborhood cues are most informative. Code is publicly available at: https://github.com/elkhouryk/LC-TIM
+Modern Earth observation (EO) satellites carry increasingly advanced sensors that produce vast volumes of high-resolution, multispectral data, yet downlink capacity remains a critical bottleneck -- often causing significant latency or the loss of valuable observations within limited contact windows. We propose a "Summarize First, Download Later" paradigm that exploits recent advances in onboard edge computing and Vision-Language Models (VLMs). Rather than indiscriminately downlinking raw imagery, the system follows a three-phase interaction protocol: the satellite first transmits concise natural language summaries generated by a quantized onboard VLM; ground operators then issue targeted Visual Question Answering (VQA) queries to verify scene relevance (e.g., wildfires or maritime anomalies); and full-resolution images are downloaded only when critical information is confirmed. This transforms the downlink from passive bulk transfer into an active, semantics-aware dialogue. We implement and evaluate the system on a resource-constrained NVIDIA Jetson platform, and experiments on diverse remote sensing scenes show that the proposed strategy substantially reduces bandwidth consumption while accelerating time-to-insight for time-sensitive missions.
 
 **Why this may be relevant:**
 
-It may help track foundation-model directions for Earth observation or geospatial AI. It is directly related to remote sensing or Earth observation workflows.
+It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
-### 4. SatEdit: Mask-Conditioned Image Editing via VLM-Guided Segment Annotation
+### 5. Vernata: Self-Supervised Learning of LiDAR Point Representations
 
-**Authors:** Muhammad Talha, Muhammad Ahmed Amer
+**Authors:** Oliver Lemke, Alexander Liniger, Abel Gawel, Marco Hutter
 
-**Published:** 2026-07-31
+**Published:** 2026-08-07
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 37
+**My Score:** 38
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.29367v1
+**arXiv ID:** 2608.06919v1
 
-**Paper link:** http://arxiv.org/abs/2607.29367v1
+**Paper link:** http://arxiv.org/abs/2608.06919v1
 
-**PDF link:** https://arxiv.org/pdf/2607.29367v1
+**PDF link:** https://arxiv.org/pdf/2608.06919v1
 
 **Abstract:**
 
-Satellite image editing requires spatially precise object-level control, but supervised editing datasets for overhead imagery are costly to build because object masks, semantic labels, and paired edits are rarely available at scale. We introduce SatEdit, a mask-conditioned satellite image editing framework that constructs training supervision from unlabeled imagery. SatEdit proposes object masks with a seg- mentation foundation model, assigns semantic la- bels to sampled segments with a Vision-Language Model, and applies lightweight human verification before generating paired addition and removal exam- ples through mask-guided inpainting. We fine-tune a high-resolution image editing backbone with LoRA on a SODA-A-derived dataset containing 1,014 im- ages and 852 verified object annotations across 91 classes. In controlled comparisons with open- source and proprietary image editing models, SatE- dit achieves the highest aggregate masked-region se- mantic alignment, with a CLIP score of 0.6322 and CLIP delta of 0.0726, while preserving the surround- ing scene qualitatively. These results suggest that VLM-assisted segment annotation is a practical route to data-efficient, spatially controllable satellite image editing.
+LiDAR serves as a primary sensing modality for robots operating in outdoor environments. However, the performance of deep learning models in this domain is severely limited by the scarcity of labeled data, a direct result of the high cost of 3D annotation. Self-supervised learning addresses this scarcity by learning general-purpose features from unlabeled data. In this work, we present a multi-modal, multi-teacher distillation framework for self-supervised learning on outdoor LiDAR point clouds. Building upon the Sonata architecture, we introduce Vernata, consisting of three extensions: sparse view augmentation to improve robustness against varying point densities, a memory bank mechanism to stabilize resource-constrained training, and cross-modal distillation utilizing dense, high-resolution 2D image features to enable fine-grained semantic guidance. We evaluate our method on the GrandTour, TartanGround, and Waymo datasets, as well as data collected from our own robotic platforms. Our experiments demonstrate a significant performance improvement over Sonata baselines, yielding mIoU scores of 54.7 on TartanGround (+5.9 points, +12.1%) and 57.1 on Waymo (+7.3 points, +14.7%). Finally, we show that the self-supervised approach maintains strong performance even in reduced-modality settings (lacking color or normals), achieving competitive mIoU scores of 49.4 and 50.2 on the respective datasets.
 
 **Why this may be relevant:**
 
-It may help track foundation-model directions for Earth observation or geospatial AI. It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows.
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
 
 ---
 
-### 5. CorrelationFlow: A Training-Free Geometric Approach for LiDAR Scene Flow Estimation
+### 6. Synthetic LiDAR Data Generation and Deterministic Downsampling for Point Cloud Classification on the Edge
 
-**Authors:** Minh-Quan Dao, Yancong Lin, Julie Stephany Berrio Perez, Holger Caesar
+**Authors:** Niclas Meyer, Stefan Reitmann
 
-**Published:** 2026-07-31
+**Published:** 2026-08-07
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 27
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2608.07106v1
+
+**Paper link:** http://arxiv.org/abs/2608.07106v1
+
+**PDF link:** https://arxiv.org/pdf/2608.07106v1
+
+**Abstract:**
+
+Deploying three-dimensional deep learning frameworks to low-power embedded processors is bottlenecked by the unstructured nature of spatial data and the resource-intensive distance sorting algorithms often used before neural network inference. To address this gap, this paper presents a hardware-constrained workflow optimized for native execution on the Raspberry Pi 5. To account for the reality gap between noiseless, clean computer-aided design (CAD) datasets and real-world sensor data, we use physics-based simulation to construct a synthetic LiDAR dataset. Cross-dataset evaluations demonstrate a substantial drop in classification accuracy when networks trained on clean CAD data are evaluated on synthetic LiDAR sensor data, highlighting the critical need for sensor-aware training. To address the latency bottleneck of traditional geometric preprocessing on edge CPUs, we integrate an isolated, feature-driven Critical Points Layer (CPL) as a frontend filter. Our results show that the pretrained CPL deterministically compresses raw 1024-point clouds to a subset of 40 to 60 unique coordinates. When profiled on the ARM Cortex-A76 processor, the complete pipeline achieves an inference throughput of approximately 50 FPS while maintaining an instance classification accuracy of 88.36%, demonstrating the viability of deterministic real-time 3D perception at the edge.
+
+**Why this may be relevant:**
+
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+
+---
+
+### 7. Solver-Guided Reasoning for Mixed-Equilibrium Strategies
+
+**Authors:** Han Wang, Philippe Beardsell, Boning Li, Aaron Sasmita, Shuai Li, Hongyuan Zha, Baoxiang Wang
+
+**Published:** 2026-08-07
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 27
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2608.06741v1
+
+**Paper link:** http://arxiv.org/abs/2608.06741v1
+
+**PDF link:** https://arxiv.org/pdf/2608.06741v1
+
+**Abstract:**
+
+Reasoning in large language models (LLMs) is often grounded in human text, human demonstrations, and human-generated rationales. For equilibrium reasoning in complex games, however, relying on human data can be suboptimal. In fact, human play is often guided by intuition and heuristics and can deviate substantially from game equilibrium. This discrepancy is amplified in games with mixed-strategy equilibria, where human data is heavily biased toward pure strategies. Consequently, conditioning LLMs on this data yields weak game strategies. To grant LLMs the reasoning capacity in games, in this work, we study how to elicit equilibrium play using solver output. We propose Mixed-Strategy Decision Tree (MDT), which articulates the silent optimality of the equilibrium into sparse strategic rules that both humans and LLMs could understand. Using solver output rather than human annotation allows us to extend the input to arbitrarily new states and continuations. We instantiate this study on No-Limit Texas Hold'em by querying a solver oracle for over \textbf{250 million mixed-strategy decisions}; MDT together with other techniques \textbf{reduces the $\ell_1$ distance to the equilibrium by $52.6\%$} across $8$ different LLM configurations. A Route-only ablation tests the incremental contribution of the shadow-based contrast, while complete River-endgame and Liar's Dice experiments evaluate strategic fidelity and portability beyond the original NLH communication setting.
+
+**Why this may be relevant:**
+
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis.
+
+---
+
+### 8. Representation Handoffs for OpenArm-Based Laboratory Mobile Manipulation
+
+**Authors:** Yang Shen, Chonghao Cheng, Ziyi Zhao, Jialuo Zhu, Zhenyi Yi, Qi Zhao, Jian Yang, Yuhui Shi
+
+**Published:** 2026-08-07
 
 **Venue:** arXiv
 
@@ -146,57 +236,57 @@ It may help track foundation-model directions for Earth observation or geospatia
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.29237v1
+**arXiv ID:** 2608.07154v1
 
-**Paper link:** http://arxiv.org/abs/2607.29237v1
+**Paper link:** http://arxiv.org/abs/2608.07154v1
 
-**PDF link:** https://arxiv.org/pdf/2607.29237v1
+**PDF link:** https://arxiv.org/pdf/2608.07154v1
 
 **Abstract:**
 
-LiDAR scene flow estimation has settled into a monoculture: nearly all recent methods share the same feed-forward architecture and the same family of self-supervised losses, inheriting each other's assumptions, and each other's blind spots. When those assumptions fail, as they do for sparse, distant, or fast-moving objects, every method built on them fails together, and adding parameters or simulated training data does not fix what the formulation itself gets wrong. This paper takes the opposite path. We present CorrelationFlow, a training-free geometric framework that reduces scene flow to two textbook operations: connected-component labeling and correlation maximization on bird's-eye-view occupancy images. Objects are isolated as spatio-temporal connected components, their motions recovered as correlation peaks, and the resulting velocities propagated to all member points. However, this dense correlation evaluates every candidate displacement of every cluster and requires a window of past sweeps; therefore, we develop a sparse counterpart that operates on a single sweep pair by matching lightweight occupancy descriptors at boundary key points. Because nothing is trained, nothing is inherited: on the multi-domain test set of the Argoverse 2 2026 Scene Flow Challenge, spanning five datasets with heterogeneous sensors and platforms, CorrelationFlow ranked second among unsupervised methods and degrades most gracefully at long range, where the shared assumptions of learned methods break down. Our results suggest that a substantial share of the scene flow problem is solvable by classical computer vision, and that progress may require questioning the formulation, not scaling it.
+Open-source robotics and foundation models have lowered the barrier to embodied AI, yet language-guided laboratory automation still requires reliable alignment from instructions and observations to safe actions. This field report presents an OpenArm-based mobile manipulation prototype for laboratory-style tasks, built by integrating dual OpenArm manipulators with a mobile base, vertical slide, RGB-D sensing, lidar-based mapping, ROS2/MoveIt execution, and profile-defined skill interfaces. The system is organized around representation handoffs: natural language requests are constrained into registered skill calls, sensor observations are grounded into maps and object poses, object priors provide role and skill constraints, and runtime bindings compile validated skills into executable motion goals. We use dry-run traces and startup checks to evaluate this integration path, showing how the prototype exposes missing calibration, incomplete object assets, and unfinished real-scene visual grounding as explicit deployment blockers. These intermediate representations serve as practical debugging interfaces for integrating language, perception, planning, and robot safety in embodied systems.
 
 **Why this may be relevant:**
 
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+It may help track foundation-model directions for Earth observation or geospatial AI. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
 
 ---
 
-### 6. SAGP: Semantic Affordance-Guided Grasp Planning via Coarse-Zone VLM Reasoning
+### 9. Efficient three-dimensional variational data assimilation of multi-plane PIV data
 
-**Authors:** Muhayy Ud Din, Irfan Hussain
+**Authors:** Uttam Cadambi Padmanaban, Samaresh Midya, Ping He, Bharathram Ganapathisubramani, Sean Symon
 
-**Published:** 2026-07-31
+**Published:** 2026-08-07
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 24
+**My Score:** 22
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.29374v1
+**arXiv ID:** 2608.07469v1
 
-**Paper link:** http://arxiv.org/abs/2607.29374v1
+**Paper link:** http://arxiv.org/abs/2608.07469v1
 
-**PDF link:** https://arxiv.org/pdf/2607.29374v1
+**PDF link:** https://arxiv.org/pdf/2608.07469v1
 
 **Abstract:**
 
-Geometry-based grasp planners ensure physically valid grasps but ignore functional semantics, often generating grasps that are antipodal and collision-free yet practically inappropriate, for example, gripping a mug by its rim, a knife by the blade, or a bottle near its cap. These inconsistencies cause the downstream task to fail even when traditional grasp metrics are met. Existing vision-language model (VLM) approaches either depend on fine-grained, category-specific part segmentation or attempt to directly infer grasp poses, with the latter prone to spatial hallucinations. As a result, no practical, training-free framework has yet been proposed that robustly links high-level semantic reasoning to geometric grasp planning. We introduce Semantic Affordance-Guided Grasp Planning (SAGP), a training-free pipeline built on a coarse-zone abstraction layer. The method first partitions the object point cloud into spatial regions (top, middle, bottom, lateral sides, and protrusions) by applying PCA-based alignment followed by distance-driven DBSCAN clustering, entirely bypassing learned segmentation. A pre-trained VLM then assesses the grasp quality of each region through a structured zero-shot query, and the resulting zone-wise scores are fused with geometric, reachability, and task-alignment signals to re-rank antipodal grasp candidates. Experiments on YCB objects in PyBullet with a Franka Panda robot show that SAGP preserves the high success rate of geometry-only planning while substantially improving the functional appropriateness of selected grasps, particularly on asymmetric, handle-bearing objects where geometry alone is uninformative. The introduced coarse-zone abstraction offers an effective, training-free bridge between VLM-based reasoning and geometric grasp planning, without the need for fine-grained part segmentation.
+We perform three-dimensional variational data assimilation (3DVar) using a discrete adjoint approach to optimise the time-averaged momentum equations. The experimental data consist of sparse stereoscopic particle image velocimetry (PIV) measurements collected along $12$ cross-stream planes in the wake of a vehicle-like bluff body at a Reynolds number $Re_L = 5.64 \times 10^5$ based on the streamwise body length. Adjoint localisation is proposed and implemented to reduce the memory footprint of the discrete adjoint method for spatially-varying control variables in 3DVar by confining the control variable space to a user-defined subdomain. Restricting the control variable to $12$ % of the full control space yields a maximum reduction in peak memory of $64$ %, while producing assimilated fields of comparable fidelity with respect to mean velocity and the optimised momentum forcing field. The localised adjoint case improves upon the baseline Spalart--Allmaras turbulence model and recovers the correct asymmetric topology of the complex three-dimensional (3D) recirculation bubble. The assimilated Reynolds shear stress agrees well with the experiment, and the assimilated mean pressure is shown to be physically consistent when correlated with the in-plane vorticity fields. A data efficiency study is also performed, in which the number of planes provided for assimilation is progressively reduced, demonstrating that the data coverage must extend at least to the end of the primary recirculation bubble to adequately constrain the near-wake dynamics. The efficiency that adjoint localisation affords is crucial for assimilating sparse, experimental data for 3D separated flows on fine meshes that can tackle industrial problems of interest.
 
 **Why this may be relevant:**
 
-It may be useful for multimodal geospatial understanding using image-text models. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
 
 ---
 
-### 7. The Parts Are Greater Than the Sum: Automated Task Sequencing for Efficient Training of Multi-Policy LLMs
+### 10. SCALE: Scientific Concept Aggregation via LLMs and Embeddings for Fine-Grained Taxonomy Extension
 
-**Authors:** Jiajia Tang, Sizhe Yuen, Francisco Gomez Medina, Yali Du, Adam Sobey
+**Authors:** Daniele Raimondi, Feichi Lu, Oliver Grun, Mariia Eremina, Andrea Perlato
 
-**Published:** 2026-07-31
+**Published:** 2026-08-07
 
 **Venue:** arXiv
 
@@ -206,109 +296,19 @@ It may be useful for multimodal geospatial understanding using image-text models
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2607.29601v1
+**arXiv ID:** 2608.07254v1
 
-**Paper link:** http://arxiv.org/abs/2607.29601v1
+**Paper link:** http://arxiv.org/abs/2608.07254v1
 
-**PDF link:** https://arxiv.org/pdf/2607.29601v1
+**PDF link:** https://arxiv.org/pdf/2608.07254v1
 
 **Abstract:**
 
-Parameter-Efficient Fine-Tuning (PEFT) commonly adapts large language models using a single shared Low-Rank Adapter (LoRA). This shared optimization space often suffers from interference when adapting heterogeneous task sequences, leading to poor transfer and catastrophic forgetting. Existing approaches mainly improve adapter expressiveness by increasing parameter capacity or composing multiple adapters, yet they still rely on a shared optimization path. In this paper, we propose an optimization-path organization framework for parameter-efficient fine-tuning of large language models, implemented as an automatic multi-policy PEFT architecture. Specifically, optimization-compatible adaptation paths are automatically organized through task grouping and task sequencing under a fixed parameter budget. The organized optimization paths are implemented as independent Quantized Low-Rank Adapters (QLoRA), enabling heterogeneous tasks to be optimized in decoupled adaptation spaces while preserving positive transfer among compatible tasks. Experiments on the TRACE benchmark demonstrate that performance consistently improves from conventional single-policy PEFT to multi-policy PEFT, with the proposed automatic multi-policy framework achieving the best performance of 44.78 under the same trainable capacity. This suggests that optimization-path organization is more effective than simply increasing adapter capacity for heterogeneous parameter-efficient fine-tuning.
+The increasing specialization of scientific research challenges existing classification systems, which provide effective representations of broad disciplines and research topics but often fail to capture the fine-grained conceptual structure of contemporary science. Author keywords offer greater specificity, but their fragmentation, redundancy, and terminological variability limit their use as stable units of knowledge organization. We introduce SCALE (Scientific Concept Aggregation via LLMs and Embeddings), a framework that extends the OpenAlex taxonomy with a new level of scientific Concepts below Topics. Rather than treating keywords as isolated descriptors, SCALE organizes semantically related terms into coherent and interpretable conceptual units and integrates them within the existing disciplinary hierarchy. The framework combines scientific text embeddings, large language models, and graph-based community detection to construct this additional layer at scale. The resulting taxonomy enables scientific literature to be read through an intermediate conceptual level between broad research topics and individual documents. This perspective provides a more detailed representation of how scientific knowledge is structured, specialized, and connected across disciplines. By transforming heterogeneous author terminology into reusable hierarchical units, SCALE offers a foundation for fine-grained scholarly classification, scientometric analysis, research monitoring, and future ontology development.
 
 **Why this may be relevant:**
 
 It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
-
----
-
-### 8. Poverty Mapping: Data, Models and Applications
-
-**Authors:** Suoyi Tan, Mengning Wang, Yixiu Kong, Huimin Bai, Jianguo Liu, Dirk Brockmann, Yicheng Zhang, Xin Lu
-
-**Published:** 2026-07-31
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 20
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2607.29457v1
-
-**Paper link:** http://arxiv.org/abs/2607.29457v1
-
-**PDF link:** https://arxiv.org/pdf/2607.29457v1
-
-**Abstract:**
-
-Poverty mapping is increasingly important for monitoring Sustainable Development Goal 1 (SDG 1) of the United Nations 2030 Agenda, which aims to end poverty in all its forms everywhere. Yet timely and fine-resolution poverty estimation remains difficult because conventional census- and survey-based approaches are costly, infrequent, and often sparse precisely where deprivation is most severe. As poverty emerges from complex socioeconomic systems shaped by human mobility, social interactions, infrastructure, and economic activities, emerging computational methods and nontraditional data sources have created new opportunities for poverty estimation and mapping. At the intersection of statistical physics, complex systems science, and data science, these approaches enable poverty estimation at finer spatial and temporal resolutions. This review summarizes the main concepts of poverty and the principal frameworks used to measure it, and examines recent advances on poverty estimation and mapping using satellite imagery, mobile phone data, social media data, and multisource data fusion. The review also discusses persistent challenges related to representativeness, transferability across regions, interpretability, and uncertainty quantification. Finally, the review clarifies both the analytical promise and the practical limits of contemporary poverty mapping.
-
-**Why this may be relevant:**
-
-It is directly related to remote sensing or Earth observation workflows. It is related to urban planning, infrastructure, or built-environment analysis.
-
----
-
-### 9. AquaJEPA: Action-Conditioned Multimodal Predictive Representations for Underwater Robot Dynamics
-
-**Authors:** Alan-Barsag Gazzaev, Alexey Gavrilov, Sergey Muravyov
-
-**Published:** 2026-07-31
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 16
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2607.29393v1
-
-**Paper link:** http://arxiv.org/abs/2607.29393v1
-
-**PDF link:** https://arxiv.org/pdf/2607.29393v1
-
-**Abstract:**
-
-Underwater robots combine complementary sensors whose reliability changes abruptly with water visibility, viewpoint, and vehicle motion. We introduce AquaJEPA, an action-conditioned joint-embedding predictive model that fuses an RGB camera, forward-looking sonar, and proprioception with explicit sensor validity. It predicts a future latent target conditioned on eight-thruster commands and supplies velocity and sonar-profile predictions to a shared receding-horizon planner. We study the method in Stonefish against reactive, state-only, ordinary multimodal, supervised dynamics, and recurrent world-model baselines. We further isolate the EMA target, action margin, masks, and modality dropout. A preregistered 120-environment replication comprises five independent replicates of a grid crossing three unseen obstacle maps, four water-visibility coefficients, and nominal versus shifted dynamics, while intermittently removing DVL observations. In 120 fresh paired environments with scheduled DVL loss, AquaJEPA reaches 74 goals, versus 68 for both state-only and the recurrent world model, and attains the lowest mean final error (0.906 m). Paired final-error reductions relative to ordinary multimodal prediction, supervised dynamics, and the recurrent world model are 0.273 m (95% CI: 0.190-0.356), 0.364 m (0.260-0.468), and 0.106 m (0.025-0.187), respectively. AquaJEPA therefore achieves the best aggregate closed-loop performance and significantly outperforms three action-conditioned predictive baselines in paired final error; its advantage over state-only remains statistically unresolved.
-
-**Why this may be relevant:**
-
-It matched the geospatial machine learning search criteria and may be worth screening.
-
----
-
-### 10. Training-Free Entity-Level Few-Shot Segmentation of Remote Sensing Images with Advection Refinement
-
-**Authors:** Xueting Bai, Huan Ni
-
-**Published:** 2026-07-31
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 16
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2607.29278v1
-
-**Paper link:** http://arxiv.org/abs/2607.29278v1
-
-**PDF link:** https://arxiv.org/pdf/2607.29278v1
-
-**Abstract:**
-
-Existing cross-domain few-shot segmentation approaches suffer from high training costs due to source-domain episodic training and pixel-wise dense prediction, while often producing fragmented and noisy predictions. To overcome these issues, we propose a training-free entity-level few-shot segmentation framework for remote sensing images with advection refinement. Specifically, we first leverage SAM3's generic geometric priors to generate category-agnostic entity primitives. By reformulating few-shot inference from pixel-level prediction to entity-level reasoning, foreground and background prototypes are constructed and combined with dense textual semantic responses from SAM3 to build a multi-modal semantic potential field. Furthermore, an advection equation-based semantic refinement mechanism is introduced to propagate category-aware information across both feature and similarity spaces, enhancing semantic continuity and suppressing local texture noise. Extensive experiments on multiple remote sensing datasets demonstrate that the proposed framework effectively mitigates domain shift and local noise, substantially improving SAM3's adaptation capability for remote sensing few-shot segmentation without additional training. Our code will be publicly available at https://github.com/yu-ni1989/ELFSS-AR.
-
-**Why this may be relevant:**
-
-It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
