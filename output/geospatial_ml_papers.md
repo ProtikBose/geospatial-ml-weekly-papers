@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-08-03 to 2026-08-10
+**Search window:** 2026-08-10 to 2026-08-17
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,101 +12,133 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. Multi-index remote sensing assessment of Urban heat risk and vegetation cooling effects for sustainable planning in Errachidia a Pre-Saharan City in Southeastern Morocco
+### 1. Greening Public Infrastructure for Local Climate Resilience: A Case Study of the Mount Vernon District in Virginia
 
-**Authors:** Rachid Ouachoua, Hamid Benssi
+**Authors:** Younsung Kim, Colin Chadduck
 
-**Published:** 2026-08-08
+**Published:** 2026-08-14
 
-**Venue:** Discover Cities
-
-**Found via:** Semantic Scholar
-
-**My Score:** 127
-
-**Venue importance score included:** 10
-
-**Semantic Scholar citations:** 0
-
-**DOI:** 10.1007/s44327-026-00343-8
-
-**Paper link:** https://www.semanticscholar.org/paper/be218be67991f8f6733f64c2db1d91332e459eed
-
-**PDF link:** https://doi.org/10.1007/s44327-026-00343-8
-
-**Abstract:**
-
-Extreme heat in dryland cities represents one of the most undercharacterized risks in urban climate science, yet spatially explicit heat risk frameworks for pre-Saharan environments remain largely absent from the literature. This study addresses this gap by developing and applying an integrated Heat Risk Index (HRI) for Errachidia, Morocco, a rapidly urbanizing oasis city in the pre-Saharan zone during the record-breaking summer of July 2023. A multi-sensor remote sensing approach combining Landsat-8 thermal data and Sentinel-2 multispectral imagery was employed alongside a deep learning U-Net architecture (ResNet34 backbone) for land use/land cover (LULC) classification, achieving an overall accuracy of 94.0% (Kappa = 0.925). Land surface temperature (LST) ranged from 33.8 °C to 50.1 °C, with bare soil surfaces recording the highest mean LST (47.2 °C), representing a 9.4 °C thermal contrast with water bodies. The HRI derived from normalized LST, NDBI, and inverse SAVI ranged from 0.153 to 0.844 (mean = 0.653), classifying the majority of the urban area as high-to-very-high risk. Cooling distance analysis quantified a rapid thermal decay of 5.39 °C within 25 m of dense vegetation, diminishing to below 1 °C beyond 150 m, suggesting an approximate distance threshold for green infrastructure placement under the analyzed conditions. A marginal negative daytime Surface Urban Heat Island Intensity (SUHII = − 1.08 °C) indicated that suburban bare soil surfaces recorded slightly higher daytime land surface temperatures than the urban core; however, mean urban LST remained at 45.3 °C, underscoring that absolute heat stress in the urban area is extreme regardless of this differential. These findings provide the first quantitative heat risk framework for a pre-Saharan oasis city, offering spatially explicit, indicative insights to inform climate-adaptive urban planning aligned with SDG 11 and SDG 13.
-
-**Why this may be relevant:**
-
-It appears in one of the selected top journals, conferences, or workshops. It is directly related to remote sensing or Earth observation workflows. It connects to urban tree detection, canopy mapping, or vegetation analysis. It is relevant to urban climate and heat-resilience research. It is related to urban planning, infrastructure, or built-environment analysis.
-
----
-
-### 2. How Infrastructure and Streetscape Shape E-Scooter Route Choice: Evidence from Washington, DC
-
-**Authors:** Yiheng Qian, Duanya Lyu, Wenwen Zhang, Steven Hankey, M. Qi, Xiang Yan
-
-**Published:** 2026-08-05
+**Venue:** Urban Science
 
 **Found via:** Semantic Scholar
 
-**My Score:** 64
+**My Score:** 110
 
 **Venue importance score included:** 0
 
 **Semantic Scholar citations:** 0
 
-**arXiv ID:** 2608.05465
+**DOI:** 10.3390/urbansci10080468
 
-**Paper link:** https://www.semanticscholar.org/paper/22932e9b46cea66ab34825df4f0302b82b516607
+**Paper link:** https://www.semanticscholar.org/paper/6c5205388e070eb19f0cf16c91b8377ff36799de
+
+**PDF link:** https://doi.org/10.3390/urbansci10080468
 
 **Abstract:**
 
-E-scooters have emerged as an important micromobility mode for short urban trips, yet evidence on route choice behavior remains limited. This study examines e-scooter route choice in Washington, DC using GPS trajectory data and a Path Size Logit model. In addition to roadway and infrastructure characteristics, the model incorporates visual streetscape features extracted from Google Street View imagery using computer vision techniques. The results show that the effectiveness of cycling infrastructure depends strongly on roadway context. On major roads, only protected bicycle facilities significantly increase route attractiveness, whereas on minor roads both protected and designated lanes provide utility gains. Sidewalks constitute the most frequently used riding environment, yet only asphalt-paved sidewalks are associated with positive utility, suggesting that sidewalk riding may reflect the absence of attractive on-street alternatives rather than a preference for pedestrian infrastructure. Tree coverage, particularly during summer, as well as building and wall coverage, are positively associated with route choice. Likelihood ratio tests and value-of-distance analysis indicate that roadway infrastructure exerts a stronger influence on route choice than visual streetscape features, although the latter provide additional explanatory power. These findings support targeted infrastructure investment and the integration of streetscape improvements as a complementary strategy for enhancing micromobility route attractiveness.
+Urban climate risks, particularly extreme heat and flooding, increasingly threaten public infrastructure in rapidly urbanizing regions. Public schools represent critical community assets, yet their spatial planning often overlooks the role of natural capital in mitigating environmental risks. This study examines the intersection of natural capital and urban design through a case study of public schools in the Mount Vernon District of Fairfax County, Virginia. Using cartographic modeling and spatial analysis, the study assesses school-site exposure to urban heat island effects and localized flood risks by integrating geospatial data on land cover, surface temperature, and hydrological conditions. Results indicate that all analyzed school sites exhibit notable vulnerability to both heat exposure and flooding. The findings highlight the importance of incorporating natural capital—such as expanded tree canopy, green infrastructure, and permeable surfaces—into school site planning to enhance climate resilience and environmental quality.
 
 **Why this may be relevant:**
 
-It connects to urban tree detection, canopy mapping, or vegetation analysis. It is related to urban planning, infrastructure, or built-environment analysis. It may connect to pedestrian infrastructure, road extraction, transportation infrastructure, or walkability mapping.
+It connects to urban tree detection, canopy mapping, or vegetation analysis. It is relevant to urban climate and heat-resilience research. It is related to urban planning, infrastructure, or built-environment analysis.
 
 ---
 
-### 3. Walkable to Whom? Capturing Subjective Variability in Walkability Perception Using Multimodal Deep Learning
+### 2. From crown candidates to neighborhood screening: integrating optical GeoAI and spatial modeling for urban-canopy assessment in Davis, California
 
-**Authors:** Moloud Damandeh, Meead Saberi
+**Authors:** Mohammadreza Narimani, Shreyan Mitra, Parastoo Farajpoor
 
-**Published:** 2026-08-07
+**Published:** 2026-08-14
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 59
+**My Score:** 50
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.06934v1
+**arXiv ID:** 2608.13856v1
 
-**Paper link:** http://arxiv.org/abs/2608.06934v1
+**Paper link:** http://arxiv.org/abs/2608.13856v1
 
-**PDF link:** https://arxiv.org/pdf/2608.06934v1
+**PDF link:** https://arxiv.org/pdf/2608.13856v1
 
 **Abstract:**
 
-Visual perception of walkability varies substantially across individuals, reflecting differences in personal characteristics, experiences, and preferences. Existing studies, however, often reduce these diverse judgements to aggregated scores, implicitly assuming uniform perception, and commonly rely on vehicle-mounted street-view imagery that does not reflect the pedestrian's visual experience. This paper introduces a dataset of 29,870 walkability ratings from 1,196 respondents, linking sidewalk-view imagery across urban, suburban, and regional Australian environments with individual rater attributes, and proposes the first user-conditioned multimodal deep learning framework for walkability perception, fusing visual features with respondent-level representations. A viewpoint-comparison study shows that sidewalk-view images receive significantly higher walkability ratings than matched street-view images, indicating that imagery source is a substantive design decision in perception surveys. The user-conditioned model improves rank agreement with observed ratings by 65% over an image-only baseline (quadratic weighted kappa 0.47 vs. 0.29), demonstrating that who is evaluating an environment carries predictive indication beyond image content alone. These findings support moving from aggregated, observer-independent walkability scores toward models that represent diverse users, enabling more inclusive assessment of pedestrian environments.
+Timely urban-canopy information is essential for linking remote sensing with heat, mobility, and neighborhood planning. We developed an optical GeoAI workflow for Davis, California, using 2022 National Agriculture Imagery Program imagery (0.6 m RGB+NIR). DeepForest generated crown candidates; an NDVI threshold, non-maximum suppression, and box-prompted Segment Anything Model (ViT-B) produced a crown-anchored canopy surface. Analyses used the 25.92 km2 Census TIGER municipal boundary and a 100 m grid. The workflow retained 11,741 candidate crowns and mapped 2.43 km2 of canopy (9.37% of the city). On the identical extent, 87.8% of mapped canopy pixels and 97.4% of candidate centers agreed with the 2022 USDA/CAL FIRE LiDAR-assisted canopy product; the optical surface represented 34.2% of the reference canopy area (IoU 0.288; Dice 0.448). Approximately 49% of candidates occurred within 15 m of a road. Canopy was inversely associated with Landsat land-surface temperature (Spearman rho = -0.293; partial rho = -0.370 controlling for built probability), and spatial-lag modeling confirmed clear neighborhood structure. Two transparent attention surfaces combined canopy need with thermal and contextual indicators. The framework provides a reproducible, updateable screening layer that complements structural canopy products and municipal inventories while retaining assumptions, data provenance, and spatial diagnostics for planning interpretation.
 
 **Why this may be relevant:**
 
-It connects to urban tree detection, canopy mapping, or vegetation analysis. It may connect to pedestrian infrastructure, road extraction, transportation infrastructure, or walkability mapping.
+It is directly related to remote sensing or Earth observation workflows. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis. It is relevant to urban climate and heat-resilience research.
 
 ---
 
-### 4. Summarize First, Download Later: Onboard VLMs for Bandwidth-Efficient Earth Observation
+### 3. GhostPoint: Self-Supervised Representation Learning by Hallucinating Occluded LiDAR Structure
 
-**Authors:** Junghwan Park, Sangcheol Sim, Woojin Cho, Darongsae Kwon
+**Authors:** Mohamed Abdelsamad, Bin Yang, Michael Ulrich, Miao Zhang, Yakov Miron, Alexandru Paul Condurache, Abhinav Valada
 
-**Published:** 2026-08-07
+**Published:** 2026-08-14
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 49
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2608.14428v1
+
+**Paper link:** http://arxiv.org/abs/2608.14428v1
+
+**PDF link:** https://arxiv.org/pdf/2608.14428v1
+
+**Abstract:**
+
+3D object detection from LiDAR point clouds is a core problem in autonomous driving. Recent advances in self-supervised learning (SSL) enable scalable pretraining and transfers well to per-point tasks such as semantic and panoptic segmentation, but transfer to 3D detection remains weaker. We analyze recent SSL methods and find that most objectives are defined only on measured LiDAR returns from visible surfaces, leaving occluded and unobserved regions unconstrained. This visible-surface bias can be sufficient for point-wise prediction, but 3D detection requires robustness to missing structure. To address this gap, we propose GhostPoint, an SSL framework that hallucinates latent features in local neighborhoods around discovered instances, generated via a novel instance voxel dilation. In GhostPoint, an encoder processes observed returns, and an additional predictor infers neighborhood representations from observed context. In addition to standard encoder-level supervision, we introduce a predictor-level supervision scheme on sampled voxels from generated neighborhoods. Specifically, observed (visible/masked) voxels match teacher-encoder targets, while unobserved voxels match teacher-predictor hallucinations. This design encourages the learned representation to explicitly model structure beyond observed returns. Extensive evaluations on nuScenes and Waymo demonstrate that our method achieves state-of-the-art performance, consistently improving downstream 3D detection, especially under sparse scans and limited labels.
+
+**Why this may be relevant:**
+
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+
+---
+
+### 4. FIRM: Fine-Grained Intra-Token Representation of Masks for Remote Sensing Reasoning Segmentation
+
+**Authors:** Weidong Tang, Kaiyu Li, Yikai Wang, Yanan Wu, Haotian Gan, Shihong Wang, Xiangyong Cao
+
+**Published:** 2026-08-14
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 42
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2608.13980v1
+
+**Paper link:** http://arxiv.org/abs/2608.13980v1
+
+**PDF link:** https://arxiv.org/pdf/2608.13980v1
+
+**Abstract:**
+
+Reasoning segmentation requires multimodal large language models (MLLMs) to translate implicit instructions into precise pixel-level masks. MLLMs encode an image as visual tokens, each of which merges a group of image patches. In remote sensing images, small targets, thin structures, and adjacent instances can occupy different parts of the same visual token. Assigning a single binary mask label to such a token loses its internal spatial structure, causing nearby targets to merge and object boundaries to become coarse. To bridge this representational gap, we introduce FIRM, a Fine-grained Intra-token Representation of Masks. For each visual token, FIRM predicts a mask code that specifies an $r\times r$ binary sub-cell pattern rather than a single foreground/background label. Given a target identified by the MLLM, the complete grid of mask codes is predicted in one mask pass. Fixed lookup converts the predicted codes into a discrete sub-cell mask, while marginalizing the code distribution yields a soft structural field. To further recover fine-grained boundaries within each sub-cell, we introduce a lightweight continuous renderer that refines this field using pre-merge visual features and image details. Across five reasoning and referring segmentation benchmarks on satellite and UAV images, FIRM achieves leading results, including $70.5/80.5$ gIoU/cIoU on LaSeRS and a $3.0$-point average gain on EarthReason. These results demonstrate the value of explicitly representing intra-token mask patterns for fine-grained MLLM segmentation.
+
+**Why this may be relevant:**
+
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It is directly related to remote sensing or Earth observation workflows.
+
+---
+
+### 5. Can Language Models Understand mmWave Data? Benchmarking Large Language Models for mmWave Radar-Based Human Understanding
+
+**Authors:** Jeongwan Shin, Jaehyeon Kim, Donguk Ko, Jaeho Choi
+
+**Published:** 2026-08-14
 
 **Venue:** arXiv
 
@@ -116,45 +148,45 @@ It connects to urban tree detection, canopy mapping, or vegetation analysis. It 
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.06959v1
+**arXiv ID:** 2608.14179v1
 
-**Paper link:** http://arxiv.org/abs/2608.06959v1
+**Paper link:** http://arxiv.org/abs/2608.14179v1
 
-**PDF link:** https://arxiv.org/pdf/2608.06959v1
+**PDF link:** https://arxiv.org/pdf/2608.14179v1
 
 **Abstract:**
 
-Modern Earth observation (EO) satellites carry increasingly advanced sensors that produce vast volumes of high-resolution, multispectral data, yet downlink capacity remains a critical bottleneck -- often causing significant latency or the loss of valuable observations within limited contact windows. We propose a "Summarize First, Download Later" paradigm that exploits recent advances in onboard edge computing and Vision-Language Models (VLMs). Rather than indiscriminately downlinking raw imagery, the system follows a three-phase interaction protocol: the satellite first transmits concise natural language summaries generated by a quantized onboard VLM; ground operators then issue targeted Visual Question Answering (VQA) queries to verify scene relevance (e.g., wildfires or maritime anomalies); and full-resolution images are downloaded only when critical information is confirmed. This transforms the downlink from passive bulk transfer into an active, semantics-aware dialogue. We implement and evaluate the system on a resource-constrained NVIDIA Jetson platform, and experiments on diverse remote sensing scenes show that the proposed strategy substantially reduces bandwidth consumption while accelerating time-to-insight for time-sensitive missions.
+Large language models (LLMs) have shown remarkable reasoning and generative capabilities, motivating their use as universal reasoning engines for perception. While modern approaches such as vision-language models (VLMs) have attempted to incorporate reasoning capabilities into visual sensing, the integration of LLMs with the millimeter-wave (mmWave) modality-despite its unique advantages under low light and occlusion-remains largely unexplored. The principal bottlenecks stem from the scarcity of radar language pairs, severe cross-dataset heterogeneity, and the absence of a foundational mmWave encoder. We address this gap through a minimal textualization interface that serializes each mmWave point cloud into concise natural language, allowing off-the-shelf LLMs to operate in a question answering (QA) setting. Building on this, we present mmWave-QA, the first benchmark for language-conditioned mmWave human perception. mmWave-QA aggregates heterogeneous public mmWave datasets and harmonizes them via calibration-aware preprocessing and global taxonomy alignment, while providing natural language QA. Spanning six scenarios and five QA tasks, the benchmark enables standardized evaluation across diverse mmWave hardware and experimental conditions, establishing a foundation for scalable research on mmWave-LLM integration. We further evaluate and analyze LLMs on our mmWave-QA, highlighting their zero-shot reasoning potential for radar perception, as well as their robustness under visual degradation.
 
 **Why this may be relevant:**
 
-It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows.
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It may be useful for multimodal geospatial understanding using image-text models. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
 
 ---
 
-### 5. Vernata: Self-Supervised Learning of LiDAR Point Representations
+### 6. IRGNN: Efficient Invariant Radar Graph Neural Network for Radar Point Cloud Object Detection
 
-**Authors:** Oliver Lemke, Alexander Liniger, Abel Gawel, Marco Hutter
+**Authors:** Xiao Guo, Wanke Xia, Lili Yang, Caicong Wu
 
-**Published:** 2026-08-07
+**Published:** 2026-08-14
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 38
+**My Score:** 34
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.06919v1
+**arXiv ID:** 2608.14394v1
 
-**Paper link:** http://arxiv.org/abs/2608.06919v1
+**Paper link:** http://arxiv.org/abs/2608.14394v1
 
-**PDF link:** https://arxiv.org/pdf/2608.06919v1
+**PDF link:** https://arxiv.org/pdf/2608.14394v1
 
 **Abstract:**
 
-LiDAR serves as a primary sensing modality for robots operating in outdoor environments. However, the performance of deep learning models in this domain is severely limited by the scarcity of labeled data, a direct result of the high cost of 3D annotation. Self-supervised learning addresses this scarcity by learning general-purpose features from unlabeled data. In this work, we present a multi-modal, multi-teacher distillation framework for self-supervised learning on outdoor LiDAR point clouds. Building upon the Sonata architecture, we introduce Vernata, consisting of three extensions: sparse view augmentation to improve robustness against varying point densities, a memory bank mechanism to stabilize resource-constrained training, and cross-modal distillation utilizing dense, high-resolution 2D image features to enable fine-grained semantic guidance. We evaluate our method on the GrandTour, TartanGround, and Waymo datasets, as well as data collected from our own robotic platforms. Our experiments demonstrate a significant performance improvement over Sonata baselines, yielding mIoU scores of 54.7 on TartanGround (+5.9 points, +12.1%) and 57.1 on Waymo (+7.3 points, +14.7%). Finally, we show that the self-supervised approach maintains strong performance even in reduced-modality settings (lacking color or normals), achieving competitive mIoU scores of 49.4 and 50.2 on the respective datasets.
+Perception is a fundamental component of autonomous driving systems. While LiDAR-based methods have achieved remarkable progress in object detection, their reliability can degrade under adverse weather conditions. Radar point clouds provide a robust alternative due to their resilience to bad weather and low-illumination scenarios. However, radar point clouds are typically sparse, unordered, and less informative than LiDAR data, making it challenging to directly apply existing LiDAR-based perception methods. To address these challenges, we propose IRGNN, an Invariant Radar Graph Neural Network for radar point cloud object detection. IRGNN first reconstructs radar point clouds into graph representations using translation- and rotation-invariant feature designs, enabling robust modeling of sparse radar measurements. It then employs an improved message passing neural network (MPNN) with residual connections and a virtual node layer to enhance local feature propagation and global context modeling. Finally, task-specific heads are applied to the learned graph representations for object classification and bounding box prediction. Experimental results on the RadarScenes dataset show that IRGNN outperforms existing radar-based object detection methods and achieves competitive performance. In addition, IRGNN significantly reduces computational cost and memory usage during inference, demonstrating its effectiveness and practical potential for efficient radar-based perception in autonomous driving.
 
 **Why this may be relevant:**
 
@@ -162,131 +194,73 @@ It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D 
 
 ---
 
-### 6. Synthetic LiDAR Data Generation and Deterministic Downsampling for Point Cloud Classification on the Edge
+### 7. Learning to Forecast Crop Growth from Earth Observation Data
 
-**Authors:** Niclas Meyer, Stefan Reitmann
+**Authors:** Dominik Senti, Mehmet Ozgur Turkoglu, Michele Volpi, Helge Aasen
 
-**Published:** 2026-08-07
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 27
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2608.07106v1
-
-**Paper link:** http://arxiv.org/abs/2608.07106v1
-
-**PDF link:** https://arxiv.org/pdf/2608.07106v1
-
-**Abstract:**
-
-Deploying three-dimensional deep learning frameworks to low-power embedded processors is bottlenecked by the unstructured nature of spatial data and the resource-intensive distance sorting algorithms often used before neural network inference. To address this gap, this paper presents a hardware-constrained workflow optimized for native execution on the Raspberry Pi 5. To account for the reality gap between noiseless, clean computer-aided design (CAD) datasets and real-world sensor data, we use physics-based simulation to construct a synthetic LiDAR dataset. Cross-dataset evaluations demonstrate a substantial drop in classification accuracy when networks trained on clean CAD data are evaluated on synthetic LiDAR sensor data, highlighting the critical need for sensor-aware training. To address the latency bottleneck of traditional geometric preprocessing on edge CPUs, we integrate an isolated, feature-driven Critical Points Layer (CPL) as a frontend filter. Our results show that the pretrained CPL deterministically compresses raw 1024-point clouds to a subset of 40 to 60 unique coordinates. When profiled on the ARM Cortex-A76 processor, the complete pipeline achieves an inference throughput of approximately 50 FPS while maintaining an instance classification accuracy of 88.36%, demonstrating the viability of deterministic real-time 3D perception at the edge.
-
-**Why this may be relevant:**
-
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
-
----
-
-### 7. Solver-Guided Reasoning for Mixed-Equilibrium Strategies
-
-**Authors:** Han Wang, Philippe Beardsell, Boning Li, Aaron Sasmita, Shuai Li, Hongyuan Zha, Baoxiang Wang
-
-**Published:** 2026-08-07
+**Published:** 2026-08-14
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 27
+**My Score:** 29
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.06741v1
+**arXiv ID:** 2608.14281v1
 
-**Paper link:** http://arxiv.org/abs/2608.06741v1
+**Paper link:** http://arxiv.org/abs/2608.14281v1
 
-**PDF link:** https://arxiv.org/pdf/2608.06741v1
+**PDF link:** https://arxiv.org/pdf/2608.14281v1
 
 **Abstract:**
 
-Reasoning in large language models (LLMs) is often grounded in human text, human demonstrations, and human-generated rationales. For equilibrium reasoning in complex games, however, relying on human data can be suboptimal. In fact, human play is often guided by intuition and heuristics and can deviate substantially from game equilibrium. This discrepancy is amplified in games with mixed-strategy equilibria, where human data is heavily biased toward pure strategies. Consequently, conditioning LLMs on this data yields weak game strategies. To grant LLMs the reasoning capacity in games, in this work, we study how to elicit equilibrium play using solver output. We propose Mixed-Strategy Decision Tree (MDT), which articulates the silent optimality of the equilibrium into sparse strategic rules that both humans and LLMs could understand. Using solver output rather than human annotation allows us to extend the input to arbitrarily new states and continuations. We instantiate this study on No-Limit Texas Hold'em by querying a solver oracle for over \textbf{250 million mixed-strategy decisions}; MDT together with other techniques \textbf{reduces the $\ell_1$ distance to the equilibrium by $52.6\%$} across $8$ different LLM configurations. A Route-only ablation tests the incremental contribution of the shadow-based contrast, while complete River-endgame and Liar's Dice experiments evaluate strategic fidelity and portability beyond the original NLH communication setting.
+Forecasting crop growth across agricultural landscapes is important for improving the productivity, resilience, and operational management of farming systems. In this work, we investigate whether Earth observation time series and meteorological drivers can be used to predict future canopy development at country scale. We focus on winter wheat and formulate crop growth prediction as forecasting future leaf area index (LAI) trajectories beyond the last available Sentinel-2 observation. We evaluate this task on a multi-year dataset which spans the entire country of Switzerland, containing over 20 million pixel-level Sentinel-2-derived LAI time series paired with meteorological variables. Because cloud cover and revisit gaps leave LAI supervision sparse, models fit the few valid (cloud-free) LAI observations yet oscillate implausibly between them, producing trajectories no real canopy could follow. We introduce a lightweight unimodal shape regulariser which improves trajectory plausibility with negligible loss in accuracy. We compare deep learning sequence-to-sequence (Seq2Seq) models with classic machine learning baselines and show that Seq2Seq models generalise well across years, achieving $\mathrm{R}^2$ above 0.8 and consistently outperforming conventional approaches. Together, these results demonstrate that remote sensing and weather-driven sequence modelling can learn crop growth dynamics at landscape scale. S
 
 **Why this may be relevant:**
 
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis.
+It is directly related to remote sensing or Earth observation workflows. It connects to urban tree detection, canopy mapping, or vegetation analysis. It is relevant to urban climate and heat-resilience research.
 
 ---
 
-### 8. Representation Handoffs for OpenArm-Based Laboratory Mobile Manipulation
+### 8. HiCo-GS: Hierarchical Context Aggregation and Geometric Consistency for Octree Gaussian Splatting
 
-**Authors:** Yang Shen, Chonghao Cheng, Ziyi Zhao, Jialuo Zhu, Zhenyi Yi, Qi Zhao, Jian Yang, Yuhui Shi
+**Authors:** Wei Zhang, Shengkai Yu, Shiqiang Gong, Qi Zhang, Qiang Li, Qi Wang
 
-**Published:** 2026-08-07
+**Published:** 2026-08-14
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 25
+**My Score:** 24
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.07154v1
+**DOI:** 10.1145/3767308.3836546
 
-**Paper link:** http://arxiv.org/abs/2608.07154v1
+**arXiv ID:** 2608.14136v1
 
-**PDF link:** https://arxiv.org/pdf/2608.07154v1
+**Paper link:** http://arxiv.org/abs/2608.14136v1
 
-**Abstract:**
-
-Open-source robotics and foundation models have lowered the barrier to embodied AI, yet language-guided laboratory automation still requires reliable alignment from instructions and observations to safe actions. This field report presents an OpenArm-based mobile manipulation prototype for laboratory-style tasks, built by integrating dual OpenArm manipulators with a mobile base, vertical slide, RGB-D sensing, lidar-based mapping, ROS2/MoveIt execution, and profile-defined skill interfaces. The system is organized around representation handoffs: natural language requests are constrained into registered skill calls, sensor observations are grounded into maps and object poses, object priors provide role and skill constraints, and runtime bindings compile validated skills into executable motion goals. We use dry-run traces and startup checks to evaluate this integration path, showing how the prototype exposes missing calibration, incomplete object assets, and unfinished real-scene visual grounding as explicit deployment blockers. These intermediate representations serve as practical debugging interfaces for integrating language, perception, planning, and robot safety in embodied systems.
-
-**Why this may be relevant:**
-
-It may help track foundation-model directions for Earth observation or geospatial AI. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
-
----
-
-### 9. Efficient three-dimensional variational data assimilation of multi-plane PIV data
-
-**Authors:** Uttam Cadambi Padmanaban, Samaresh Midya, Ping He, Bharathram Ganapathisubramani, Sean Symon
-
-**Published:** 2026-08-07
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 22
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2608.07469v1
-
-**Paper link:** http://arxiv.org/abs/2608.07469v1
-
-**PDF link:** https://arxiv.org/pdf/2608.07469v1
+**PDF link:** https://arxiv.org/pdf/2608.14136v1
 
 **Abstract:**
 
-We perform three-dimensional variational data assimilation (3DVar) using a discrete adjoint approach to optimise the time-averaged momentum equations. The experimental data consist of sparse stereoscopic particle image velocimetry (PIV) measurements collected along $12$ cross-stream planes in the wake of a vehicle-like bluff body at a Reynolds number $Re_L = 5.64 \times 10^5$ based on the streamwise body length. Adjoint localisation is proposed and implemented to reduce the memory footprint of the discrete adjoint method for spatially-varying control variables in 3DVar by confining the control variable space to a user-defined subdomain. Restricting the control variable to $12$ % of the full control space yields a maximum reduction in peak memory of $64$ %, while producing assimilated fields of comparable fidelity with respect to mean velocity and the optimised momentum forcing field. The localised adjoint case improves upon the baseline Spalart--Allmaras turbulence model and recovers the correct asymmetric topology of the complex three-dimensional (3D) recirculation bubble. The assimilated Reynolds shear stress agrees well with the experiment, and the assimilated mean pressure is shown to be physically consistent when correlated with the in-plane vorticity fields. A data efficiency study is also performed, in which the number of planes provided for assimilation is progressively reduced, demonstrating that the data coverage must extend at least to the end of the primary recirculation bubble to adequately constrain the near-wake dynamics. The efficiency that adjoint localisation affords is crucial for assimilating sparse, experimental data for 3D separated flows on fine meshes that can tackle industrial problems of interest.
+Octree-based anchor Gaussian Splatting has emerged as a scalable representation for city-scale novel view synthesis, where multi-level anchors adaptively capture scene content from coarse building structures to fine architectural details. However, we identify a fundamental limitation in existing methods: cross-level feature isolation, where each level's anchor features are optimized independently with no inter-level communication, causing color drift on building facades and over-smoothing in textured regions. We present HiCo-GS, a high-fidelity reconstruction framework with two complementary modules. Cross-Level Context Aggregation (CLCA) enables bidirectional hierarchical prior injection by leveraging the octree's spatial containment structure to aggregate per-level context vectors into parent-self-child triplets, fused via a lightweight MLP with residual connection. Coarse-level structural priors flow down to inform fine-level anchors, while fine-level detail statistics feed back to prevent over-smoothing, at negligible computational overhead. Depth-Normal Geometric Consistency (DNGC) regularization enforces agreement between rendered normals and depth-derived normals through an alpha-weighted consistency loss, complemented by edge-aware smoothness losses with progressive warmup that exploit the strong planar priors ubiquitous in urban geometry to suppress floating artifacts. We further introduce the China-Pagoda dataset comprising 8 ancient Chinese pagodas with over 1,200 images each, featuring dense ornamental carvings, curved multi-layer eaves, and repetitive fine-grained textures. Extensive experiments on Mill19, UrbanScene3D, MatrixCity, and China-Pagoda demonstrate that HiCo-GS achieves state-of-the-art rendering quality and substantially cleaner geometry across real-world and synthetic urban benchmarks.Code: https://github.com/WZ-CS/HiCo-GS.
 
 **Why this may be relevant:**
 
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
+It connects to urban tree detection, canopy mapping, or vegetation analysis.
 
 ---
 
-### 10. SCALE: Scientific Concept Aggregation via LLMs and Embeddings for Fine-Grained Taxonomy Extension
+### 9. Rollplex: Cross-Phase GPU Spatial Sharing for Vision Language Model Post-Training
 
-**Authors:** Daniele Raimondi, Feichi Lu, Oliver Grun, Mariia Eremina, Andrea Perlato
+**Authors:** Hanfeng Lu, Tianyu Feng, Suyi Li, Yuheng Zhao, Wei Gao, Shaopan Xiong, Ju Huang, Siran Yang
 
-**Published:** 2026-08-07
+**Published:** 2026-08-14
 
 **Venue:** arXiv
 
@@ -296,15 +270,45 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.07254v1
+**arXiv ID:** 2608.14498v1
 
-**Paper link:** http://arxiv.org/abs/2608.07254v1
+**Paper link:** http://arxiv.org/abs/2608.14498v1
 
-**PDF link:** https://arxiv.org/pdf/2608.07254v1
+**PDF link:** https://arxiv.org/pdf/2608.14498v1
 
 **Abstract:**
 
-The increasing specialization of scientific research challenges existing classification systems, which provide effective representations of broad disciplines and research topics but often fail to capture the fine-grained conceptual structure of contemporary science. Author keywords offer greater specificity, but their fragmentation, redundancy, and terminological variability limit their use as stable units of knowledge organization. We introduce SCALE (Scientific Concept Aggregation via LLMs and Embeddings), a framework that extends the OpenAlex taxonomy with a new level of scientific Concepts below Topics. Rather than treating keywords as isolated descriptors, SCALE organizes semantically related terms into coherent and interpretable conceptual units and integrates them within the existing disciplinary hierarchy. The framework combines scientific text embeddings, large language models, and graph-based community detection to construct this additional layer at scale. The resulting taxonomy enables scientific literature to be read through an intermediate conceptual level between broad research topics and individual documents. This perspective provides a more detailed representation of how scientific knowledge is structured, specialized, and connected across disciplines. By transforming heterogeneous author terminology into reusable hierarchical units, SCALE offers a foundation for fine-grained scholarly classification, scientometric analysis, research monitoring, and future ontology development.
+Vision-language models (VLMs) enable embodied agents to reason and act from visual observations and language instructions. Reinforcement learning (RL) post-training enhances these capabilities using task feedback, but current on-policy RL runtimes execute rollout, reference scoring, and actor training in strict serial phases. While effective for text-only RL, this phase-granular execution is wasteful for VLMs, where processing dense video inputs and prompt prefixes occupies a large fraction of each phase. Because prefix processing is independent of the generated response, it can be run alongside rollout decoding, which leaves GPU compute capacity underutilized, without breaking synchronous on-policy semantics. We present Rollplex, a runtime that decomposes the reference and training phase and moves the prefix computation into the rollout decode window. Realizing this schedule requires more than concurrent kernel launches: naive colocation of Qwen2.5-VL-32\,B requires roughly 165\,GiB per GPU, while rollout and training prefer different tensor-parallel (TP) degrees and weight layouts. Rollplex addresses these constraints with two mechanisms. Phase-aware memory management controls HBM residency according to producer--consumer lifetimes. Parallelism-aware weight sharing uses the same physical storage for layout-compatible tensors across distinct TP degrees and reconstructs only incompatible tensors, avoiding a complete second actor copy. On 32 H800 GPUs, Rollplex achieves $1.23\times$--$1.30\times$ speedup over serial colocation and $1.57\times$--$2.24\times$ over disaggregation under the same GPU budget, while preserving the synchronous RL update.
+
+**Why this may be relevant:**
+
+It may be useful for multimodal geospatial understanding using image-text models.
+
+---
+
+### 10. Whose doctor does the AI recommend? An algorithm audit of reputation and demographic signals in large language model-assisted physician choice
+
+**Authors:** Syeda Anshrah Gillani, Mirza Samad Ahmed Baig
+
+**Published:** 2026-08-14
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 21
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2608.14399v1
+
+**Paper link:** http://arxiv.org/abs/2608.14399v1
+
+**PDF link:** https://arxiv.org/pdf/2608.14399v1
+
+**Abstract:**
+
+Patients increasingly ask large language model (LLM) assistants which doctor to see, making these systems AI infomediaries: algorithms that intermediate one person's choice among other people and thereby decide, silently and at scale, which physicians become visible. We report a prespecified randomized algorithm audit of what causally moves those recommendations. Seven models (six open-weight; gpt-4o-mini) each chose among five synthetic family-medicine physician cards whose attributes were independently randomized across 3,024 choice sets, three patient personas, nine prompt paraphrases and nine experimental arms, yielding 40,068 scored responses; gender and ethnicity were signaled through names following correspondence-audit methodology. Reputation signals dominate: raising a rating from 3.9 to 4.7 increases choice probability by 31.4 percentage points (pp), and raising the fee from $90 to $190 lowers it by 20.0 pp. Demographic parity is rejected, but not in the direction human audit studies predict: female-signaled names gain 2.5 pp, and Hispanic-, South-Asian- and Black-signaled names gain 1.3-2.9 pp over White-signaled names, tilts worth $7-$14 per visit in fee-equivalent terms, and a content-free first-listed position is worth $11. Yet models mentioned gender or ethnicity in at most 0.03% of their stated reasons and abstained in 0.39% of trials, so these effects are invisible in the models' own explanations, and transparency obligations relying on model self-report would not detect them. One reasoning model failed the prespecified auditability gate outright. The frozen design makes the audit repeatable: any new model can be assessed against identical stimuli, making recurring behavioural audit, rather than self-reported explanation, the monitoring technology fit for purpose.
 
 **Why this may be relevant:**
 
