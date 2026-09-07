@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-08-24 to 2026-08-31
+**Search window:** 2026-08-31 to 2026-09-07
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,73 +12,11 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. GeBDA: Building Damage Assessment as Text-Based Sequence Prediction
+### 1. SAR and InSAR Change Detection with Quantum Generative Models
 
-**Authors:** Olivier Dietrich, Krishna Sapkota, Konrad Schindler, Genady Beryozkin
+**Authors:** Samwel K. Sekwao, Shaunak De, Alexis Hocken, Scott Staniewicz, Evgeny Epifanovsky, Craig Stringham, Gordon Farquharson, Martin Roetteler
 
-**Published:** 2026-08-28
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 56
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2608.28567v1
-
-**Paper link:** http://arxiv.org/abs/2608.28567v1
-
-**PDF link:** https://arxiv.org/pdf/2608.28567v1
-
-**Abstract:**
-
-Conventionally, Building Damage Assessment (BDA) is tackled either with dedicated network architectures or by fine-tuning geospatial image foundation models. In this work, we ask whether a general-purpose Vision-Language Model (VLM) can localize buildings and grade their damage through autoregressive sequence generation alone. We cast BDA as predicting a variable-length set of bounding boxes, each specified by its coordinates and a damage label. Our preliminary implementation, based on the open Gemma model, achieves promising damage mapping results from only bi-temporal satellite images and a suitable text prompt.
-
-**Why this may be relevant:**
-
-It may help track foundation-model directions for Earth observation or geospatial AI. It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 2. The impact of climate change on the most vulnerable women and children in Northern Nigeria: a vulnerability segmentation and geospatial analysis
-
-**Authors:** Michael Kalnoky, Gaspard Pairault, Jessica E. Long, Lang Gao, Andrew Buhayar, D. Helldén
-
-**Published:** 2026-08-25
-
-**Venue:** Environmental Research: Health
-
-**Found via:** Semantic Scholar
-
-**My Score:** 40
-
-**Venue importance score included:** 0
-
-**Semantic Scholar citations:** 0
-
-**DOI:** 10.1088/2752-5309/ae9634
-
-**Paper link:** https://www.semanticscholar.org/paper/b6e8fe7ef075b66f2a1ec33cf366c9073ad27f0c
-
-**PDF link:** https://iopscience.iop.org/article/10.1088/2752-5309/ae9634/pdf
-
-**Abstract:**
-
-Women and children in Northern Nigeria face increasing climate-related hazards and persistent health challenges. However, the relationship between climate-related environmental exposure and vulnerability to poor reproductive, maternal, neonatal, and child health (RMNCH) outcomes remains poorly understood. We applied a vulnerability-segmentation approach to categorize women aged 15–49 yr (n = 19041) in the 2018 Nigeria demographic and health survey into segments experiencing different levels of vulnerability to poor RMNCH outcomes. Using descriptive geospatial analysis, we overlaid measures of extreme heat exposure (maximum wet-bulb globe temperature), drought conditions (soil moisture levels), and food availability (normalized difference vegetation index) to examine how climate change vary across these vulnerability segments. Eleven distinct segments with unique vulnerabilities to RMNCH outcomes were identified. Across all climate-change indicators, segments at the highest risk of poor RMNCH outcomes were also more exposed to climate-related hazards compared with lower-risk segments. This pattern was particularly pronounced in rural areas. Overall, the most vulnerable women and children in Northern Nigeria experience high and overlapping levels of climate-change exposure. Targeted and context-specific climate-adaptation strategies, both within and beyond RMNCH programs, are essential to address the disproportionate burden faced by these high-risk groups.
-
-**Why this may be relevant:**
-
-It connects to urban tree detection, canopy mapping, or vegetation analysis. It is relevant to urban climate and heat-resilience research.
-
----
-
-### 3. Data Leakage Inflates Generalizability of Power Outage Prediction Models
-
-**Authors:** Yamil Essus, Ranga Raju Vatsavai, Benjamin Rachunok
-
-**Published:** 2026-08-25
+**Published:** 2026-09-04
 
 **Venue:** arXiv
 
@@ -88,197 +26,135 @@ It connects to urban tree detection, canopy mapping, or vegetation analysis. It 
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.24665v1
+**arXiv ID:** 2609.05313v1
 
-**Paper link:** http://arxiv.org/abs/2608.24665v1
+**Paper link:** http://arxiv.org/abs/2609.05313v1
 
-**PDF link:** https://arxiv.org/pdf/2608.24665v1
+**PDF link:** https://arxiv.org/pdf/2609.05313v1
 
 **Abstract:**
 
-Power outage prediction models are increasingly used in assessments of climate-driven infrastructure risk, yet current evaluation practices obscure whether these models generalize to the novel conditions such applications require. We identify three common methodological choices in power outage prediction models that influence their ability to generalize across spatial, temporal, and event-based settings. We compare the predictive performance impacts of different methodological decisions using publicly available data for the U.S. East Coast from 2018 to 2023 and feature sets derived from weather reanalysis and land-cover data, and embeddings from a GeoAI foundation model (Prithvi WxC). Specifically, we assess model performance under multiple test selection strategies, including unfiltered random splits, leave-one-state-out, and leave-one-event-out designs, which increasingly approximate real-world deployment conditions. While random train-test splits yield strong performance, we show that these results are inflated by spatial and temporal autocorrelation. Under spatial and temporal holdout experiments, predictive accuracy degrades substantially, with models often failing to outperform a simple null baseline. Incorporating GeoAI foundation model embeddings yields limited and inconsistent improvements, primarily for spatial generalization, and does not resolve poor event-level transferability. These findings suggest that, given current data availability and evaluation practices, publicly trained outage prediction models offer limited and uncertain operational value. Progress will likely require improved data coverage, more realistic evaluation protocols, and a shift in focus from marginal modeling advances toward addressing structural data constraints.
+Change detection in synthetic aperture radar (SAR) and interferometric synthetic aperture radar (InSAR) underpins disaster response, infrastructure monitoring and land-use enforcement. Detection is limited by the background estimator, which conventionally forms a conditional expectation directly from observed pixel statistics and degrades where those statistics are sparse, including the regime produced by the heavy-tailed marginals of sub-meter-resolution radars. In this work, we integrate state-of-the-art satellite imagery with quantum machine learning on IonQ trapped-ion-based quantum processors. By replacing the empirical conditional with a quantum circuit Born machine (QCBM)-sampled generative model in Copula space, we substantially improve change detection on sparse real-world images. On Capella Space satellite image acquisitions, the generative estimator matches conventional methods when the observed statistics are adequate, and substantially outperforms them when they are not. Executing the trained model on IonQ trapped-ion based hardware reproduces the results of the ideal and noisy simulations and demonstrates up to par, or even better, performance with the classical state-of-the-art methods. For a SAR dataset of an airport, QPU circuit evaluations for both training and inference achieved a maximized filtered F1 score of 0.32, compared with 0.16 and 0.24 for the two classical baselines. For an InSAR dataset of a volcanic lava flow, all three methods reached a maximum filtered F1 of approximately 0.66. These experiments demonstrate the feasibility of executing a QCBM-based background estimator on trapped-ion hardware. We further demonstrate that the QCBM method successfully extends to interferometric coherence data, achieving performance comparable to classical approaches.
 
 **Why this may be relevant:**
 
-It may help track foundation-model directions for Earth observation or geospatial AI. It is related to urban planning, infrastructure, or built-environment analysis. It may help with cross-city, cross-region, or cross-sensor generalization.
+It is directly related to remote sensing or Earth observation workflows. It is related to urban planning, infrastructure, or built-environment analysis.
 
 ---
 
-### 4. SafeLink-Agent: Agentic Maintenance for Adaptive Bitrate Controllers over Dynamic Starlink Networks
+### 2. MEOX: Compact Multimodal Mixture-of-Experts for Earth Observation
 
-**Authors:** Hongjun Xie, Bowen Zhang, Genke Yang, Pengcheng Luo
+**Authors:** Mohanad Albughdadi
 
-**Published:** 2026-08-28
+**Published:** 2026-09-04
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 26
+**My Score:** 24
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.28194v1
+**arXiv ID:** 2609.05351v1
 
-**Paper link:** http://arxiv.org/abs/2608.28194v1
+**Paper link:** http://arxiv.org/abs/2609.05351v1
 
-**PDF link:** https://arxiv.org/pdf/2608.28194v1
+**PDF link:** https://arxiv.org/pdf/2609.05351v1
 
 **Abstract:**
 
-Low Earth orbit (LEO) satellite broadband, represented by Starlink, is making high-resolution video streaming feasible beyond fixed terrestrial coverage. However, Starlink access links change across time and regions, exposing adaptive bitrate (ABR) streaming to shifting throughput tails, latency, volatility, and handover conditions. Existing ABR controllers are usually designed, tuned, or trained for specific network conditions, making it difficult to handle newly exposed hard Starlink profiles. This paper proposes SafeLink-Agent, an agentic maintenance framework for ABR controllers over dynamic Starlink networks. SafeLink-Agent summarizes exposed failures and uses a large language model (LLM)-based agentic patch proposer to generate candidate patches, while replay verification determines whether each patch can be safely committed. The framework supports both rule-based controllers and learned controllers under the same maintenance workflow. Experiments on real Starlink networks show that SafeLink-Agent reduces the severe-session ratio of RobustMPC from 2.60% to 0.40% and reduces cumulative severe sessions from 45 to 7 in rolling maintenance. For learned controllers, verified adaptive auditing lowers the average severe-session ratio from 39.01% to 9.79%. These results demonstrate that agentic maintenance can improve ABR robustness under dynamic Starlink access conditions.
+Recent advances in Earth Observation representation learning accommodate heterogeneous sensors and missing observations, often through larger architectures. We present MEOX (Multimodal Earth Observation with eXperts), a multimodal masked autoencoder with a 2.939 million-parameter encoder and 3.115 million parameters in total. Sensor-specific adapters, explicit validity signals, and a shared sparse-expert block preserve modality-dependent processing before a learned patch-wise fusion. Four metadata tokens then accompany a single spatial sequence through fourteen further encoder blocks. Shared expert projections with private low-rank residuals constrain parameter growth, while rotary attention supports downstream spatial grids different from pretraining. The model is pretrained on 1.228 million MMEarth64 samples using modality-balanced masked reconstruction and structured sensor dropout. Frozen transfer is evaluated on six GEO-Bench tasks at both 64 and 224 pixels. The model reaches 64.42% mean intersection-over-union on cashew segmentation at 64 pixels and 90.56% average accuracy on EuroSAT at 224 pixels, exceeding the corresponding reported CSMoE results. BigEarthNet finetuning reaches 72.95% micro-average precision. Routing diagnostics distinguish expert participation, spatial dependence, modality association, and functional contribution. A held-out WorldCover probe measures a 0.64-percentage-point benefit from metadata, while retrieval separates same-sensor semantics from cross-sensor alignment. These results demonstrate sensor-flexible representation learning and strong task transfer using a compact parameter budget.
 
 **Why this may be relevant:**
 
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It is directly related to remote sensing or Earth observation workflows.
+It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
-### 5. One year in a forest: Analyzing the challenges of autonomous navigation in subarctic environments
+### 3. SimFuse3D: Source-Guided Target Simulation and Confidence-Guided Multi-Stage Localization Reweighting for Cross-Platform 3D Object Detection
 
-**Authors:** Matěj Boxan, Nicolas Lauzon, Veronica Vannini, Mathis Turgeon-Roy, François Pomerleau
+**Authors:** Yongchun Lin, Xinliang Zhang, Yun Zou, Zhixuan Xiao, Liang Lei, Jianya Guo, Yuqiang Zhai, Xiaofeng Wang
 
-**Published:** 2026-08-27
+**Published:** 2026-09-04
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 26
+**My Score:** 24
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.27628v1
+**arXiv ID:** 2609.04886v1
 
-**Paper link:** http://arxiv.org/abs/2608.27628v1
+**Paper link:** http://arxiv.org/abs/2609.04886v1
 
-**PDF link:** https://arxiv.org/pdf/2608.27628v1
+**PDF link:** https://arxiv.org/pdf/2609.04886v1
 
 **Abstract:**
 
-Subarctic regions have the potential to see increased deployment of autonomous robots in applications including forestry, mining, and environmental monitoring. In these conditions, an autonomous system's reliance on GNSS or cloud computing is precarious due to dense tree canopies and atmospheric attenuation, necessitating onboard sensing and data processing. However, established exteroceptive modalities, including cameras, lidars, and radars, are typically evaluated in structured urban settings or in environments that lack significant seasonal variations. To address this, we present a field report on a year-long deployment of a mobile robot in a subarctic boreal forest. We evaluate 64 km of data using nine odometry, localization, and mapping methods and assess their performance across seasonal changes. The performed experiments suggest that the environment changes significantly hinder the performance of state-of-the-art techniques, which show increased fragility when subject to conditions characterized by self-similar scenes or tall snowbanks. Additionally, complex Simultaneous Localization and Mapping (SLAM) algorithms offer limited accuracy gains over a proprioceptive baseline while significantly increasing system fragility. Furthermore, by correlating the position drift with features and confidence weight distribution, we show that visual-based SLAM methods are particularly affected by the seasonal changes. Additionally, we investigate the task of cross-season localization in a prior map. While lidar-based methods successfully completed localization runs between seasons, radar and visual methods are prone to failure due to a few matching features between runs, even within the same season. Finally, we detail the challenges and lessons learned from this year-long trial, including a multi-season Teach and Repeat (T&R) evaluation using both radar and lidar-based pipelines.
+Changes in sensor height and viewpoint alter object-level point distributions, making cross-platform LiDAR unsupervised domain adaptation (UDA) difficult. Self-training uses labeled source scans and unlabeled target scans, yet a retained prediction may provide a useful target location while enclosing sparse foreground returns, background clutter, or points inconsistent with the predicted box. We refer to this mismatch as box-point inconsistency. We introduce SimFuse3D, which preserves the target placement and repairs the associated pseudo-object using measured geometry from labeled source scans. Object Memory retrieves a compatible labeled source instance. Target Simulation places its ground-truth box at the target location, aligns its points with the target viewing geometry, and filters the aligned crop to approximate the target observation. Confidence-Guided Multi-Stage Localization Reweighting (CMLR) maps each target pseudo-object confidence score to a bounded weight shared by RPN localization and R-CNN box regression. All components operate only during adaptation, leaving the detector architecture and inference graph unchanged. Across six cross-platform transfers, SimFuse3D exceeds Pi3DET-Net on every reported AP metric and ranks first among the compared adaptation methods on nearly all metrics. On nuScenes-to-KITTI, it ranks first among the compared adaptation methods with both evaluated detectors.
 
 **Why this may be relevant:**
 
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis.
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It may help with cross-city, cross-region, or cross-sensor generalization.
 
 ---
 
-### 6. Lossy Event Compression: From Event Stream Distortion to Task Performance
+### 4. HiSfM: Disambiguating Structure-from-Motion via Scaffold-Anchored Hierarchical Reconstruction
 
-**Authors:** Zahra Rezaee, Catarina Brites, João Ascenso
+**Authors:** Ziding Zhao, Hainan Cui, Peilin Tao, Shuhan Shen
 
-**Published:** 2026-08-28
+**Published:** 2026-09-04
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 21
+**My Score:** 19
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.28429v1
+**arXiv ID:** 2609.04718v1
 
-**Paper link:** http://arxiv.org/abs/2608.28429v1
+**Paper link:** http://arxiv.org/abs/2609.04718v1
 
-**PDF link:** https://arxiv.org/pdf/2608.28429v1
+**PDF link:** https://arxiv.org/pdf/2609.04718v1
 
 **Abstract:**
 
-Event cameras generate asynchronous, sparse data streams with microsecond temporal resolution, but in moderate-to-high motion scenes they can produce as many as hundreds of millions of events per second, creating significant bandwidth and storage challenges. Lossy compression is therefore essential for practical deployment, yet existing event stream distortion metrics fail to reliably predict compression-induced degradation at the task level, forcing codec optimization to rely on expensive task-specific evaluations. To address this gap, this paper introduces two fundamentally different event compression pipelines: i) an aggregation-based pipeline that converts the event stream into polarity-based histogram frames for compression with the conventional image codec JPEG 2000, and ii) a frame-free point cloud-based pipeline that codes events natively as 3D points using the octree-based codec G-PCC. Both pipelines are then assessed within a unified task-driven evaluation framework that relates event stream distortion to downstream application performance across four representative tasks: i) video reconstruction, ii) object detection, iii) optical flow estimation, and a delay-sensitive task iv) asynchronous feature tracking under a reference-relative protocol. Building on this framework, five classification-based distortion metrics are applied to event compression for the first time, to the best of the authors' knowledge, and benchmarked against existing event stream metrics. Experimental results demonstrate that the proposed metrics reliably predict compression-induced task degradation across different coding frameworks. This demonstrates that event stream distortion assessment can be an efficient alternative to repeated task-specific evaluation, providing direct guidance for the development and optimization of future event data coding solutions.
+Structure-from-Motion (SfM) is a fundamental tool for sparse 3D reconstruction with broad impact in robotics and vision, supporting mapping, localization, and large-scale scene modeling. However, conventional pipelines often fail under hard visual ambiguity caused by repeated or symmetric structures, and incur heavy computational cost due to redundant cameras and constraints. We present HiSfM, a hierarchical coarse-to-fine SfM framework that improves robustness and efficiency through scaffold construction. HiSfM first forms strong local communities using geometrical induced heuristics, then connects communities with a compact yet strong skeleton by packing edge-disjoint spanning trees (EDST) while verifying skeletal edges with a two-view disambiguator. We reconstruct a stable scaffold on this verified skeleton, serving as an anchor to capture the essence of the scene, and subsequently absorb remaining images via efficient registration and triangulation for further refinements. Experiments on ambiguity-focused benchmarks and general datasets show that HiSfM prevents ambiguity-induced failures while substantially reducing runtime compared to previous methods, and improves completeness over aggressive sparsification methods. Code is available at https://github.com/3dv-casia/HiSfM.
 
 **Why this may be relevant:**
 
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis.
+It connects to urban tree detection, canopy mapping, or vegetation analysis.
 
 ---
 
-### 7. Pair-Level Essay-Scale Republication and Reuse from Fragmented Historical Text Reuse: A Workflow Study on Eighteenth-Century Books and Newspapers
+### 5. Towards Scaling Quantum Fine-Tuning of Foundational Time Series Models for Classification
 
-**Authors:** Ke Shu, Kira Hinderks, Eetu Mäkelä, Mikko Tolonen
+**Authors:** Sang Hyub Kim, Julien Baglio, Rajiv Krishnakumar, Chi Chen, Oliver Knitter, Jonathan Mei, Claudio Girotto, Masako Yamada
 
-**Published:** 2026-08-27
+**Published:** 2026-09-04
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 20
+**My Score:** 18
 
 **Venue importance score included:** 0
 
-**DOI:** 10.1145/3799682.3839901
+**arXiv ID:** 2609.05408v1
 
-**arXiv ID:** 2608.27343v1
+**Paper link:** http://arxiv.org/abs/2609.05408v1
 
-**Paper link:** http://arxiv.org/abs/2608.27343v1
-
-**PDF link:** https://arxiv.org/pdf/2608.27343v1
+**PDF link:** https://arxiv.org/pdf/2609.05408v1
 
 **Abstract:**
 
-This paper addresses the recovery of essay-scale republication and reuse from fragmented text-reuse evidence, a setting whose central challenge is pair-level evidence consolidation and not fragment retrieval alone. The study focuses on a candidate set centered on essays by eighteenth-century Scottish philosopher David Hume, spanning books from ECCO (Eighteenth Century Collections Online) and historical newspapers. Because the input consists of fragmented reuse hits instead of clean document pairs, and positive coverage is inherently incomplete, we formulate the task as pair-level evidence consolidation into plausible transmission relations and compare three methodological families: a staged rule-based workflow, baselines (a decision tree and two direct LLM settings), and automated rule adaptation. On labeled ECCO--ECCO slices, pair-level feature aggregation alone already reaches 0.948 F1 on the main labeled slice, while the final workflow gives the strongest overall precision-recall trade-off among the tested rule stages. On the full ECCO--ECCO candidate universe, direct LLM baselines flag up to 14,886 pairs as reprints compared to 771 for the final workflow, behaving in this direct-prompt setup as high-recall candidate expanders rather than precision-controlled deployment classifiers. On ECCO--Newspaper, manual audit confirms all 176 predicted positives as genuine cases of republication or reuse, while issue duplication and source-side multiplicity reveal additional provenance structure. Under incomplete ground truth, auditable pair-level evidence consolidation provides a practical way to produce compact candidate spaces for historical inspection.
-
-**Why this may be relevant:**
-
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis.
-
----
-
-### 8. Dual-Stream Semantic Guidance with Prototype Anchor Calibration for Source-Fully-Free Adaptation of Vision-Language Models
-
-**Authors:** Weiwei Xiang, Shun Peng, Guangyi Xiao, Hao Chen, Lei Yang
-
-**Published:** 2026-08-28
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 20
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2608.28145v1
-
-**Paper link:** http://arxiv.org/abs/2608.28145v1
-
-**PDF link:** https://arxiv.org/pdf/2608.28145v1
-
-**Abstract:**
-
-Source-Fully-Free Domain Adaptation (SFF-DA) has emerged as a strategic paradigm to adapt Vision-Language Models (VLMs) without any access to source data or task-specific source models. However, we identify a critical Dual Semantic Drift that hinders this process: static drift arising from the rigidity of fixed class embeddings, and dynamic drift stemming from the divergence of generated captions, causing severe semantic misalignment that intensifies the stability-plasticity dilemma. To address this, we propose DSSG (Dual-Stream Semantic Guidance), an end-to-end framework that reconciles fine-grained plasticity with global stability. Our core contribution is the Dual Semantic Guidance (DSG) module, which integrates a caption stream for domain-specific knowledge with a class-anchor stream to anchor global categorical consistency. Furthermore, a Dynamic Cross-Modal Knowledge Distillation (CMKD) module is introduced to leverage the evolving teacher distribution for calibrating teacher-student consistency. Building upon DSSG, we further introduce Prototype Anchor Calibration (PAC), yielding DSSG-PAC, which periodically calibrates prototype anchors and caches them until the next calibration. This design reduces redundant text-side computation while preserving the adaptability of class guidance to the evolving text space. We further establish SFF-DA risk bounds that relate student risk to semantic-teacher quality and teacher--student discrepancy. Extensive experiments demonstrate that DSSG consistently outperforms current state-of-the-art methods across multiple benchmarks, while DSSG-PAC largely preserves its adaptation performance with 18.9% lower total adaptation time. The code is available at https://github.com/mrmenand/DSSG.
-
-**Why this may be relevant:**
-
-It may be useful for multimodal geospatial understanding using image-text models. It may help with cross-city, cross-region, or cross-sensor generalization.
-
----
-
-### 9. Cut-ViT: Task-Specific Model Pruning via Gram Anchoring Subspace Consistency
-
-**Authors:** Jianjian Yin, Liulei Li, Tao Chen, Yi Chen, Yazhou Yao, Wenguan Wang
-
-**Published:** 2026-08-28
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 13
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2608.28205v1
-
-**Paper link:** http://arxiv.org/abs/2608.28205v1
-
-**PDF link:** https://arxiv.org/pdf/2608.28205v1
-
-**Abstract:**
-
-Pruning visual foundation models has attracted considerable attention. However, existing methods focus on rigid point-to-point token alignment on a single dataset for pruning, suffering from two limitations: i) robustness degradation, and ii) task-specificity deficiency. To address these limitations, we propose a task-specific pruning pipeline, named Cut-ViT. Specifically, we first construct gram anchoring matrices from both spatial and semantic perspectives, and perform the subspace decomposition to extract the corresponding subspace bases. Basis-agnostic and residual constraints are then adopted to align the gram subspaces between the native and pruned DINOv3 models along spatial and channel dimensions, enabling subnetworks to inherit robust feature representations of native DINOv3. Furthermore, we design spectral entropy adaptation, which quantifies the information density of feature manifolds along spatial and channel dimensions, thereby adapting the pruning objective to specific downstream tasks. Experiments show that Cut-ViT requires approximately one minute on a single A100 GPU to obtain subnetworks at various sparsity levels, using only 20.9% of the time and 45.5% of the GPU memory compared with previous methods, while achieving SOTA performance on six tasks across nine datasets.
+Time-series foundation models produce rich embeddings, but whether quantum models can exploit them, and how far hybrid classical-quantum architectures scale, remains unclear. We address this by fine-tuning Chronos for power-grid event classification (PSML-5) with a quantum head on the model's embeddings. Grouping embeddings by physical sensor type before summarization already surpasses the best published baseline built for this benchmark, and with finer-grained features the quantum head outperforms a larger classical multilayer perceptron on identical inputs by 1.7-2.0 percentage points of balanced accuracy. Yet the gains saturate: past a point, feeding more information to the same fixed-width register yields no improvement. We show the bottleneck is neither the supply of information nor circuit expressiveness, but the bandwidth of the data intake. To overcome this limitation, we introduce the wing module, a self-contained few-qubit circuit that feeds additional information into the core circuit through a sparse, one-way coupling. Under a preregistered four-seed protocol, we attach wings to a fixed 12-qubit core with fixed features. Balanced accuracy increases with each added wing, from 83.6% with no wings (13 qubits, including a post-selection qubit) to 85.2% with two (19 qubits). Ablations establish that a circuit enlarged without new information gains nothing, while a wing fed information from the wrong sample harms accuracy. These results reframe scaling for quantum fine-tuning: added qubits help when they carry added inputs, not merely more parameters. Wings offer a modular and stable route to widening that bandwidth.
 
 **Why this may be relevant:**
 
@@ -286,33 +162,153 @@ It may help track foundation-model directions for Earth observation or geospatia
 
 ---
 
-### 10. How Proper Scoring Rules Shape LLM Forecasting
+### 6. ARC-Loc: Leveraging Azimuthal Ray Convergence as a Geometric Cue for Direct Cross-View Localization
 
-**Authors:** Benjamin Turtel, Paul Wilczewski, Kris Skotheim, Ville A. Satopää, Philip E. Tetlock
+**Authors:** Hyeongsik Kim, Mincheol Kim, Heejoon Moon, Je Hyeong Hong
 
-**Published:** 2026-08-28
+**Published:** 2026-09-04
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 12
+**My Score:** 18
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2608.28482v1
+**arXiv ID:** 2609.04965v1
 
-**Paper link:** http://arxiv.org/abs/2608.28482v1
+**Paper link:** http://arxiv.org/abs/2609.04965v1
 
-**PDF link:** https://arxiv.org/pdf/2608.28482v1
+**PDF link:** https://arxiv.org/pdf/2609.04965v1
 
 **Abstract:**
 
-This paper evaluates how reward function choice shapes the performance and behavior of LLM forecasters. We compare five proper scoring rules as training objectives for binary forecasts of resolved real-world events. Although the rules share the same theoretical incentive for truthful probability reporting, the resulting models differ in calibration, probability use, and estimated profiles of bias, information, and noise, with smaller differences in aggregate accuracy and discrimination. The Brier-trained model has the lowest observed Brier score and highest AUC-ROC, while the log-trained model has the highest observed log score and lowest calibration error. Models with similar aggregate performance also reach that performance through different combinations of bias, information, and noise. Proper scoring rules therefore need not behave interchangeably as training objectives. Reward choice may shape not only how well an LLM forecasts, but how its forecasting errors are structured. Each condition uses a single seed, so some differences may reflect training stochasticity.
+Cross-view localization (CVL) estimates the pose of a ground image by matching it to a geo-referenced satellite image. To bridge the extreme viewpoint gap, mainstream pipelines rely on Bird's-Eye-View (BEV) transformations or 2D-to-3D lifting. However, deriving 3D structures from a single ground image is fundamentally ill-posed, causing these methods to endure geometric distortions and computational costs during 3D lifting or BEV projection. Furthermore, relying on external depth foundation models to resolve this introduces latency and remains susceptible to noisy predictions. In this work, we present a different approach inspired by a human navigation technique called resection, that can perform direct ground to satellite image matching and localization without relying on external depth foundation models. The key insights of our method are that (i) ground keypoints can be translated into azimuthal rays on the satellite map, and (ii) these rays ideally converge at the user location. Exploiting this geometric constraint through direct line-to-point correspondences, we introduce a minimal Azimuthal Ray Convergence (ARC) solver to identify the intersection, alongside an ARC loss to optimize the matching network. By eliminating dependencies on computationally heavy BEV transformations and external depth foundation models, our approach achieves faster, memory-efficient inference, while its explicit feature matching ensures straightforward compatibility with existing frameworks. Experiments on VIGOR and KITTI demonstrate that ARC-Loc maintains competitive localization accuracy compared to recent approaches, highlighting its practicality.
 
 **Why this may be relevant:**
 
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
+It may help track foundation-model directions for Earth observation or geospatial AI. It is directly related to remote sensing or Earth observation workflows.
+
+---
+
+### 7. Human-Human & Human-Robot Interaction Transformer (H2INT) for Robot Navigation in Dense and Uncertain Crowds
+
+**Authors:** Ao Shen, Kaixi Chen, Shiwei Liu, Fang Deng, Chen Chen
+
+**Published:** 2026-09-04
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 16
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2609.05300v1
+
+**Paper link:** http://arxiv.org/abs/2609.05300v1
+
+**PDF link:** https://arxiv.org/pdf/2609.05300v1
+
+**Abstract:**
+
+Safe robot navigation in dense crowds requires reasoning about pedestrian motion and how it may change in response to a robot. However, many learning-based approaches generate pedestrian motion independently of the robot or assume uniform reciprocity, omitting an important source of interaction uncertainty. This paper presents a Human-Human & Human-Robot Interaction Transformer (H2INT), a reinforcement learning framework that retains robot-conditioned changes in pedestrian motion during policy learning while allowing responsiveness to vary across pedestrians. Responsiveness affects the crowd dynamics when the robot is visible but is not supplied as a policy input; the policy must instead infer its consequences from robot-centered relative positions. A two-stage gated Transformer progressively encodes human-human and human-robot relations, while a recurrent policy captures their temporal evolution. A curriculum gradually reduces pedestrian responsiveness to increase interaction difficulty. Simulation experiments demonstrate improved navigation safety and robustness over representative baselines across response conditions and crowd densities, and show transfer without retraining to structurally distinct crowd-flow layouts. Ablations support the hierarchical relational encoding and gated updates. Real-robot deployment further verifies that the learned policy can operate with sparse observations in a physical environment.
+
+**Why this may be relevant:**
+
+It may connect to pedestrian infrastructure, road extraction, transportation infrastructure, or walkability mapping.
+
+---
+
+### 8. Coupled Control and Wireless World Models for Resilient Remote Robotic Control
+
+**Authors:** H. P. Madushanka, Sumudu Samarakoon, Mehdi Bennis
+
+**Published:** 2026-09-04
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 15
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2609.04851v1
+
+**Paper link:** http://arxiv.org/abs/2609.04851v1
+
+**PDF link:** https://arxiv.org/pdf/2609.04851v1
+
+**Abstract:**
+
+Remote robotic systems operating over wireless networks must maintain reliable control despite limited communication resources, changing channel conditions, and environmental disturbances.However, continuously transmitting high-dimensional sensory observations, such as camera images, increases communication overhead and energy consumption while reducing robustness under unreliable connectivity.To address these challenges, this paper proposes a resilient communication-aware remote robotic control framework based on coupled control and wireless Joint Embedding Predictive Architecture (JEPA) world models that jointly capture robot dynamics and wireless channel evolution from visual observations and a combination of raw and structured radio frequency (RF) representations based on spectrograms and Persistence Images(PIs).The learned latent representations enable predictive communication scheduling by jointly forecasting future robot states and wireless conditions, thereby reducing unnecessary uplink transmissions while maintaining reliable control performance.Furthermore, an adaptive resilience mechanism detects latent prediction discrepancies and efficiently adapts perception embeddings to accommodate wireless and visual environmental changes without retraining the complete control policy.The proposed framework is evaluated in a synchronized Gazebo-Robot Operating System (ROS)-Sionna robot-wireless simulation environment under diverse wireless propagation and perception perturbations.Experimental results demonstrate significant improvements in communication efficiency, robustness, and resilience while maintaining navigation performance compared with conventional Proportional Integral Derivative (PID), model-free Deep Q-Network (DQN), and predictive approaches based on Vision Transformers(ViTs).
+
+**Why this may be relevant:**
+
+It matched the geospatial machine learning search criteria and may be worth screening.
+
+---
+
+### 9. Learning from VAE Errors to support ECG-based Differential Diagnosis of Myocardial Scar
+
+**Authors:** Shayan Sharifi, Riccardo Treu, Ilaria Gandin, Federico Garoia, Marco Merlo, Giulia Cisotto
+
+**Published:** 2026-09-04
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 14
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2609.05294v1
+
+**Paper link:** http://arxiv.org/abs/2609.05294v1
+
+**PDF link:** https://arxiv.org/pdf/2609.05294v1
+
+**Abstract:**
+
+Late Gadolinium Enhancement (LGE) on cardiac magnetic resonance is a key marker of myocardial scar, but its limited accessibility motivates routine ECG-based screening. We evaluated whether $β$-variational autoencoder (VAE)-derived ECG representations can discriminate LGE+ from LGE- cardiomyopathic patients in a local cohort of 300 subjects. We compared 32-dimensional features from the foundation ECGx.AI model with those from a shallower $β$-VAE trained on normal PTB-XL ECGs, evaluating downstream classification and Dynamic Time Warping (DTW)-based reconstruction errors. ECGx.AI reached an area under ROC of 0.686 with Random Forest, while the proposed $β$-VAE reached 0.577 with sensitivity of 0.775 with Gradient Boosting. Notably, DTW-reconstruction errors significantly differed between classes in 10 out of 12 leads according to Mann-Whitney U test and help in classification, leading to an area under ROC of 0.643 with Logistic Regression, supporting their potential as markers of scar-related ECG alterations.
+
+**Why this may be relevant:**
+
+It matched the geospatial machine learning search criteria and may be worth screening.
+
+---
+
+### 10. Methane Detection On Board Satellites from Unorthorectified Imagery
+
+**Authors:** Luca Marini, Maggie Chen, Hala Lamdouar, Laura Martínez-Ferrer, Dr C. P. Bridges, Giacomo Acciarini
+
+**Published:** 2026-09-04
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 14
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2609.04906v1
+
+**Paper link:** http://arxiv.org/abs/2609.04906v1
+
+**PDF link:** https://arxiv.org/pdf/2609.04906v1
+
+**Abstract:**
+
+As a potent greenhouse gas, methane is a major driver of climate change. Its effective mitigation relies on timely detection. Conventional detection methods rely on orthorectification to correct geometric distortions and matched filters to enhance plume signals, which are steps designed for ground processing and poorly suited to onboard execution. We introduce UnorthoDOS, a dataset and approach for training machine learning models directly on unorthorectified hyperspectral imagery, bypassing both orthorectification and matched-filter products. Our U-Net models trained on unorthorectified data approach the performance of models trained on orthorectified data (IoU 16.91% vs. 18.47% on all plumes), while both substantially outperform the mag1c matched-filter baseline (IoU 4.76%). We further demonstrate the feasibility of onboard deployment: FP16 compression halves model size with under 0.3% output deviation. The trained ML models and two ML-ready datasets -- orthorectified and unorthorectified hyperspectral imagery from the EMIT sensor -- are publicly available at https://huggingface.co/datasets/SpaceML/UnorthoDOS, with code at https://github.com/spaceml-org/plume-hunter.
+
+**Why this may be relevant:**
+
+It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
