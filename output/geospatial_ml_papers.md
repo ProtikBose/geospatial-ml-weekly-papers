@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-09-14 to 2026-09-21
+**Search window:** 2026-09-21 to 2026-09-28
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,209 +12,123 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. The Role of Radiometric Features in Cross-Site Leaf-Wood Segmentation of LiDAR Point Clouds
+### 1. SatNav: A Scalable Benchmark for Long-Horizon UAV Vision-Language Navigation from Satellite Imagery
 
-**Authors:** Roman Kaharlytskyi, Derek T. Robinson, Roberto Guglielmi
+**Authors:** Jiajun Jiang, Chunliang Hua, Zichun Chen, Yanxing Wu, Zeyuan Yang, Jie Song, Xiao Hu
 
-**Published:** 2026-09-18
+**Published:** 2026-09-25
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 50
+**My Score:** 59
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.21903v1
+**arXiv ID:** 2609.31507v1
 
-**Paper link:** http://arxiv.org/abs/2609.21903v1
+**Paper link:** http://arxiv.org/abs/2609.31507v1
 
-**PDF link:** https://arxiv.org/pdf/2609.21903v1
+**PDF link:** https://arxiv.org/pdf/2609.31507v1
 
 **Abstract:**
 
-Leaf-wood segmentation of individual trees from LiDAR point clouds is essential for quantitative structure models (QSMs) used in non-destructive biomass estimation. Existing segmentation methods typically exclude radiometric features (e.g., intensity, return number) to maximize cross-sensor compatibility. We challenge this design choice by evaluating cross-site and cross-platform generalization: training on the public Heidelberg dataset (terrestrial TLS, 1550nm) and testing on a novel dataset from Ontario, Canada (RPA-LS, 905nm). Results show that geometry-only methods - including state-of-the-art deep learning models trained on high-density LiDAR datasets - fail to generalize to the sparse, top-down geometry of aerial scans, achieving F1 scores <= 0.56. Incorporating radiometric features (intensity, return number, number of returns) improves F1 to 0.61, but more critically, increases wood recall by 119% from 0.16 to 0.35. Furthermore, geometry-only approaches often result in fragmented stem and branch components. We find that leveraging radiometric features preserves greater structural connectivity, resulting in more coherent architectures that are better suited for QSM reconstruction. We demonstrate that while geometric patterns are view-dependent and prone to overfitting scan patterns, radiometric features encode physical material properties that generalize across disparate sensors and environments.
+Urban uncrewed aerial vehicle (UAV) vision-language navigation (VLN) requires agents to follow instructions across extended urban spaces, inherently demanding long-term memory and geospatial grounding. However, scaling existing benchmarks remains difficult because of their reliance on costly reconstructed 3D assets, limiting geographic diversity and episode scale. To address this, we introduce SatNav, a scalable, long-horizon UAV VLN benchmark built from high-resolution satellite imagery. SatNav targets city-level navigation missions and uses satellite crops as approximations of UAV nadir views for visual observations. Through an automated cue-to-episode pipeline, SatNav constructs 118K episodes from 59 scenes across 18 cities, with an average trajectory length of 379 m. To stress-test long-horizon memory and geospatial reasoning, SatNav defines three task families: Boundary, Landmark, and Route, targeting loop progress tracking, landmark-based spatial grounding, and route following with counting cues. Benchmarking classical VLN agents and recent agents based on large vision-language models (LVLMs) on SatNav shows that city-scale navigation remains challenging. We further introduce SwiftVLN, a modular framework with switchable memory components, and conduct systematic memory-design ablations. Finally, satellite-to-UAV transfer experiments show that satellite-trained navigation models can operate on real-flight UAV observations, showing the practical relevance of SatNav. Our project page: https://eku127.github.io/SatNav/
 
 **Why this may be relevant:**
 
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis. It may help with cross-city, cross-region, or cross-sensor generalization.
+It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
-### 2. XCalib Depth-Guided Geometric Optimization for Dense Thermal-Visible Video Registration
+### 2. GraphWrit3R: End-to-End 3D Scene Graph Writing
 
-**Authors:** Aurelien Godet, Gabriel Jobert, Mauro Dalla Mura
+**Authors:** Luka Milivojevic, Nikola Popovic, Sayan Deb Sarkar, Sebastian Koch, Iro Armeni, Luc Van Gool, Danda Pani Paudel
 
-**Published:** 2026-09-18
+**Published:** 2026-09-25
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 35
+**My Score:** 37
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.21770v1
+**arXiv ID:** 2609.31595v1
 
-**Paper link:** http://arxiv.org/abs/2609.21770v1
+**Paper link:** http://arxiv.org/abs/2609.31595v1
 
-**PDF link:** https://arxiv.org/pdf/2609.21770v1
+**PDF link:** https://arxiv.org/pdf/2609.31595v1
 
 **Abstract:**
 
-Image registration is a vital preprocessing step in multimodal perception tasks, including image fusion, object detection, and semantic segmentation. In Advanced Driver- Assistance Systems (ADAS), spatial misalignment between visible (RGB) and infrared (IR) cameras -caused by non-coincident optical axes and field-of-view differences- introduces non-uniform parallax and visual ghosting. Classical keypoint-based methods are restricted to global homographies that fail under dynamic depth, while unconstrained dense flow algorithms lack structural regularization and suffer from temporal instability. In this paper, we propose XCalib, an unsupervised dense thermal-visible registration framework that bridges this gap. Rather than serving as an absolute metric calibration tool, XCalib leverages virtual pinhole camera parameterization strictly as a geometric constraint space. By optimizing effective relative pose and intrinsics alongside predicted monocular metric depth, XCalib restricts the search space of spatial displacements to physically valid projection geometries. Our key contributions are: (1) a novel registration paradigm that uses camera parameterization as an implicit regularizer for dense cross-modal warping; (2) Normalized Edges Correlation (NEC), a robust structural similarity metric tailored to cross- spectral alignment; and (3) extensive quantitative and qualitative evaluations across public ADAS datasets, demonstrating superior temporal stability and alignment accuracy over unconstrained dense flow baselines.
+3D scene graphs provide a structured representation of complex environments by encoding objects, their semantic attributes, and the spatial and functional relationships between them. Current approaches for 3D scene graph generation suffer from several fundamental limitations. They rely on complex multi-stage pipelines with explicit intermediate representations, making systems fragile and prone to error propagation. They assume access to ground-truth object annotations during inference, which deviates from real-world scenarios. They depend on proprietary models, hindering open-source deployment, or incur prohibitively slow inference. We present GraphWrit3R, a simple end-to-end method that takes a 3D point cloud, Gaussian Splats, or a combination of both as input, and directly outputs a complete scene graph as a structured JSON script. The graph lists all objects, their semantic attributes, and the relationships between them, while avoiding all of the above mentioned limitations. The choice of multiple input modalities is purely for versatility, allowing a single set of weights to handle diverse scenarios. Point cloud inputs are encoded via Sonata and Gaussian Splat inputs via Chorus, with both modalities projected onto a shared voxel grid and fused through a novel per-voxel contrastive alignment loss before being decoded by a large language model. As a natural consequence of the LLM, GraphWrit3R also supports open-vocabulary querying. On the 3DSSG benchmark, our method achieves state-of-the-art performance on object class, predicate, and triplet recall, outperforming methods that rely on ground-truth object annotations during inference. We further provide qualitative results and analyze different input modality configurations, contrastive loss formulations, and token fusion strategies.
 
 **Why this may be relevant:**
 
-It matched the geospatial machine learning search criteria and may be worth screening.
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
 
 ---
 
-### 3. PointLAM: Local Attentive Mamba for Efficient Point-based 3D Object Detection
+### 3. Electric Vehicle Charging Station Location Selection using Geospatial Artificial Intelligence (GeoAI)
 
-**Authors:** Xuanming Shang, Weijia Zhang, Chao Ma
+**Authors:** Eun Hak Lee, Euntak Lee
 
-**Published:** 2026-09-18
+**Published:** 2026-09-24
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 27
+**My Score:** 36
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.21780v1
+**DOI:** 10.1016/j.tre.2026.104930
 
-**Paper link:** http://arxiv.org/abs/2609.21780v1
+**arXiv ID:** 2609.30417v1
 
-**PDF link:** https://arxiv.org/pdf/2609.21780v1
+**Paper link:** http://arxiv.org/abs/2609.30417v1
+
+**PDF link:** https://arxiv.org/pdf/2609.30417v1
 
 **Abstract:**
 
-3D object detection from LiDAR point clouds faces a fundamental dilemma: voxel-based methods achieve efficiency at the cost of geometric quantization, while point-based methods preserve fidelity but suffer from prohibitive computational bottlenecks. Specifically, point-based architectures are crippled by slow downsampling strategies (e.g., FPS) and expensive dynamic neighbor queries (e.g., k-NN) coupled with costly continuous interactions. To tackle these systemic inefficiencies, we propose PointLAM, a highly efficient and powerful point-based architecture driven by two synergistic innovations. First, to resolve the downsampling bottleneck, we develop the Laplacian Point Sampler (LPS). LPS employs an implicit discrete Laplacian high-pass filter and Doubly Sorted Sampling to achieve fast, structure-aware foreground preservation. Second, to overcome local modeling latency, we design the Local Hadamard Aggregator (LHA). LHA decouples spatial indexing from feature representation using transient grids, and replaces complex continuous interactions with a Hadamard Gating mechanism for topology-aware, attentive modulation. By coupling this local gating with Bi-Directional Mamba (BDM) layers for global sequence modeling, we formulate the Local Attentive Mamba (LAM) block. Powered by this architecture, PointLAM achieves competitive performance on nuScenes and Waymo for point-based detectors. It rivals highly optimized voxel competitors while requiring a fraction of the computational footprint, demonstrating marked superiority in detecting small instances and handling extreme sparsity. Project page: https://pointlam.github.io/.
+As electric vehicle (EV) adoption increases, ensuring efficient and well-distributed charging infrastructure has become a critical challenge. While many EV charging station location problem (CSLP) studies focus on minimizing costs or travel distance, it is crucial to consider the surrounding geospatial characteristics of existing stations that influence operational performance. This study proposes a geospatial artificial intelligence (GeoAI)-based framework that integrates high-dimensional EV-related geospatial data, including EV usage, land-use, population, and traffic attributes. We incorporate a variational autoencoder (VAE) and a graph convolutional network (GCN) into the model to capture similarities among existing charging stations, and to identify suitable locations for future stations. The VAE compresses high-dimensional EV input data into a low-dimensional latent space, and the GCN uses this latent representation to predict locations suitable for charging stations. Using real-world data from Bryan-College Station, Texas, US, the proposed model outperforms state-of-the-art baselines, achieving an F1-score of 0.87 in distinguishing existing station locations from non-station locations. The model also identifies 27 additional candidate locations that show geospatial characteristics similar to those of existing stations, based on a similarity score. We further evaluate two policy implementation scenarios, maximizing geospatial similarity and minimizing total travel distance, each yielding different outcomes aligned with distinct strategic objectives. The findings highlight the importance of incorporating spatial context into CSLP and provide valuable insights for future EV infrastructure planning, promoting both efficiency and accessibility in the rapidly growing electric mobility sector.
 
 **Why this may be relevant:**
 
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+It is related to urban planning, infrastructure, or built-environment analysis.
 
 ---
 
-### 4. Extending Decoupled Attention to Dense Prediction and Masked Training for Multi-Channel Images
+### 4. EAServe: Encode-Aware Disaggregated Serving for Multimodal Large Language Models
 
-**Authors:** Umar Marikkar, Sameed Husain, Muhammad Awais, Sara Atito
+**Authors:** Kunxiong Zhu, Zhihao Shu, Hangyu Zheng, Minghai Qin, Miao Yin, Gagan Agrawal, Wei Niu
 
-**Published:** 2026-09-18
+**Published:** 2026-09-25
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 26
+**My Score:** 31
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.21629v1
+**DOI:** 10.1145/3838684.3846886
 
-**Paper link:** http://arxiv.org/abs/2609.21629v1
+**arXiv ID:** 2609.31551v1
 
-**PDF link:** https://arxiv.org/pdf/2609.21629v1
+**Paper link:** http://arxiv.org/abs/2609.31551v1
 
-**Abstract:**
-
-Multi-Channel imaging (MCI) data differs fundamentally from natural images, as each channel records a semantically distinct signal rather than a colour band. To adapt vision encoders to MCI data, Multi-Channel Vision Transformers (MC-ViTs) tokenize each channel independently and concatenate the resulting tokens into one sequence, and the channel count is no longer fixed by the architecture. Self-attention is then computed across all channel-patch tokens with no restriction on which channels attend to which, which dilutes the features of individual channels. The Decoupled Vision Transformer (DC-ViT) regulates this by separating updates computed within a channel from updates computed across channels, and by forming a representation per channel before the channels are combined. Its formulation, however, pairs tokens by spatial position, and thus requires the same visible tokens in every channel. Correspondence under independent per-channel masking is recovered by solving a linear assignment between the retained patches of each channel, which allows decoupled attention to be combined with current masked multi-channel training in its standard configuration rather than a restricted one. Across three classification and three segmentation benchmarks spanning fluorescence microscopy, imaging mass cytometry and satellite imaging, including dense prediction at high channel counts, the resulting formulation outperforms the strongest MC-ViT baseline.
-
-**Why this may be relevant:**
-
-It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 5. Beyond the Desert Label: A Pathway Diagnostic for User-Centered Smart Mobility Service Design
-
-**Authors:** Oluwasegun Adegoke, Sevgi Erdogan
-
-**Published:** 2026-09-18
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 20
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2609.21956v1
-
-**Paper link:** http://arxiv.org/abs/2609.21956v1
-
-**PDF link:** https://arxiv.org/pdf/2609.21956v1
+**PDF link:** https://arxiv.org/pdf/2609.31551v1
 
 **Abstract:**
 
-Smart-city mobility platforms increasingly rely on spatial screening tools to identify neighborhoods where public transit fails dependent users, but a single transit desert label can mask very different user problems: localized mismatch between service and concentrated need, or basic absence of usable service. These call for different user-centered responses. This paper introduces a pathway-based, reproducible, data-driven diagnostic that distinguishes relative transit mismatch from minimum-service failure and reports the specific service attributes (frequency, span, weekend service, walking access, and destination accessibility) driving each classification. The workflow combines open data (GTFS, ACS, LEHD, Census, and OpenStreetMap), detects spatially coherent mismatch using Local Moran's I, and applies an equity-informed service-failure test that centers vulnerable users. Applied to Baltimore, Philadelphia, Nashville, and Dallas, the diagnostic shows that legacy-transit cities are dominated by localized mismatch, while auto-oriented cities show broader minimum-service failure, with distinct service-deficit profiles in each case. By making the mechanism behind an under-service label explicit, the tool supports more inclusive, user-centered smart-mobility planning across cities with different transit baselines.
-
-**Why this may be relevant:**
-
-It connects to urban tree detection, canopy mapping, or vegetation analysis.
-
----
-
-### 6. Learning to Move Cities: Deep Meta-Models and Reinforcement Policies for Calibration and Control in Urban Networks
-
-**Authors:** Adewumi Augustine Adepitan, Christopher J. Haruna, Oluwasegun Adegoke, Ayooluwatomiwa Ajiboye, Oluwatobi Oluwasakin
-
-**Published:** 2026-09-18
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 19
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2609.21945v1
-
-**Paper link:** http://arxiv.org/abs/2609.21945v1
-
-**PDF link:** https://arxiv.org/pdf/2609.21945v1
-
-**Abstract:**
-
-Urban transportation networks present complex optimization challenges spanning calibration of high-fidelity simulators and real-time operational control. This paper presents a shared latent-space framework that connects simulator calibration and reinforcement learning control through a common learned representation of urban traffic dynamics. First, we develop a combinatorial MLP-autoencoder architecture that learns low-dimensional manifolds linking simulator inputs (origin-destination demand, network parameters) to outputs (travel times, congestion patterns), enabling efficient Bayesian optimization for calibration. This approach demonstrates superior sample efficiency compared to traditional dimension reduction methods, achieving better fit to observational data within fixed computational budgets. Second, we implement a deep Q-learning agent with experience replay and target networks to optimize dynamic traffic assignment through scheduling and routing adjustments. In empirical evaluations on benchmark networks, our approach reduces system-wide travel times by up to 51% compared to baseline operations. The learned latent representation is not only used to reduce the dimensionality of Bayesian calibration, but is also incorporated into the reinforcement learning state representation, allowing the control policy to operate on compressed and calibrated traffic dynamics. This shared latent-space formulation provides a unified pathway from simulator calibration to adaptive operational control within intelligent transportation systems. Our results highlight the transformative potential of deep learning methods in urban mobility planning and management, particularly for large-scale networks where traditional optimization approaches face computational bottlenecks.
-
-**Why this may be relevant:**
-
-It matched the geospatial machine learning search criteria and may be worth screening.
-
----
-
-### 7. Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention
-
-**Authors:** Andre Bacellar
-
-**Published:** 2026-09-18
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 17
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2609.22056v1
-
-**Paper link:** http://arxiv.org/abs/2609.22056v1
-
-**PDF link:** https://arxiv.org/pdf/2609.22056v1
-
-**Abstract:**
-
-Multi-hop retrieval failures are not uniformly distributed across queries: they cluster in structurally predictable subpopulations. We prove two results formalizing this structure. First (CWAR Reducibility): confident-failure reduction is achievable if and only if retrieval features carry mutual information about success, a condition satisfied by LLM-judge pipelines but substantially weaker in dense-only settings, explaining the AUC-AC gap between regimes. Second (Feature Regime Complementarity): no single ANN score feature achieves best predictive performance across all failure regimes; the dominant feature differs between datasets (query length on MuSiQue, hop-1 concentration on HoVer), and a constructive witness pair shows each is necessary in one regime and non-contributory in the other. We instantiate these principles in RegimeAbstain, which computes a Retrieval Confidence Score (RCS), a logistic function of up to nine query-ANN structural features, all available without any additional LLM call, and uses it to implement a calibrated abstention policy. We define the Confident-Wrong-Answer Rate (CWAR) metric and evaluate across three multi-hop benchmarks (MuSiQue, 2WikiMultiHopQA, HoVer) and two retrieval architectures (LLM-judge and dense-only), covering five failure regimes with CWAR from 14.5% to 62.1%. RCS achieves best or co-best AUC-AC in all five conditions against eight confidence baselines. On MuSiQue (LLM-judge), RCS reduces CWAR from 39.5% to 20.6% at 50% coverage (47.8% relative reduction), with ECE=0.035. A model trained on MuSiQue transfers to 2WikiMultiHopQA with only -0.5pp AUC loss, confirming the domain-agnostic structure of regime features.
+Disaggregating the two stages, Prefill and Decode, onto separate GPU pools is now a standard optimization for (text-only) LLM serving. However, multimodal LLMs (MLLMs), which add a third phase, Encode, pose new challenges for resource allocation. Encode turns images, video, or audio into embeddings that the language model can consume, yielding a three-stage Encode-Prefill-Decode (EPD) pipeline. Existing frameworks offer only partial answers: text-only PD systems lack Encode, while EPD frameworks expose it as a separate service without regulating downstream request flow. The pipeline also carries a structural resource imbalance: every request enters through Encode before downstream work can begin, yet per-request execution leaves the encode GPU severely underutilized even at high loads, starving the downstream Prefill and Decode workers. Addressing this, we reposition Encode as the control point of the EPD pipeline, exposing three tightly coupled dimensions: when work enters downstream, where prefill executes, and how the GPU is shared. We instantiate this in EAServe across two co-designed layers. Its runtime manages load-adaptive micro-batching, rate-controlled partial offload to a co-resident prefill worker, and dynamic SM partitioning for predictable co-location. The configuration layer, Hybrid Auto Selection (HAS), navigates the joint space of GPU allocation, encode batch size, and offload ratio by pruning unbalanced allocations with per-stage capacity profiling and refining the remainder through TPE-based Bayesian optimization. Evaluated on three MLLM architectures spanning image, video, and audio, EAServe delivers up to 4.3x and 1.7x higher goodput than NVIDIA Dynamo and vLLM, respectively, under identical SLO constraints, sustains more balanced and higher GPU utilization across the EPD pipeline, and reaches near-optimal configurations faster than baseline search methods.
 
 **Why this may be relevant:**
 
@@ -222,93 +136,183 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 ---
 
-### 8. ForceTwin: Physics-informed Digital Twins for Robotic Manipulation from Instrumented Human Interaction
+### 5. Enabling a Unified Cross-Domain Representation for Two-Finger Gripper Manipulation via Interaction-Centric Modeling
 
-**Authors:** Tim Engelbracht, René Zurbrügg, Mayank Mittal, Marco Hutter, Marc Pollefeys, Hermann Blum, Zuria Bauer
+**Authors:** Guanlin Li, Shifeng Bao, Yihan Zhao, Haitao Shen, Haoyang Li, Chen Zhao, Tong Yang, Jie Tang
 
-**Published:** 2026-09-18
+**Published:** 2026-09-25
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 12
+**My Score:** 29
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.21751v1
+**arXiv ID:** 2609.31207v1
 
-**Paper link:** http://arxiv.org/abs/2609.21751v1
+**Paper link:** http://arxiv.org/abs/2609.31207v1
 
-**PDF link:** https://arxiv.org/pdf/2609.21751v1
+**PDF link:** https://arxiv.org/pdf/2609.31207v1
 
 **Abstract:**
 
-Manipulating objects requires understanding not only their motion, but also the physical properties that determine it. For articulated objects, these include inertia, friction, and mechanisms such as springs or door closers, whose effects can vary with configuration and velocity. Such properties are not directly observable from appearance: visually identical doors may require very different effort to manipulate. Existing digital-twin pipelines recover primarily kinematics or assign static physical parameters from visual and language priors, which can yield physically implausible estimates. As a result, state-dependent mechanism dynamics remain unidentified and are not represented in standard asset formats. We present ForceTwin, a system for identifying physics-informed digital twins of articulated objects from instrumented human interaction. A person probes an object using a handheld force-sensing gripper, providing synchronized poses and interaction forces from which we estimate the articulation, parametric dynamics including inertia, Coulomb friction, viscous damping, and a structured neural residual capturing state-dependent mechanism forces. ForceTwin nearly halves the inertial-parameter error of a VLM prior. As a feedforward dynamics model for impedance control on a Spot and a Franka FR3, ForceTwin achieves 87% goal completion across nine object-embodiment pairs, compared with 60% using VLM-prior and 57% using kinematics-only twins, with the largest gains on objects whose strong mechanisms cause both baselines to stall. We further use the identified twins to train whole-body door-traversal policies and deploy them in the real world. Project Page: https://timengelbracht.github.io/forcetwin-website/
+Achieving robust cross-embodiment generalization in imitation learning demands overcoming a critical representation flaw that inextricably entangles task semantics with hardware-specific visual geometry. We propose an interaction-centric framework that leverages the shared structure of two-finger grippers via a parameterized universal gripper abstraction, yielding a canonical gripper-frame representation. Given language and RGB-D observations, a VLM infers the subtask and grounds an interaction triplet (gripper, held, target), while SAM~2.1 tracks masks to reduce VLM queries. We design concise hybrid features that combine target/collision artificial potential fields for global guidance with segmented gripper-frame point clouds for local geometry, and use a Flow-Matching Transformer to predict smooth 7-DoF action chunks. Experiments in simulation and real-world tasks demonstrate that ours is the first imitation learning approach to simultaneously achieve competitive benchmark scores and extreme cross-embodiment/cross-viewpoint zero-shot sim-to-real transfer to completely distinct, heterogeneous robot platforms.
 
 **Why this may be relevant:**
 
-It may be useful for multimodal geospatial understanding using image-text models.
+It may be useful for multimodal geospatial understanding using image-text models. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It may help with cross-city, cross-region, or cross-sensor generalization.
 
 ---
 
-### 9. On the atomic decomposition of complete intersection in flag varieties
+### 6. WeaveAgent: A Two-Stage Tool-Routing Agent for Ultra-High-Resolution Remote Sensing Imagery
 
-**Authors:** Boris Alexeev, Leonardo F. Cavenaghi, Giovane Galindo, Bogdan Georgiev, Ludmil Katzarkov, Pedro Antonio Muniz Martins
+**Authors:** Zhongyu Pang
 
-**Published:** 2026-09-18
+**Published:** 2026-09-25
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 9
+**My Score:** 24
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.21914v1
+**arXiv ID:** 2609.31234v1
 
-**Paper link:** http://arxiv.org/abs/2609.21914v1
+**Paper link:** http://arxiv.org/abs/2609.31234v1
 
-**PDF link:** https://arxiv.org/pdf/2609.21914v1
+**PDF link:** https://arxiv.org/pdf/2609.31234v1
 
 **Abstract:**
 
-We develop a root-theoretic localization formalism for genus-zero Gromov--Witten invariants of flag varieties and of smooth zero loci of globally generated homogeneous vector bundles. The resulting invariants are expressed as finite sums over decorated trees whose contributions are determined by the root system of the ambient flag variety and by the torus weights of the defining bundle. We connect these computations with the Theory of Hodge Atoms of Katzarkov--Kontsevich--Pantev--Yu via the matrix of small quantum multiplication by first Chern class. Let $X$ be a Fano fourfold with $h^{3,1}(X)=1$ arising as a hyperplane section of a suitable Fano fivefold. Its cohomology decomposes into a monodromy-fixed part and the middle vanishing cohomology. This decomposition is preserved by quantum multiplication by the first Chern class. Moreover, it acts by a scalar on the vanishing summand. We show, for the monodromy-fixed block, that (a) if every eigenvalue has algebraic multiplicity at most two and $X$ is Hodge general, then $X$ is irrational; (b) if every eigenvalue has Jordan defect at most one and $X$ is rational, then every weak factorization contains a smooth surface center whose minimal model is a projective K3 surface. Many applications are presented.
+Problem. Ultra-high-resolution (UHR) remote sensing with vague user intents has two bottlenecks: visual tokens are expensive, and tool calling must be format-reliable (pretrained models emit zero tool calls zero-shot). Method. WeaveAgent, a two-stage tool-routing agent, decouples routing from visual perception. Stage A is routing-first: emission is trained, not elicited. Stage B executes conditionally: intrinsic queries enter visual answering (full-scene thumbnail; a WeaveEarth-style evidence board as an optional fixed-budget, approx. 5k-token compression interface); extrinsic queries execute tool call on original full-resolution imagery, answering from tool observations in a second, observation-masked round. Training: alignment SFT, then GRPO under reward R_WA2. Results. Alignment SFT lifts extrinsic routing from 0% to 80.75% (323/400); GRPO suppresses 9 intrinsic mis-emissions while tool selection is unchanged. The trained 2B system does not beat the zero-shot 8B baseline overall (0.263 vs. 0.250), a diagnostic contribution. Oracle attribution separates two repair ingredients: loading the observation into context lifts extrinsic answer accuracy from 0.025 to 0.425 under marker-free cross-mode returns, and the two-turn SFT stage adds a further +9.3 points to 0.518 at a small routing cost. A +/- image ablation shows emission suppression is visually grounded, and a query-register matrix shows LLM-rewritten queries cost trained checkpoints 2-11 points. Scope. All training and evaluation use the 5,000 / 3,273 / 1,000-record VagueUHR corpus (600 intrinsic + 400 tool-requiring; the base seeds synthesis and is not used for optimization). Single-pass evidence construction runs at 7.31 s per image on an RTX 4090. Code, data, and evaluation protocols will be released.
 
 **Why this may be relevant:**
 
-It connects to urban tree detection, canopy mapping, or vegetation analysis.
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
-### 10. Dynamics of Weighted Backward Shifts on Cesàro Spaces of Rooted Trees
+### 7. Evaluating Cultural Awareness of LLMs for Haitian Creole
 
-**Authors:** Xiang Chen, Meng-Huan Cheng, Liang Zhang, Ze-Hua Zhou
+**Authors:** Christelle Clervilsson, Yanzhu Guo
 
-**Published:** 2026-09-18
+**Published:** 2026-09-25
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 9
+**My Score:** 21
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.21752v1
+**arXiv ID:** 2609.31506v1
 
-**Paper link:** http://arxiv.org/abs/2609.21752v1
+**Paper link:** http://arxiv.org/abs/2609.31506v1
 
-**PDF link:** https://arxiv.org/pdf/2609.21752v1
+**PDF link:** https://arxiv.org/pdf/2609.31506v1
 
 **Abstract:**
 
-We study the dynamics of weighted backward shifts on Ces`aro spaces associated with leafless locally finite rooted trees. We first characterize their boundedness in terms of adjacent level cardinalities and edge weights. We then characterize their $\mathcal{F}$-transitivity by a growth condition involving level cardinalities, products of weights along paths, and a level-dependent Ces`aro factor. As consequences, we obtain criteria for hypercyclicity, weak mixing, topological ergodicity, and topological mixing. We also characterize the existence of nonzero orbit limit points and chaotic weighted shifts, the latter in terms of normalized fixed points and unit flows satisfying an explicit summability condition. Examples show that $\mathcal{F}_{\underline{d}>0}$-transitivity need not imply frequent hypercyclicity, that a nonhypercyclic weighted shift may nevertheless have a nonzero orbit limit point, and that topological mixing need not imply chaos.
+Large language models (LLMs) exhibit substantial performance disparities between high- and low-resource languages. Beyond lower task performance, they often fail to capture the cultural norms and values of underrepresented communities. In this work, we present the first systematic evaluation of cultural awareness in LLMs for Haitian Creole, a language spoken by millions but severely underrepresented in digital resources. We assess cultural awareness along four complementary dimensions---specificity, bias, diversity, and variation---using a benchmark of culturally salient prompts curated by native speakers in a text infilling setting. Our results reveal a clear gap between cultural awareness in Haitian Creole and higher-resource French, with Haitian performance being more uneven across domains and more affected by French linguistic interference. Story generation further reveals recurring portrayals of Haitian characters through hardship and resilience, showing that even positive characterizations can encode stereotypical narratives. Our code, benchmark, and evaluation framework are publicly available.
 
 **Why this may be relevant:**
 
-It connects to urban tree detection, canopy mapping, or vegetation analysis.
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
+
+---
+
+### 8. RupeeBias: Auditing Demographic Bias in Indian Economic Guidance from Large Language Models
+
+**Authors:** Pavithra P M Nair, Bhavik Talaviya, Shourya Bhushan, Rahul Pankajakshan, Seema Guruvadoo, Avinash Agarwal, Gilad Gressel, Krishnashree Achuthan
+
+**Published:** 2026-09-25
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 21
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2609.31245v1
+
+**Paper link:** http://arxiv.org/abs/2609.31245v1
+
+**PDF link:** https://arxiv.org/pdf/2609.31245v1
+
+**Abstract:**
+
+Individuals turn to large language models (LLMs) for guidance across a wide range of economic tasks, from comparing loan options and planning savings to deciding what raise to ask for or how much to charge for their services. LLMs are known to reproduce social biases, and biased economic guidance may influence what users believe they are worth, what they ask for, and what they ultimately accept. This risk is especially salient in India, where economic outcomes are shaped by demographic categories such as caste and urban-rural location. Existing LLM bias benchmarks, however, are largely designed around Western demographic categories and therefore miss key axes of economic disparity in the Indian context. We introduce RupeeBias, a benchmark for auditing demographic bias in LLM-generated economic guidance across Indian economic settings. RupeeBias consists of 39,150 prompts spanning four use cases: salary estimation, salary increment estimation, counter-offer recommendation, and service pricing recommendation. The benchmark follows a single-attribute counterfactual design, holding the description of the user's qualifications, experience, or service offering fixed while varying one demographic identifier at a time. RupeeBias covers 87 India-specific demographic identifiers across six axes: caste, religion, regional identity, gender, disability, and urban-rural location, with all prompts constructed in both English and Hinglish. We evaluate nine LLMs on RupeeBias and find systematic demographic disparities across all six axes. For otherwise identical prompts that differ only in demographic identifier, LLM-generated economic outputs differ by 20.2% on average. We publicly release RupeeBias to support future research on demographic bias in LLM-generated economic guidance across India-specific demographic and economic contexts.
+
+**Why this may be relevant:**
+
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
+
+---
+
+### 9. Same Text, Different Numbers: The Divergence of LLM-Based Measures
+
+**Authors:** Hamid Boustanifar, Sasan Mansouri
+
+**Published:** 2026-09-25
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 21
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2609.31013v1
+
+**Paper link:** http://arxiv.org/abs/2609.31013v1
+
+**PDF link:** https://arxiv.org/pdf/2609.31013v1
+
+**Abstract:**
+
+Researchers increasingly use generative large language models (LLMs) to convert corporate text into empirical variables. We examine the extent to which LLM-based textual measures are invariant to model choice using thirteen measures, including sentiment, management clarity, uncertainty, answer specificity, and climate and political risk. Seven LLMs from different providers score earnings call transcripts of S&P 500 companies on these constructs. Cross-model rank correlations average only 0.52, and transcript-level differences common across providers account for only 34% of total score variation. Cross-model disagreement does not predict subsequent analyst or market disagreement, consistent with a substantial model-specific component rather than common ambiguity in the underlying disclosure. Model choice significantly affects downstream inference, with coefficient magnitudes, signs, and statistical significance varying substantially across models. Averaging across providers makes transcript rankings more stable for most constructs, but score levels remain sensitive to the models included in the ensemble. LLM-generated variables should therefore be treated as model-contingent measurements and validated across providers.
+
+**Why this may be relevant:**
+
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
+
+---
+
+### 10. Bandwidth, Latency, and 400 Million Kilometers: The Case for Mars-Local Compute
+
+**Authors:** Maleeha Masood, Indranil Gupta, Deepak Vasisht
+
+**Published:** 2026-09-25
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 15
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2609.31566v1
+
+**Paper link:** http://arxiv.org/abs/2609.31566v1
+
+**PDF link:** https://arxiv.org/pdf/2609.31566v1
+
+**Abstract:**
+
+There have been recent proposals for human settlements on Mars in 2030s. Any human activity on Mars must be preceded by extensive robotic exploration. However, Mars exploration is bottlenecked by the low bandwidth, intermittent Mars-Earth link. For example, HiRISE, a high-resolution camera onboard the Martian orbiter MRO imaged less than 3% of Mars over eleven years, even though MRO's low resolution Context Camera had mapped more than 99% of Mars in that time. We present a systems case for shared compute for Mars exploration. Such Mars-local compute, paired with advances in computer vision and AI, can enable large volumes of data to be collected and processed on Mars while sending periodic updates, insights, and selective datasets to Earth. To overcome the lack of surface infrastructure on Mars, we propose a two-tier in-orbit deployment of computational satellites that provides consistent coverage and bandwidth. Our analysis shows that the proposed deployment can start small: one areostationary node makes compute reachable from all active Mars missions, two additional areostationary nodes can extend this coverage to roughly 90% of the planet, while low-Mars-orbit nodes add high-rate surface links and compute capacity where demand grows.
+
+**Why this may be relevant:**
+
+It is directly related to remote sensing or Earth observation workflows. It is related to urban planning, infrastructure, or built-environment analysis.
 
 ---
 
