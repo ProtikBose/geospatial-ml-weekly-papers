@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-09-21 to 2026-09-28
+**Search window:** 2026-09-28 to 2026-10-05
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,135 +12,137 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. SatNav: A Scalable Benchmark for Long-Horizon UAV Vision-Language Navigation from Satellite Imagery
+### 1. On-Orbit Execution of a Geospatial Foundation Model
 
-**Authors:** Jiajun Jiang, Chunliang Hua, Zichun Chen, Yanxing Wu, Zeyuan Yang, Jie Song, Xiao Hu
+**Authors:** Andrew Du, Roberto del Prete, Alejandro D. Mousist, Fabrice Marre, C. Seubert, Gabriele Meoni, Tat-Jun Chin
 
-**Published:** 2026-09-25
+**Published:** 2026-10-01
+
+**Venue:** Remote Sensing
+
+**Found via:** Semantic Scholar
+
+**My Score:** 58
+
+**Venue importance score included:** 10
+
+**Semantic Scholar citations:** 0
+
+**DOI:** 10.3390/rs18193371
+
+**Paper link:** https://www.semanticscholar.org/paper/621b91eadfb425ec2b4ccb85df3495e95de9d214
+
+**PDF link:** https://doi.org/10.3390/rs18193371
+
+**Abstract:**
+
+Geospatial foundation models (GeoFMs) offer broad generalisation across Earth observation (EO) tasks, particularly under data-limited conditions. However, their large model size and computational requirements remain major barriers to deployment on resource-constrained space hardware. To address this challenge, we develop compact variants of a GeoFM designed to preserve downstream task performance while enabling onboard execution. The models are evaluated across five downstream EO tasks and validated on two representative flight-computing environments. The results show that compression substantially reduces model size (1157.03 MB to 73.30 MB; approximately 16×) and enables execution on resource-constrained hardware (FP32-to-FP16 conversion for the Myriad-2 resulted in differences of no more than 0.21 percentage points across all reported task-level performance metrics), while task-head adaptation improves performance on mission-domain imagery under limited supervision. We further demonstrate on-orbit execution of the compact GeoFM using the IMAGIN-e payload aboard the International Space Station, where inference was performed on a preloaded curated dataset under orbital computing conditions. These findings establish a practical pathway for translating large pretrained GeoFMs into resource-efficient onboard implementations and expand the feasibility of onboard artificial intelligence for future EO missions.
+
+**Why this may be relevant:**
+
+It appears in one of the selected top journals, conferences, or workshops. It may help track foundation-model directions for Earth observation or geospatial AI. It is directly related to remote sensing or Earth observation workflows.
+
+---
+
+### 2. AI-Assisted Planning for Sustainable Urbanism: Mapping Urban Livability in a Contemporary American City through Tree Coverage
+
+**Authors:** Kunth Shah, Edwin Flores
+
+**Published:** 2026-09-29
+
+**Venue:** Journal of Contemporary Urban Affairs
+
+**Found via:** Semantic Scholar
+
+**My Score:** 41
+
+**Venue importance score included:** 0
+
+**Semantic Scholar citations:** 0
+
+**DOI:** 10.25034/ijcua.2026.v10n2-5
+
+**Paper link:** https://www.semanticscholar.org/paper/ba8cef396c062effcff5a2c115a8141595966f65
+
+**PDF link:** https://doi.org/10.25034/ijcua.2026.v10n2-5
+
+**Abstract:**
+
+This study explores the integration of artificial intelligence, spatial analysis, and urban design to evaluate and enhance urban livability while addressing socio-economic and environmental vulnerabilities in contemporary cities. Using Austin, Texas, as a case study, the research combines ArcGIS-based spatial analysis with AI-assisted modeling to examine environmental, socio-economic, and infrastructural datasets, with urban tree canopy coverage serving as a key indicator of neighborhood health and equity. A hexagonal tessellation grid is developed to break down census tract data into standardized spatial units. This allows vulnerability scores to be calculated and correlated with tree coverage. Machine-learning techniques, including regression-based predictive modeling, are applied to identify patterns of vulnerability and forecast future urban conditions using survey-based and real-time data inputs. The findings demonstrate that an integrated GIS–AI workflow effectively reveals socio-spatial disparities in urban livability, paving the way for sustainable urban design, scientific zoning strategies, and informed form-based coding interventions.
+
+**Why this may be relevant:**
+
+It connects to urban tree detection, canopy mapping, or vegetation analysis.
+
+---
+
+### 3. On-Board Anomaly Detection for Efficient Marine Environmental Monitoring
+
+**Authors:** Thomas Goudemant, Clotilde Szywala, Benjamin Francesconi, Michelle Aubrun, Yves Bobichon, Marjorie Bellizzi, Adrien Girard
+
+**Published:** 2026-10-02
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 59
+**My Score:** 38
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.31507v1
+**DOI:** 10.5281/zenodo.13850918
 
-**Paper link:** http://arxiv.org/abs/2609.31507v1
+**arXiv ID:** 2610.03649v1
 
-**PDF link:** https://arxiv.org/pdf/2609.31507v1
+**Paper link:** http://arxiv.org/abs/2610.03649v1
+
+**PDF link:** https://arxiv.org/pdf/2610.03649v1
 
 **Abstract:**
 
-Urban uncrewed aerial vehicle (UAV) vision-language navigation (VLN) requires agents to follow instructions across extended urban spaces, inherently demanding long-term memory and geospatial grounding. However, scaling existing benchmarks remains difficult because of their reliance on costly reconstructed 3D assets, limiting geographic diversity and episode scale. To address this, we introduce SatNav, a scalable, long-horizon UAV VLN benchmark built from high-resolution satellite imagery. SatNav targets city-level navigation missions and uses satellite crops as approximations of UAV nadir views for visual observations. Through an automated cue-to-episode pipeline, SatNav constructs 118K episodes from 59 scenes across 18 cities, with an average trajectory length of 379 m. To stress-test long-horizon memory and geospatial reasoning, SatNav defines three task families: Boundary, Landmark, and Route, targeting loop progress tracking, landmark-based spatial grounding, and route following with counting cues. Benchmarking classical VLN agents and recent agents based on large vision-language models (LVLMs) on SatNav shows that city-scale navigation remains challenging. We further introduce SwiftVLN, a modular framework with switchable memory components, and conduct systematic memory-design ablations. Finally, satellite-to-UAV transfer experiments show that satellite-trained navigation models can operate on real-flight UAV observations, showing the practical relevance of SatNav. Our project page: https://eku127.github.io/SatNav/
+Marine ecosystems are impacted by various threats such as oil spills, algal blooms, and sediment floods, which disrupt habitats, wildlife, and human activities. Advances in satellite imagery and Artificial Intelligence (AI) have enhanced our capabilities for early detection and mitigation of such hazards. In this paper, we propose a marine event detection pipeline for Earth observation satellites equipped with multi- or hyperspectral sensors. Our approach includes a self-supervised neural network encoder that compresses satellite images into a reduced latent space, enabling efficient onboard processing. A machine learning anomaly detection model identifies deviations from normal sea patterns to detect environmental anomalies. We compare its performance against traditional algorithms such as Isolation Forest, One-Class Support Vector Machine and Local Outlier Factors. Our lightweight, resource-efficient pipeline is optimized for deployment on satellites with limited computational resources, ranging from embedded CPUs to AI hardware accelerators. By prioritizing the transmission of critical information, our solution enhances system responsiveness and optimizes satellite communication bandwidth. Demonstrated through current integration across multiple missions, including European Space Agency's (ESA) Phisat-2 mission and Microsoft/Thales Alenia Space IMAGIN-e mission, our pipeline aims to improve marine environmental monitoring by providing timely alerts and efficient data reduction.
 
 **Why this may be relevant:**
 
-It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows.
+It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
-### 2. GraphWrit3R: End-to-End 3D Scene Graph Writing
+### 4. A Vision-Language Model (VLM)-based Pipeline for End-to-End Procedural Modeling of Field-Grown Maize from Point Clouds
 
-**Authors:** Luka Milivojevic, Nikola Popovic, Sayan Deb Sarkar, Sebastian Koch, Iro Armeni, Luc Van Gool, Danda Pani Paudel
+**Authors:** Mozhgan Hadadi, Talukder Z. Jubery, Adarsh Krishnamurthy, Baskar Ganapathysubramanian
 
-**Published:** 2026-09-25
+**Published:** 2026-10-02
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 37
+**My Score:** 32
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.31595v1
+**arXiv ID:** 2610.03468v1
 
-**Paper link:** http://arxiv.org/abs/2609.31595v1
+**Paper link:** http://arxiv.org/abs/2610.03468v1
 
-**PDF link:** https://arxiv.org/pdf/2609.31595v1
-
-**Abstract:**
-
-3D scene graphs provide a structured representation of complex environments by encoding objects, their semantic attributes, and the spatial and functional relationships between them. Current approaches for 3D scene graph generation suffer from several fundamental limitations. They rely on complex multi-stage pipelines with explicit intermediate representations, making systems fragile and prone to error propagation. They assume access to ground-truth object annotations during inference, which deviates from real-world scenarios. They depend on proprietary models, hindering open-source deployment, or incur prohibitively slow inference. We present GraphWrit3R, a simple end-to-end method that takes a 3D point cloud, Gaussian Splats, or a combination of both as input, and directly outputs a complete scene graph as a structured JSON script. The graph lists all objects, their semantic attributes, and the relationships between them, while avoiding all of the above mentioned limitations. The choice of multiple input modalities is purely for versatility, allowing a single set of weights to handle diverse scenarios. Point cloud inputs are encoded via Sonata and Gaussian Splat inputs via Chorus, with both modalities projected onto a shared voxel grid and fused through a novel per-voxel contrastive alignment loss before being decoded by a large language model. As a natural consequence of the LLM, GraphWrit3R also supports open-vocabulary querying. On the 3DSSG benchmark, our method achieves state-of-the-art performance on object class, predicate, and triplet recall, outperforming methods that rely on ground-truth object annotations during inference. We further provide qualitative results and analyze different input modality configurations, contrastive loss formulations, and token fusion strategies.
-
-**Why this may be relevant:**
-
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
-
----
-
-### 3. Electric Vehicle Charging Station Location Selection using Geospatial Artificial Intelligence (GeoAI)
-
-**Authors:** Eun Hak Lee, Euntak Lee
-
-**Published:** 2026-09-24
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 36
-
-**Venue importance score included:** 0
-
-**DOI:** 10.1016/j.tre.2026.104930
-
-**arXiv ID:** 2609.30417v1
-
-**Paper link:** http://arxiv.org/abs/2609.30417v1
-
-**PDF link:** https://arxiv.org/pdf/2609.30417v1
+**PDF link:** https://arxiv.org/pdf/2610.03468v1
 
 **Abstract:**
 
-As electric vehicle (EV) adoption increases, ensuring efficient and well-distributed charging infrastructure has become a critical challenge. While many EV charging station location problem (CSLP) studies focus on minimizing costs or travel distance, it is crucial to consider the surrounding geospatial characteristics of existing stations that influence operational performance. This study proposes a geospatial artificial intelligence (GeoAI)-based framework that integrates high-dimensional EV-related geospatial data, including EV usage, land-use, population, and traffic attributes. We incorporate a variational autoencoder (VAE) and a graph convolutional network (GCN) into the model to capture similarities among existing charging stations, and to identify suitable locations for future stations. The VAE compresses high-dimensional EV input data into a low-dimensional latent space, and the GCN uses this latent representation to predict locations suitable for charging stations. Using real-world data from Bryan-College Station, Texas, US, the proposed model outperforms state-of-the-art baselines, achieving an F1-score of 0.87 in distinguishing existing station locations from non-station locations. The model also identifies 27 additional candidate locations that show geospatial characteristics similar to those of existing stations, based on a similarity score. We further evaluate two policy implementation scenarios, maximizing geospatial similarity and minimizing total travel distance, each yielding different outcomes aligned with distinct strategic objectives. The findings highlight the importance of incorporating spatial context into CSLP and provide valuable insights for future EV infrastructure planning, promoting both efficiency and accessibility in the rapidly growing electric mobility sector.
+Editable 3D models of field-grown crops support high-throughput phenotyping and in silico breeding trials, but building them from scanned point clouds requires organ-level segmentation and fitting. Procedural generators can turn an organ-level parameter set into an analysis-suitable 3D model, but obtaining that set requires hours of manual tuning per plant or segmentation models trained on species-specific labels. We present an automated pipeline that reconstructs procedural maize models from raw 3D point clouds without manual tuning or species-specific training data. A multimodal vision-language model (VLM) annotates leaf midlines in rendered orthographic views. Deterministic geometric algorithms back-project the annotations onto the point cloud, merge them into 3D leaves by cross-view consensus, and grow the midlines to full blades on an orientation-weighted surface graph. Measured organ parameters populate a plant descriptor for a Non-Uniform Rational B-Spline (NURBS)-based procedural model generator. Each leaf surface is then refined against its scan points by differentiable NURBS fitting. The pipeline reached a median whole-plant Chamfer distance of 5.4 mm on 100 genotypically diverse field-grown maize plants from the MaizeField3D dataset. The reconstructions were closer to the scans than those of an earlier semi-automated pipeline based on manual annotations. The pipeline recovered 1,017 of 1,023 (99.4%) curated reference leaves at an intersection-over-union of at least 0.5 without using those labels as input. These results show that VLM annotations become usable organ-level measurements when downstream geometric stages can correct them. This makes automated generation of editable 3D plant assets feasible at the scale of modern phenotyping experiments.
 
 **Why this may be relevant:**
 
-It is related to urban planning, infrastructure, or built-environment analysis.
+It may be useful for multimodal geospatial understanding using image-text models. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
 
 ---
 
-### 4. EAServe: Encode-Aware Disaggregated Serving for Multimodal Large Language Models
+### 5. CLIMB: Confidence-Guided Complementary Evidence for Multimodal Retrieval-Augmented Generation
 
-**Authors:** Kunxiong Zhu, Zhihao Shu, Hangyu Zheng, Minghai Qin, Miao Yin, Gagan Agrawal, Wei Niu
+**Authors:** Hang Gao, Wujiang Xu, Zhixing Zhang, Kai Mei, Jingyi Yang, Dimitris N. Metaxas
 
-**Published:** 2026-09-25
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 31
-
-**Venue importance score included:** 0
-
-**DOI:** 10.1145/3838684.3846886
-
-**arXiv ID:** 2609.31551v1
-
-**Paper link:** http://arxiv.org/abs/2609.31551v1
-
-**PDF link:** https://arxiv.org/pdf/2609.31551v1
-
-**Abstract:**
-
-Disaggregating the two stages, Prefill and Decode, onto separate GPU pools is now a standard optimization for (text-only) LLM serving. However, multimodal LLMs (MLLMs), which add a third phase, Encode, pose new challenges for resource allocation. Encode turns images, video, or audio into embeddings that the language model can consume, yielding a three-stage Encode-Prefill-Decode (EPD) pipeline. Existing frameworks offer only partial answers: text-only PD systems lack Encode, while EPD frameworks expose it as a separate service without regulating downstream request flow. The pipeline also carries a structural resource imbalance: every request enters through Encode before downstream work can begin, yet per-request execution leaves the encode GPU severely underutilized even at high loads, starving the downstream Prefill and Decode workers. Addressing this, we reposition Encode as the control point of the EPD pipeline, exposing three tightly coupled dimensions: when work enters downstream, where prefill executes, and how the GPU is shared. We instantiate this in EAServe across two co-designed layers. Its runtime manages load-adaptive micro-batching, rate-controlled partial offload to a co-resident prefill worker, and dynamic SM partitioning for predictable co-location. The configuration layer, Hybrid Auto Selection (HAS), navigates the joint space of GPU allocation, encode batch size, and offload ratio by pruning unbalanced allocations with per-stage capacity profiling and refining the remainder through TPE-based Bayesian optimization. Evaluated on three MLLM architectures spanning image, video, and audio, EAServe delivers up to 4.3x and 1.7x higher goodput than NVIDIA Dynamo and vLLM, respectively, under identical SLO constraints, sustains more balanced and higher GPU utilization across the EPD pipeline, and reaches near-optimal configurations faster than baseline search methods.
-
-**Why this may be relevant:**
-
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
-
----
-
-### 5. Enabling a Unified Cross-Domain Representation for Two-Finger Gripper Manipulation via Interaction-Centric Modeling
-
-**Authors:** Guanlin Li, Shifeng Bao, Yihan Zhao, Haitao Shen, Haoyang Li, Chen Zhao, Tong Yang, Jie Tang
-
-**Published:** 2026-09-25
+**Published:** 2026-10-02
 
 **Venue:** arXiv
 
@@ -150,75 +152,15 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.31207v1
+**arXiv ID:** 2610.03421v1
 
-**Paper link:** http://arxiv.org/abs/2609.31207v1
+**Paper link:** http://arxiv.org/abs/2610.03421v1
 
-**PDF link:** https://arxiv.org/pdf/2609.31207v1
-
-**Abstract:**
-
-Achieving robust cross-embodiment generalization in imitation learning demands overcoming a critical representation flaw that inextricably entangles task semantics with hardware-specific visual geometry. We propose an interaction-centric framework that leverages the shared structure of two-finger grippers via a parameterized universal gripper abstraction, yielding a canonical gripper-frame representation. Given language and RGB-D observations, a VLM infers the subtask and grounds an interaction triplet (gripper, held, target), while SAM~2.1 tracks masks to reduce VLM queries. We design concise hybrid features that combine target/collision artificial potential fields for global guidance with segmented gripper-frame point clouds for local geometry, and use a Flow-Matching Transformer to predict smooth 7-DoF action chunks. Experiments in simulation and real-world tasks demonstrate that ours is the first imitation learning approach to simultaneously achieve competitive benchmark scores and extreme cross-embodiment/cross-viewpoint zero-shot sim-to-real transfer to completely distinct, heterogeneous robot platforms.
-
-**Why this may be relevant:**
-
-It may be useful for multimodal geospatial understanding using image-text models. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It may help with cross-city, cross-region, or cross-sensor generalization.
-
----
-
-### 6. WeaveAgent: A Two-Stage Tool-Routing Agent for Ultra-High-Resolution Remote Sensing Imagery
-
-**Authors:** Zhongyu Pang
-
-**Published:** 2026-09-25
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 24
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2609.31234v1
-
-**Paper link:** http://arxiv.org/abs/2609.31234v1
-
-**PDF link:** https://arxiv.org/pdf/2609.31234v1
+**PDF link:** https://arxiv.org/pdf/2610.03421v1
 
 **Abstract:**
 
-Problem. Ultra-high-resolution (UHR) remote sensing with vague user intents has two bottlenecks: visual tokens are expensive, and tool calling must be format-reliable (pretrained models emit zero tool calls zero-shot). Method. WeaveAgent, a two-stage tool-routing agent, decouples routing from visual perception. Stage A is routing-first: emission is trained, not elicited. Stage B executes conditionally: intrinsic queries enter visual answering (full-scene thumbnail; a WeaveEarth-style evidence board as an optional fixed-budget, approx. 5k-token compression interface); extrinsic queries execute tool call on original full-resolution imagery, answering from tool observations in a second, observation-masked round. Training: alignment SFT, then GRPO under reward R_WA2. Results. Alignment SFT lifts extrinsic routing from 0% to 80.75% (323/400); GRPO suppresses 9 intrinsic mis-emissions while tool selection is unchanged. The trained 2B system does not beat the zero-shot 8B baseline overall (0.263 vs. 0.250), a diagnostic contribution. Oracle attribution separates two repair ingredients: loading the observation into context lifts extrinsic answer accuracy from 0.025 to 0.425 under marker-free cross-mode returns, and the two-turn SFT stage adds a further +9.3 points to 0.518 at a small routing cost. A +/- image ablation shows emission suppression is visually grounded, and a query-register matrix shows LLM-rewritten queries cost trained checkpoints 2-11 points. Scope. All training and evaluation use the 5,000 / 3,273 / 1,000-record VagueUHR corpus (600 intrinsic + 400 tool-requiring; the base seeds synthesis and is not used for optimization). Single-pass evidence construction runs at 7.31 s per image on an RTX 4090. Code, data, and evaluation protocols will be released.
-
-**Why this may be relevant:**
-
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 7. Evaluating Cultural Awareness of LLMs for Haitian Creole
-
-**Authors:** Christelle Clervilsson, Yanzhu Guo
-
-**Published:** 2026-09-25
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 21
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2609.31506v1
-
-**Paper link:** http://arxiv.org/abs/2609.31506v1
-
-**PDF link:** https://arxiv.org/pdf/2609.31506v1
-
-**Abstract:**
-
-Large language models (LLMs) exhibit substantial performance disparities between high- and low-resource languages. Beyond lower task performance, they often fail to capture the cultural norms and values of underrepresented communities. In this work, we present the first systematic evaluation of cultural awareness in LLMs for Haitian Creole, a language spoken by millions but severely underrepresented in digital resources. We assess cultural awareness along four complementary dimensions---specificity, bias, diversity, and variation---using a benchmark of culturally salient prompts curated by native speakers in a text infilling setting. Our results reveal a clear gap between cultural awareness in Haitian Creole and higher-resource French, with Haitian performance being more uneven across domains and more affected by French linguistic interference. Story generation further reveals recurring portrayals of Haitian characters through hardship and resilience, showing that even positive characterizations can encode stereotypical narratives. Our code, benchmark, and evaluation framework are publicly available.
+Multimodal large language models (MLLMs) have shown strong visual reasoning abilities, but knowledge-intensive visual question answering often requires external textual evidence beyond the image and the model's parametric knowledge. Existing multimodal RAG systems commonly rely on Top-$K$ retrieval or reranking, which may return redundant passages and provide limited control over whether an answer update is sufficiently supported by the retrieved evidence. We propose \textit{CLIMB}, a training-free inference-time framework for multimodal RAG. CLIMB first constructs a compact complementary evidence pool using an MMR-style objective that balances query relevance and passage-level redundancy. It then performs confidence-controlled refinement within this fixed pool: an R/E/C critic scores passages by relevance, evidence specificity, and cross-modal alignment, while an evidence-grounded confidence estimator accepts an updated answer only when the estimated confidence increases. This design provides a simple stopping criterion and reduces unnecessary refinement without modifying the underlying retriever or MLLM. Experiments on Encyclopedic-VQA and InfoSeek show that CLIMB consistently improves over retrieval-augmented multimodal baselines. Ablations further indicate that complementary pooling, critic-based scoring, and iterative confidence-controlled refinement each contribute to the final performance.
 
 **Why this may be relevant:**
 
@@ -226,29 +168,89 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 ---
 
-### 8. RupeeBias: Auditing Demographic Bias in Indian Economic Guidance from Large Language Models
+### 6. Decoding the Functional Roles of Register and High-Norm Patch Tokens in Vision Transformers
 
-**Authors:** Pavithra P M Nair, Bhavik Talaviya, Shourya Bhushan, Rahul Pankajakshan, Seema Guruvadoo, Avinash Agarwal, Gilad Gressel, Krishnashree Achuthan
+**Authors:** Neel Varma, Andrew Rufail, Dipika Khullar, Vasu Sharma
 
-**Published:** 2026-09-25
+**Published:** 2026-10-02
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 21
+**My Score:** 28
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.31245v1
+**arXiv ID:** 2610.03698v1
 
-**Paper link:** http://arxiv.org/abs/2609.31245v1
+**Paper link:** http://arxiv.org/abs/2610.03698v1
 
-**PDF link:** https://arxiv.org/pdf/2609.31245v1
+**PDF link:** https://arxiv.org/pdf/2610.03698v1
 
 **Abstract:**
 
-Individuals turn to large language models (LLMs) for guidance across a wide range of economic tasks, from comparing loan options and planning savings to deciding what raise to ask for or how much to charge for their services. LLMs are known to reproduce social biases, and biased economic guidance may influence what users believe they are worth, what they ask for, and what they ultimately accept. This risk is especially salient in India, where economic outcomes are shaped by demographic categories such as caste and urban-rural location. Existing LLM bias benchmarks, however, are largely designed around Western demographic categories and therefore miss key axes of economic disparity in the Indian context. We introduce RupeeBias, a benchmark for auditing demographic bias in LLM-generated economic guidance across Indian economic settings. RupeeBias consists of 39,150 prompts spanning four use cases: salary estimation, salary increment estimation, counter-offer recommendation, and service pricing recommendation. The benchmark follows a single-attribute counterfactual design, holding the description of the user's qualifications, experience, or service offering fixed while varying one demographic identifier at a time. RupeeBias covers 87 India-specific demographic identifiers across six axes: caste, religion, regional identity, gender, disability, and urban-rural location, with all prompts constructed in both English and Hinglish. We evaluate nine LLMs on RupeeBias and find systematic demographic disparities across all six axes. For otherwise identical prompts that differ only in demographic identifier, LLM-generated economic outputs differ by 20.2% on average. We publicly release RupeeBias to support future research on demographic bias in LLM-generated economic guidance across India-specific demographic and economic contexts.
+Self-supervised Vision Transformers (ViTs), such as DINOv2, learn rich visual representations, but the functions of their internal tokens remain poorly understood. Recent architectures introduce dedicated register tokens to reduce high-norm out- lier patch tokens that emerge in background re- gions, yet the semantic and functional roles of both token types have not been fully established. In this paper, we analyze these roles by training sparse autoencoders (SAEs) on register-token and outlier-token activations in DINOv2. Using an automated interpretability pipeline, UMAP clus- tering, and CLIP-space cross-checks, we find that register-token features are more strongly associ- ated with high-level semantic concepts. Outlier- token features, by contrast, are more often associ- ated with lower-level structural, background, and texture-dominant patterns. Causal ablations fur- ther reveal a substantial functional asymmetry: disrupting top-activating register-derived features produces a 48.17% drop in representation cosine similarity, whereas disrupting outlier-derived fea- tures produces only a 0.31% drop. Together, our results provide evidence for token specialization in self-supervised ViTs.
+
+**Why this may be relevant:**
+
+It matched the geospatial machine learning search criteria and may be worth screening.
+
+---
+
+### 7. ForestQuery: Boundary-Aware and Spatially Anchored Query Learning for Unified Forest Point Cloud Segmentation
+
+**Authors:** Zhihao Zhan, Le Tao, Yifei Tian, Xin Liu, Jie Yuan
+
+**Published:** 2026-10-02
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 28
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2610.03403v1
+
+**Paper link:** http://arxiv.org/abs/2610.03403v1
+
+**PDF link:** https://arxiv.org/pdf/2610.03403v1
+
+**Abstract:**
+
+Forest point cloud segmentation is fundamental for fine-grained 3D forest scene understanding, yet remains challenging due to irregular tree structures, severe occlusions, density variations, and ambiguous instance boundaries. Recent query-based forest segmentation methods have shown promise for unified semantic and instance prediction, but they still insufficiently exploit forest-specific spatial structure and account for boundary uncertainty. In this paper, we propose ForestQuery, a boundary-aware and spatially anchored query learning framework for unified forest point cloud segmentation. ForestQuery enhances instance and semantic query learning through two complementary designs. Specifically, boundary uncertainty is explicitly modeled to guide reliable instance query construction and modulate query optimization through adaptive loss reweighting. Meanwhile, spatially anchored semantic query enhancement (SA-SQE) introduces learnable 3D anchors encoding forest vertical stratification priors to enrich semantic queries with explicit spatial references. We evaluate ForestQuery on multiple public forest point cloud benchmarks and a self-collected annotated real-world dataset. Extensive experiments demonstrate consistent improvements in both individual-tree segmentation and semantic segmentation across diverse forest scenes. Code and data are publicly available at https://zhan994.github.io/ForestQuery
+
+**Why this may be relevant:**
+
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis.
+
+---
+
+### 8. Objects Without Morphisms: What LLMs for Mathematics Do Not Represent
+
+**Authors:** Yanli Wang, Suijin Wang, Xiaopeng Yuan, Haohan Wang
+
+**Published:** 2026-10-02
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 26
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2610.03551v1
+
+**Paper link:** http://arxiv.org/abs/2610.03551v1
+
+**PDF link:** https://arxiv.org/pdf/2610.03551v1
+
+**Abstract:**
+
+Large language models (LLMs) have reached expert-level performance on competition mathematics largely through the volume of search placed around them: candidate solutions are sampled in quantity and retained only when an external criterion accepts them. Such a procedure improves the outcome that survives it while leaving untouched what the model represents. We examine that question where no external criterion exists: translating statements between the dialects of neighbouring subfields, where fidelity turns on the level of generality at which content is asserted. The source leaves that level implicit in its vocabulary, so a faithful translation must recover it from the relation between the theories. We introduce an instrument that codes truth, content and scope in separate blind queues, with a judge-free measure of whether a rewrite states the hypothesis implicit in its source, and establish its sensitivity with a planted-positive control. Across seven models from four families, translating towards the general framing widens the domain of quantification in 60.6% of rewrites and narrows it in none; translating towards the concrete framing narrows it in 28.3% and widens it in 0.3%. The hypothesis that would prevent it is stated in 21.6% of model rewrites and 4.2% of human statements. Capability does not govern the asymmetry: it appears in every model tested, and the most capable widens least. It replicates on the half of the benchmark held out by a pre-registered rule, and on statements written by mathematicians. Instructing a model to state every hypothesis it requires raises that rate but not its sensitivity to direction. We argue that these systems have acquired an object-level correspondence between subfield vocabularies without the constraint under which a translation between theories carries hypotheses to hypotheses.
 
 **Why this may be relevant:**
 
@@ -256,41 +258,11 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 ---
 
-### 9. Same Text, Different Numbers: The Divergence of LLM-Based Measures
+### 9. From Wildfire Severity to Snow Persistence: A Multisource GeoAI Study of the 2020 Creek Fire
 
-**Authors:** Hamid Boustanifar, Sasan Mansouri
+**Authors:** Parastoo Farajpoor, Mohammadreza Narimani
 
-**Published:** 2026-09-25
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 21
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2609.31013v1
-
-**Paper link:** http://arxiv.org/abs/2609.31013v1
-
-**PDF link:** https://arxiv.org/pdf/2609.31013v1
-
-**Abstract:**
-
-Researchers increasingly use generative large language models (LLMs) to convert corporate text into empirical variables. We examine the extent to which LLM-based textual measures are invariant to model choice using thirteen measures, including sentiment, management clarity, uncertainty, answer specificity, and climate and political risk. Seven LLMs from different providers score earnings call transcripts of S&P 500 companies on these constructs. Cross-model rank correlations average only 0.52, and transcript-level differences common across providers account for only 34% of total score variation. Cross-model disagreement does not predict subsequent analyst or market disagreement, consistent with a substantial model-specific component rather than common ambiguity in the underlying disclosure. Model choice significantly affects downstream inference, with coefficient magnitudes, signs, and statistical significance varying substantially across models. Averaging across providers makes transcript rankings more stable for most constructs, but score levels remain sensitive to the models included in the ensemble. LLM-generated variables should therefore be treated as model-contingent measurements and validated across providers.
-
-**Why this may be relevant:**
-
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
-
----
-
-### 10. Bandwidth, Latency, and 400 Million Kilometers: The Case for Mars-Local Compute
-
-**Authors:** Maleeha Masood, Indranil Gupta, Deepak Vasisht
-
-**Published:** 2026-09-25
+**Published:** 2026-09-28
 
 **Venue:** arXiv
 
@@ -300,19 +272,49 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2609.31566v1
+**arXiv ID:** 2609.36345v1
 
-**Paper link:** http://arxiv.org/abs/2609.31566v1
+**Paper link:** http://arxiv.org/abs/2609.36345v1
 
-**PDF link:** https://arxiv.org/pdf/2609.31566v1
+**PDF link:** https://arxiv.org/pdf/2609.36345v1
 
 **Abstract:**
 
-There have been recent proposals for human settlements on Mars in 2030s. Any human activity on Mars must be preceded by extensive robotic exploration. However, Mars exploration is bottlenecked by the low bandwidth, intermittent Mars-Earth link. For example, HiRISE, a high-resolution camera onboard the Martian orbiter MRO imaged less than 3% of Mars over eleven years, even though MRO's low resolution Context Camera had mapped more than 99% of Mars in that time. We present a systems case for shared compute for Mars exploration. Such Mars-local compute, paired with advances in computer vision and AI, can enable large volumes of data to be collected and processed on Mars while sending periodic updates, insights, and selective datasets to Earth. To overcome the lack of surface infrastructure on Mars, we propose a two-tier in-orbit deployment of computational satellites that provides consistent coverage and bandwidth. Our analysis shows that the proposed deployment can start small: one areostationary node makes compute reachable from all active Mars missions, two additional areostationary nodes can extend this coverage to roughly 90% of the planet, while low-Mars-orbit nodes add high-rate surface links and compute capacity where demand grows.
+Accurate prediction of post-fire snow conditions does not necessarily establish how wildfire changed those conditions. We developed an explainable geospatial artificial intelligence framework combining multisource Earth observations, meteorological information, and matched before-after comparisons to examine seasonal snow persistence following the 2020 Creek Fire in California's Sierra Nevada. Harmonized Landsat Sentinel-2 observations were used to estimate the fraction of clear-sky observations containing snow during October-July for eleven water years, 2016-2026, on a 500 m analysis grid. We matched 3,778 snow-zone cells inside the fire perimeter to comparable unburned controls using terrain and pre-fire snow conditions; absolute standardized mean differences after matching were no greater than 0.047. HLS persistence agreed closely with MODIS, with a mean annual spatial correlation of 0.947. The landscape-average before-after control-impact contrast was +0.0017, with a year-level 95% confidence interval of -0.023 to +0.027. A stronger response emerged in the highest burn-severity class, where observed persistence increased by 0.026 relative to matched controls, equivalent to 2.6 percentage points. Under 5 km spatial cross-validation, XGBoost predicted raw post-fire persistence with an out-of-fold coefficient of determination of 0.811, whereas predictive skill for the fire-adjusted anomaly reached 0.046. Elevation and temperature together accounted for 65.7% of mean absolute model attribution. These findings distinguish a severity-associated optical snow response from the terrain-climate relationships that dominate predictive skill. Combining matched comparisons with explainable GeoAI provides a practical framework for forest monitoring that separates accurate environmental mapping from inference about disturbance effects.
 
 **Why this may be relevant:**
 
-It is directly related to remote sensing or Earth observation workflows. It is related to urban planning, infrastructure, or built-environment analysis.
+It is directly related to remote sensing or Earth observation workflows.
+
+---
+
+### 10. A Residual Tree Gaussian Process Modeling Framework for High-Dimensional Data
+
+**Authors:** Pulong Ma, Li Ma
+
+**Published:** 2026-10-02
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 14
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2610.02893v1
+
+**Paper link:** http://arxiv.org/abs/2610.02893v1
+
+**PDF link:** https://arxiv.org/pdf/2610.02893v1
+
+**Abstract:**
+
+With the advance of measurement technologies and increasing computing power, large spatial data with heterogeneous structures are often collected over high-dimensional domains. Existing Gaussian process (GP) models and computational strategies are often inadequate for analyzing such datasets in multi-dimensional domains. To address these challenges, we develop a Bayesian residual tree GP methodology called ResTGP for large spatial data with potentially heterogeneous structures in multi-dimensional domains. The key idea is to decompose a Gaussian process at a cascade of resolutions along a dyadic tree through iteratively computing predictive and residual processes so that the residual process on each tree node, both interior and leaf, becomes sufficient for the finer-level dependency within that node. This allows characterization of the underlying covariance structure in a flexible, multi-scale manner while achieving divide-and-conquer on the data domain, which leads to computational efficiency. To allow efficient tree inference, we introduce a computational strategy for Bayesian inference based on recursive message passing, which scales linearly with the sample size given the tree. This paper also proves posterior consistency of the model for estimating continuous functions in a nonparametric regression framework. Extensive numerical examples and the storm surge application confirm the advantages of the proposed method.
+
+**Why this may be relevant:**
+
+It connects to urban tree detection, canopy mapping, or vegetation analysis.
 
 ---
 
