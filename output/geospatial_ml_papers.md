@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-10-05 to 2026-10-12
+**Search window:** 2026-10-12 to 2026-10-19
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,61 +12,211 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. Revisiting the Task of Building Damage Assessment by Satellite Imaging
+### 1. GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation
 
-**Authors:** Anthony Cioppa, Virgile Blua, Sébastien Piérard, Pietro Ceccato, Marc Van Droogenbroeck
+**Authors:** Cheng Fan, Han Wu, Tingzhang Luo, Minjing Dong, Yehui Tang, Jianyuan Guo
 
-**Published:** 2026-10-09
+**Published:** 2026-10-16
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 81
+**My Score:** 52
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.13857v1
+**arXiv ID:** 2610.23416v1
 
-**Paper link:** http://arxiv.org/abs/2610.13857v1
+**Paper link:** http://arxiv.org/abs/2610.23416v1
 
-**PDF link:** https://arxiv.org/pdf/2610.13857v1
+**PDF link:** https://arxiv.org/pdf/2610.23416v1
 
 **Abstract:**
 
-Natural disasters such as earthquakes, tropical storms, and floods cause extensive damage to buildings, and rapid, reliable damage maps are essential to guide emergency response. Automating this task, referred to as building damage assessment (BDA), from satellite imagery, has become an active research topic at the intersection of remote sensing, computer vision, and machine learning, particularly since supervised deep learning methods were shown to outperform earlier handcrafted approaches. Yet, despite a decade of intense activity and the release of several large-scale datasets, the field lacks a shared foundation. This chapter revisits the task of BDA from first principles, organized around three pillars: data, evaluation, and methods. We first clarify the candidate task for- mulations and argue for a sensor-agnostic, instance-based definition that tolerates missing pre-event imagery. We then review existing datasets along the axes of sensing modality, temporal configuration, and geographic coverage. On the evaluation side, we show that prevailing practices, largely based on a single aggregate score, are theoretically fragile, and we lay the foundations of a more informative, ranking-based, multi-score protocol. We further review methods ranging from task-specific deep networks to recent Earth observation foundation models, noticing that generalization to unseen events and regions remains an open difficulty. Finally, we discuss how these elements can inform the organization of a BDA challenge, including cross-validation, challenge, and private data-sharing setups designed to build trust between developers and users.
+Multimodal Large Language Models (MLLMs) have significantly advanced instruction-driven perception through the "Embedding-as-Mask" paradigm. However, extending this capability to Remote Sensing (RS) reasoning segmentation remains exceptionally challenging under cluttered geographical contexts and extreme scale variations, often leading to Spatial Fidelity Degradation and Target Misidentification. We identify a critical yet underexplored bottleneck: the sequential alienation of the segmentation token [SEG] from its initial visual grounding within the autoregressive generation paradigm. Produced only at the end of long reasoning chains, [SEG] relies on visual evidence that has been progressively diluted by linguistic abstraction and autoregressive noise. This information decay is particularly catastrophic for RS targets with minuscule pixel footprints, where even marginal fidelity loss leads to localization failure. To address these bottlenecks, we propose GeoReason, a novel framework designed to fortify logical deduction and preserve spatial integrity. First, we introduce an Anticipatory Prior mechanism that injects the [SEG] token directly into the initial user query, shifting it from a terminal output to a primary condition. This paradigm shift transforms the token into a persistent spatial anchor, preventing information decay during long-form linguistic inference. Second, we enhance visual reasoning via a Location-aware Chain-of-Thought (CoT) that enforces coarse-to-fine localization using bounding boxes, coupled with a Latent Patch-to-Token Alignment (PTA) Loss that explicitly aligns the latent segmentation token with physical RS textures. Extensive experiments demonstrate that GeoReason consistently outperforms state-of-the-art methods on the Earthreason and RRSIS-D benchmarks. Code is available at https://github.com/Fanc0126/GeoReason.
 
 **Why this may be relevant:**
 
-It may help track foundation-model directions for Earth observation or geospatial AI. It is directly related to remote sensing or Earth observation workflows. It may help with cross-city, cross-region, or cross-sensor generalization.
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It is directly related to remote sensing or Earth observation workflows.
 
 ---
 
-### 2. GeoFitBench-LLM: A Benchmark for Assessing Large Language Models' Capabilities in Geospatial Data Requirements Elicitation for Geo-Analytic Tasks
+### 2. Aero‐VLM: Vision‐Language Guided Oriented Aircraft Detection for Remote Sensing Imagery
 
-**Authors:** Amirhossein Vahdat, Thierry Badard, Luc Lamontagne
+**Authors:** Faryal Aurooj Nasir, Khurram Khurshid, Syeda Khan, Madiha Tahir, Waqas ur Rahman, Syed Ali Irtaza
 
-**Published:** 2026-10-08
+**Published:** 2026-10-13
+
+**Venue:** Expert systems
+
+**Found via:** Semantic Scholar
+
+**My Score:** 51
+
+**Venue importance score included:** 0
+
+**Semantic Scholar citations:** 0
+
+**DOI:** 10.1111/exsy.70450
+
+**Paper link:** https://www.semanticscholar.org/paper/2b2a81ca407175d0adbb824dc70b9e87acf3b66b
+
+**PDF link:** https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/exsy.70450
+
+**Abstract:**
+
+Fine‐grained aircraft detection in remote sensing (RS) imagery is challenged by limited labelled data, domain shifts, high intra‐class similarity and complex environmental conditions. Conventional detectors rely heavily on dense supervision, whereas vision–language models (VLMs) often lack the geometric precision required for accurate localization in aerial scenes. To address these challenges, we propose Aero‐VLM, a hybrid CNN–Transformer framework that combines self‐supervised visual representation learning with pretrained vision–language semantic embeddings for data‐efficient fine‐grained aircraft detection. An oriented detection head with knowledge distillation is integrated with the vision–language representation to improve geometric localization and support efficient inference. We further introduce Aero‐RSI, a 10,000‐image high‐resolution benchmark comprising ten visually similar aircraft categories for fine‐grained detection. Aero‐VLM achieves 64.6% mAP@50 in zero‐shot evaluation on unseen classes, outperforming CLIP, BLIP‐2, Grounding DINO and VisionLLM by up to 44.1 percentage points. With only 10 labelled samples per class, Aero‐VLM improves mAP@50 by 16.1 percentage points, whereas competing models achieve gains of less than 10 percentage points. Cross‐domain evaluation on DOTA, MTARSI and FAIR1M demonstrates strong generalization without additional fine‐tuning, with Aero‐VLM achieving gains of up to 11.0 percentage points over CNN‐based detectors and up to 46.0 percentage points over adapted VLMs. Under full supervision, Aero‐VLM achieves 90.2% mAP@50, exceeding YOLOv11s by 2.5 percentage points and Grounding DINO by 39.7 percentage points. Despite a 33% increase in inference latency relative to YOLOv11s, Aero‐VLM requires approximately 45% less inference time than Grounding DINO, demonstrating a favourable accuracy–efficiency trade‐off.
+
+**Why this may be relevant:**
+
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows. It may help with cross-city, cross-region, or cross-sensor generalization.
+
+---
+
+### 3. FloodVLM-Pix: Language-Guided Pixel-Level Flood Understanding
+
+**Authors:** Chengyang Zhang, Zhihao Wang, Zhiyu Long, Xueqian Wang, Quanming Yao, Wei Wu, Gang Li
+
+**Published:** 2026-10-16
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 53
+**My Score:** 40
 
 **Venue importance score included:** 0
 
-**DOI:** 10.5281/zenodo.20129011
+**arXiv ID:** 2610.23377v1
 
-**arXiv ID:** 2610.12669v1
+**Paper link:** http://arxiv.org/abs/2610.23377v1
 
-**Paper link:** http://arxiv.org/abs/2610.12669v1
-
-**PDF link:** https://arxiv.org/pdf/2610.12669v1
+**PDF link:** https://arxiv.org/pdf/2610.23377v1
 
 **Abstract:**
 
-Large language models are becoming central to GeoAI systems, yet their evaluation rarely considers the elicitation of geospatial data requirements. This omission is critical as retrieval oriented geo-analytic tasks cannot be supported reliably without first identifying the necessary datasets and constraints. GeoFitBench-LLM is introduced as a benchmark for assessing whether LLMs can infer the datasets, the supporting resources and the constraints required by geo-analytic requests in natural language. The benchmark is structured around two reasoning dimensions, Spatio-Temporal Relational and Semantic Grounding, reflecting long-standing challenges in geospatial information retrieval and related natural language tasks. Ground truth requirements are encoded in a fixed, provider-independent schema for reproducible evaluation of resource identification and attribute-level specification. Experiments on seven models under minimal prompting indicate that identifying the necessary resources is often achievable, with GPT-5.4 Thinking achieving the best result by recovering the complete set of resources in 66.67% of benchmark requests. Results further indicate that accurate fitness-for-use specification remains more difficult as inferential demands increase.
+As climate change intensifies, floods are becoming more frequent and destructive, making accurate flood understanding an urgent priority. However, existing vision-language models perform poorly on flood-related tasks, suffering from attentional bias and inaccurate descriptions of flood magnitude. To bridge this gap, we construct the first large-scale remote sensing flood multi-modal benchmark that supports language-level flood understanding and pixel-level flood segmentation. The benchmark contains 131,200 flood image patches and corresponding 443,100 textual descriptions for flood severity and evolution. Based on this benchmark, we propose FloodVLM-Pix, a language-guided pixel-level flood understanding model that includes a flood prior module and a multi-temporal flood pixel decoder to achieve accurate flood understanding. The flood prior module automatically distills sub-region flood spatial priors and inputs priors into FloodVLM-Pix, solving the attentional bias problem in flood language understanding. The flood pixel decoder introduces a novel general-specific feature fusion mechanism to address performance degradation caused by interference (e.g., clouds or mountain shadows) during flood segmentation. Experiments on FloodVL-Pix demonstrate that FloodVLM-Pix improves both flood description quality and pixel-level flood segmentation performance compared with state-of-the-art VLMs and flood segmentation models. Our code and data will be released at https://github.com/Haomiaoyanmeng/FloodPix.
+
+**Why this may be relevant:**
+
+It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows.
+
+---
+
+### 4. ShadowCast: On-the-Fly Context-Aware Shadow Augmentation for Remote Sensing Image Segmentation
+
+**Authors:** Yechan Kim, Dongho Yoon, Jongmin Joo, JongHyun Park, Moongu Jeon
+
+**Published:** 2026-10-16
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 29
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2610.23440v1
+
+**Paper link:** http://arxiv.org/abs/2610.23440v1
+
+**PDF link:** https://arxiv.org/pdf/2610.23440v1
+
+**Abstract:**
+
+Shadows cast by elevated objects alter the spectral appearance and obscure the boundaries of objects in remote sensing images, thereby degrading semantic segmentation performance. Most existing approaches handle shadows as degradations to be detected and removed, requiring additional costs from dedicated networks and shadow-specific annotations. We propose ShadowCast, which takes the opposite approach: it synthesizes shadows and injects them during training for remote sensing segmentation. It extracts masks of elevated objects, such as buildings and trees, directly from the segmentation labels and estimates an image-specific cast-shadow direction cue by probing the brightness around them. It then projects synthetic shadows along the inferred cast-shadow direction, requiring no learned network and no acquisition metadata. Experiments on three widely used remote sensing benchmarks, Vaihingen, Potsdam, and LoveDA, show that ShadowCast consistently outperforms the baseline across diverse state-of-the-art segmentation architectures. Moreover, it brings additional performance gains when combined with standard augmentation and regularization techniques, indicating that stochastic shadow injection serves as a simple and complementary augmentation strategy for remote sensing segmentation.
+
+**Why this may be relevant:**
+
+It is directly related to remote sensing or Earth observation workflows. It connects to urban tree detection, canopy mapping, or vegetation analysis.
+
+---
+
+### 5. Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize
+
+**Authors:** Chashi Mahiul Islam, Samuel Jacob Chacko, Mao Nishino, Canlin Zhang, Xiuwen Liu
+
+**Published:** 2026-10-16
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 20
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2610.23716v1
+
+**Paper link:** http://arxiv.org/abs/2610.23716v1
+
+**PDF link:** https://arxiv.org/pdf/2610.23716v1
+
+**Abstract:**
+
+Deep neural networks demonstrate remarkable generalization despite being highly over-parameterized, challenging traditional statistical learning theories. While several theoretical paradigms such as margin-based bounds, PAC-Bayesian analyses, and neural tangent kernels provide global explanations, they often lack mechanistic insight into how generalization emerges from training dynamics. We introduce Neural Expansion, a unified geometric framework that characterizes generalization through the expansion of directionally-selective ray coverage in the input space. Using Generalization Intervals (GIs), we quantify direction-specific regions around training samples where the model's predictions remain stable. Our extensive empirical studies across diverse architectures and datasets reveal that training leads to progressive expansion of ray coverage, particularly along directions with low Jacobian singular values. This mechanism helps explain a large fraction of correctly classified test inputs, adversarial examples, and even mislabeled or out-of-distribution samples through the geometry of ray coverage rather than instance-level memorization. By connecting input-space curvature to predictive behavior, our framework provides a mechanistic foundation that complements existing global theories of deep learning.
+
+**Why this may be relevant:**
+
+It may help with cross-city, cross-region, or cross-sensor generalization.
+
+---
+
+### 6. Fluid-Spatiotemporal Stochastic Geometry for Information Flow in Non-Stationary Fields: Kinematics and Field Reconstruction
+
+**Authors:** Wen-Yu Dong, Weiwei Jiang, Song Zhao, Qi Bi, Sheng Chen
+
+**Published:** 2026-10-16
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 19
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2610.23277v1
+
+**Paper link:** http://arxiv.org/abs/2610.23277v1
+
+**PDF link:** https://arxiv.org/pdf/2610.23277v1
+
+**Abstract:**
+
+Classical stochastic geometry primarily addresses forward analysis by prescribing spatial point-process laws and mobility models. It does not directly address the inverse problem of recovering directional macroscopic transport from aggregate density evolution in non-stationary spatial networks. This paper develops the kinematic foundation of fluid-spatiotemporal stochastic geometry (F-STSG), representing an evolving mobile population by an intensity field under an assumed continuum limit while retaining the network infrastructure as a discrete spatial measure. We formulate macroscopic transport reconstruction as an inverse boundary value problem. Under a strictly positive bounded intensity and compatible source and boundary data, an instantaneous weighted minimum-energy criterion selects a unique velocity representative from the admissible class. The reconstruction reduces to a weighted elliptic Neumann problem and separates density-identifiable transport from weighted-solenoidal circulation that is not identifiable from density evolution alone. We further derive the information flux, interface transport, velocity-divergence relation, and centroid dynamics. Numerical experiments examine reconstruction consistency and sensitivity, while the public New Era of Urban Traffic Monitoring with Aerial Footage (pNEUMA) dataset provides held-out validation of internal transport. A separate unmanned aerial vehicle (UAV) study evaluates the centroid as a causal downstream control reference under observation delay, motion constraints, and execution perturbations.
+
+**Why this may be relevant:**
+
+It is related to urban planning, infrastructure, or built-environment analysis.
+
+---
+
+### 7. Beyond the Benchmark: Conditioning, Domains and Failure Modes of Qwen3-TTS
+
+**Authors:** Séverin Baroudi, Yanis Labrak, Petr Motlicek, Hervé Bredin, Ricard Marxer
+
+**Published:** 2026-10-16
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 17
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2610.23678v1
+
+**Paper link:** http://arxiv.org/abs/2610.23678v1
+
+**PDF link:** https://arxiv.org/pdf/2610.23678v1
+
+**Abstract:**
+
+Qwen3-TTS reports state-of-the-art zero-shot voice cloning, but its technical report leaves open how the model should be conditioned, how it behaves outside read speech, and how it fails. We characterise its two cloning interfaces, in-context learning (ICL) and X-Vector, against Chatterbox, XTTS-v2 and F5-TTS on read, meeting, emotional and air-traffic-control (ATC) speech, using eighteen objective measures, an LLM judge, a spoofing countermeasure and a listening test. Neither interface dominates: ICL clones timbre more closely from correctly transcribed references, X-Vector clones timing, and ICL degrades sharply when a short reference transcript is wrong. Domain explains four times more variance than system choice. Qwen3-TTS leads on intelligibility and pitch register but trails on prosody, and the objective measures rank systems differently from listeners. An off-the-shelf countermeasure flags its clones no more often than genuine recordings, and on ATC radio it fails for every system. Code and audio are released.
 
 **Why this may be relevant:**
 
@@ -74,241 +224,93 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 ---
 
-### 3. Shortcut Learning in Geospatial Foundation Model Embeddings for Cross-Disaster Damage Assessment
+### 8. The Italian lawmaking process: a unified and structured dataset
 
-**Authors:** Ali Shibli, Andrea Nascetti, Yifang Ban
+**Authors:** Matilde Contestabile, Chiara Ferrara, Giovanni Parrillo, Lorenzo Emer, Andrea Vandin
 
-**Published:** 2026-10-09
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 45
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2610.13766v1
-
-**Paper link:** http://arxiv.org/abs/2610.13766v1
-
-**PDF link:** https://arxiv.org/pdf/2610.13766v1
-
-**Abstract:**
-
-Geospatial foundation models can support disaster damage assessment, but high accuracy on familiar disasters may hide shortcut learning: prediction from event or scene characteristics rather than evidence that transfers to a new disaster. We study embeddings from TerraMind, Prithvi-EO-2.0, DOFA, and DINOv3 on the multi-disaster datasets xView2 and BRIGHT. Holding out an entire disaster, instead of randomly splitting image tiles, reduces mean balanced accuracy from 0.807 to 0.638 on xView2 and from 0.818 to 0.568 on BRIGHT. Four sets of tests examine what information supports prediction: event and acquisition context, before/after image inputs, building count, and correct image pairing. Pre-event images remain predictive, and a classifier given only the annotated number of buildings reaches balanced accuracy of 0.629 and 0.653. Combining before/after features performs best on average on xView2, but does not improve over pre-only features on BRIGHT. Shuffling image pairs within the same disaster and damage class causes modest losses. Motivated by these findings, we test whether feature transformations learned only from training disasters improve generalization to unseen disasters. These transformations improve performance, with supervised contrastive learning performing best on xView2 and PCA on BRIGHT. Our results highlight the importance of evaluation on unseen domains for assessing model robustness and show that simple feature-level transformations can improve generalization. Code and experiments can be found at https://github.com/alishibli97/gfm-shortcut-learning.
-
-**Why this may be relevant:**
-
-It may help track foundation-model directions for Earth observation or geospatial AI. It may help with cross-city, cross-region, or cross-sensor generalization.
-
----
-
-### 4. Anaximander: Interactively Running Geospatial Deep Learning Models on Any Compute Backend
-
-**Authors:** satej soman, Akram Zaytar, G. Tadesse, G. Hacheme, M. S. Danish, I. Becker-Reshef, Rahul Dodhia, J. Ferres
-
-**Published:** 2026-10-06
-
-**Found via:** Semantic Scholar
-
-**My Score:** 44
-
-**Venue importance score included:** 0
-
-**Semantic Scholar citations:** 0
-
-**arXiv ID:** 2610.09085
-
-**Paper link:** https://www.semanticscholar.org/paper/e51007fc3b142b4a770cc53327946c52445f9191
-
-**Abstract:**
-
-Applying deep learning models to satellite imagery from within geographic information systems (GIS) remains high-friction for remote sensing practitioners. Models arrive in incompatible formats and target different compute environments, from local workstations to serverless cloud services. As a result, every evaluation demands custom deployment, tiling, and georeferencing code before a single prediction reaches the analyst's map. This friction discourages systematic comparison in a domain where model choice directly affects operational outcomes such as field delineation, crop monitoring, and disaster response. We present Anaximander, an open-source system that unifies model source and compute location choice behind one interactive interface. The system's backend is an inference server that loads models from multiple commonly-used sources and serves them on any accessible compute backend. The server provides session management and model caching, and streams results back per tile. The backend is paired with a QGIS plugin that drives tiling, result reassembly, georeferencing, and real-time per-tile status visualization. An additional user-interface path injects layer legends as prompts into vision-language models. We demonstrate the system in a code-free side-by-side comparison of three heterogeneous models on an agricultural field delineation task: gpt-image-1 via a cloud API, Segment Anything Model 3 (SAM3) on a remote GPU, and DelineateAnything on a local CPU. The inference backend and protocol are open-source and available at https://github.com/microsoft/nxmndr.
-
-**Why this may be relevant:**
-
-It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 5. PlacePulse: Learning Transferable Place Representations from Structural Geographic Data
-
-**Authors:** Lucía García-Duarte, Miguel Álvarez, Diego Vicente, Javier Pérez Trufero, Javier de la Torre
-
-**Published:** 2026-10-09
+**Published:** 2026-10-16
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 35
+**My Score:** 17
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.13390v1
+**arXiv ID:** 2610.23741v1
 
-**Paper link:** http://arxiv.org/abs/2610.13390v1
+**Paper link:** http://arxiv.org/abs/2610.23741v1
 
-**PDF link:** https://arxiv.org/pdf/2610.13390v1
+**PDF link:** https://arxiv.org/pdf/2610.23741v1
 
 **Abstract:**
 
-Geospatial machine learning often depends on task-specific feature engineering over large collections of sociodemographic, business, and environmental variables. Geospatial foundation models offer reusable representations of place, but leading approaches typically encode dynamic signals, such as mobility and search activity, or visual signals from satellite imagery. Few models represent the static structural composition of places (who lives and works there, which businesses operate there, and which risks they face) as transferable embeddings at fine spatial resolution. We introduce PlacePulse, a structural geospatial foundation model that compresses 572 attributes, expanded to 2,288 inputs through H3 neighborhood aggregates, into 256-dimensional unit-norm embeddings for 1,055,537 H3 resolution-7 cells in the United States. We also introduce a reusable two-axis benchmark that separates intrinsic representation quality from downstream predictive utility across multiple targets and spatial supports. Intrinsically, the embeddings reconstruct standardized inputs with mean $R^2 = 0.853$, use 251 of 256 approximately decorrelated dimensions, and show strong spatial organization, with Moran's $I = 0.93$ on the leading principal component and autocorrelation persisting beyond the input radius. Extrinsically, across 74 held-out targets from 12 external sources and four spatial supports, PlacePulse outperforms a dimensionality-matched feature-selection baseline on targets unrelated to the training inputs and is competitive with Google's Population Dynamics Foundation Model, leading on health, economic, election, economic-mobility and social-vulnerability outcomes, with relative strengths that vary by domain. These findings position structural composition as a distinct and complementary modality for geospatial foundation models, not simply a fallback where behavioral or imagery data are unavailable.
+The Italian legislative process is documented in detailed parliamentary records hosted in institutional websites. However, much of this information is available only as unstructured text, limiting its systematic reuse. We applied a controlled, systematic LLM-based extraction procedure, validated against manually annotated records, to convert these texts into ordered and dated events including, e.g., bill introduction, committee examination, plenary examination, and approval. The resulting dataset reconstructs the procedural histories of all 5346 Italian laws enacted between 1985 and 2026, spanning parliamentary terms IX to XIX, for overall 101413 events. Each event records the activity, date, and chamber, with additional procedural details where available. The dataset supports research in the emerging fields of computational legal and legislative studies, potentially combined with process-oriented data science methods to examine procedural paths and legislative timing across parliamentary terms.
 
 **Why this may be relevant:**
 
-It may help track foundation-model directions for Earth observation or geospatial AI. It is directly related to remote sensing or Earth observation workflows.
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
 
 ---
 
-### 6. MeshBind: Point-to-Mesh Binding for Non-Rigid Scene Flow Automatic Annotation
+### 9. ScoutRoute: Efficient Mixture-of-Experts Routing Using Internal Language Model Signals
 
-**Authors:** Yinqi Chen, E Li, Shuaijun Wang, Weiyuan Peng, Meiying Zhang, Qi Hao
+**Authors:** Rajdeep Pandhare, Delzaan Bharucha
 
-**Published:** 2026-10-09
+**Published:** 2026-10-16
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 28
+**My Score:** 17
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.12895v1
+**arXiv ID:** 2610.23443v1
 
-**Paper link:** http://arxiv.org/abs/2610.12895v1
+**Paper link:** http://arxiv.org/abs/2610.23443v1
 
-**PDF link:** https://arxiv.org/pdf/2610.12895v1
+**PDF link:** https://arxiv.org/pdf/2610.23443v1
 
 **Abstract:**
 
-Scene flow estimation is essential for many autonomous driving (AD) and robotic applications, but obtaining ground-truth scene flow for non-rigid objects such as pedestrians is highly difficult. We present MeshBind, an automatic annotation method that uses mesh models to generate per-point scene flow for non-rigid objects. The novelty of this work is threefold: 1) developing a multi-view module that reconstructs an articulated mesh model from six surround cameras and registers it to the LiDAR frame; 2) developing a local-frame binding technique that attaches each point to the mesh via a per-triangle tangent-normal frame, invariant under rigid motion yet adaptive to articulated deformation; 3) developing a three-layer flow registration pipeline that combines ego-vehicle motion compensation, box binding, and mesh binding to produce full-scene per-point flow. We implement MeshBind in SF-Studio, an interactive annotation tool that visualises flow and allows human mesh corrections with automatic recomputation. We also release SFB (SUScape-Flow Benchmark), a large-scale benchmark built on the public SUScape dataset, covering 41k frames with per-point non-rigid pedestrian annotations and a Rigid/Semi-Rigid/Non-Rigid evaluation protocol. Experiments show that fine-tuning on SFB reduces three-way endpoint error (EPE) by 2-3x, and brings non-rigid EPE to the same level as rigid EPE.
+Efficient expert routing is a fundamental challenge in Mixture-of-Experts (MoE) systems, particularly for heterogeneous collections of independently trained Large Language Mod els (LLMs). Existing routing approaches typically rely on jointly trained gating networks, prompt-based predictors, or computationally expensive multi-model inference, limiting their flexibility and efficiency. This paper presents ScoutRoute, a lightweight post-hoc routing framework that predicts expert competence using internal language model signals extracted from a single forward pass through an inexpensive scout model. Hidden-state representations are used to estimate cross-model competence through lightweight logistic probes, while logit-derived confidence measures are incorporated within a domain-aware routing strategy for efficient expert selec tion without modifying the underlying language models. ScoutRoute isevaluatedon fiveopen-weightlanguagemodels across fourbenchmark datasets covering mathematical reasoning, code generation, commonsense reasoning, and multidis ciplinary knowledge. Experimental results show that ScoutRoute consistently outperforms individual routing signals while requiring only a single scout-model inference. The proposed competence probes also achieve superior calibration compared with conventional confidence measures, demonstrating that internal language model representations provide transferable information for accurate and efficient expert routing across heterogeneous language models
 
 **Why this may be relevant:**
 
-It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It may connect to pedestrian infrastructure, road extraction, transportation infrastructure, or walkability mapping.
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
 
 ---
 
-### 7. An Annealing-based Quantum Neural Network with Discrete Wavelet Transforms for Enhanced Air Pollution Nowcasting
+### 10. FlexUMM: Flexible Representation Learning for Unified Multimodal Models
 
-**Authors:** Otto Menegasso Pires, André Saimon, Daniela Herrmann, Prashant Kumar, Marcelo Moret, Erick Giovani Sperandio Nascimento
+**Authors:** Yinyi Luo, Haoyue Bai, Yi Ge, Nilton Cesar Rojas Vales, Marios Savvides, Jindong Wang
 
-**Published:** 2026-10-09
+**Published:** 2026-10-15
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 25
+**My Score:** 17
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.13882v1
+**arXiv ID:** 2610.22682v1
 
-**Paper link:** http://arxiv.org/abs/2610.13882v1
+**Paper link:** http://arxiv.org/abs/2610.22682v1
 
-**PDF link:** https://arxiv.org/pdf/2610.13882v1
-
-**Abstract:**
-
-Air pollution poses a significant threat to public health, exacerbated by the rapid industrialization and urbanization of modern society. While traditional deep learning offers predictive capabilities, recent advancements in quantum machine learning (QML) present a compelling alternative. Here, we introduce a scalable hybrid framework that integrates variational quantum circuits with quantum annealing. Leveraging a neuromorphic quantum computing platform to transcend the qubit limitations of the NISQ era, we model particulate matter (PM$_{2.5}$) dynamics using high-density urban data from the UK. We demonstrate that our Quantum Neural Networks (QNNs) exhibit an intrinsic resilience to input volatility, significantly outperforming classical baselines (MLP and LSTM) on raw, high-entropy environmental data. Furthermore, we successfully scaled the model to 172 qubits, observing a synergistic enhancement when coupled with wavelet decomposition that achieves state-of-the-art predictive fidelity. These findings establish a critical benchmark for quantum utility, proving that scalable, neuromorphic quantum machine learning can now address complex, non-linear real-world problems.
-
-**Why this may be relevant:**
-
-It matched the geospatial machine learning search criteria and may be worth screening.
-
----
-
-### 8. Hide and Seek: HIDE Concepts to SEEK explanations for black box models
-
-**Authors:** Bhanu Tokas, Rahul Nair, Rockwell Jackson, Hannah Kerner
-
-**Published:** 2026-10-09
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 20
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2610.13935v1
-
-**Paper link:** http://arxiv.org/abs/2610.13935v1
-
-**PDF link:** https://arxiv.org/pdf/2610.13935v1
+**PDF link:** https://arxiv.org/pdf/2610.22682v1
 
 **Abstract:**
 
-Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods interpret models using human-understandable concepts. Existing concept-based methods can only interpret classification and regression models. They require access to model weights or large concept-annotated datasets, and most methods cannot provide image-level attribution. We propose Hide and Seek (HnS), a new method for concept-level attribution that does not require access to model weights or labeled concept datasets. HnS can interpret a wide range of vision models. Given a concept and image set, HnS retrieves concept-aligned images using a vision-language model, localizes the concept within each image, masks the localized region, and measures attribution from the change in the black-box model's output between the original and masked images. This enables faithful attribution by directly measuring the model's behavior and supporting local attributions. We validated HnS on CelebA and COCO-Stuff. Compared to existing methods, HnS showed better agreement with ground-truth attributions. We demonstrated the applicability of HnS on diverse tasks, including image captioning and satellite image segmentation, where no existing concept attribution method can be used. We provided our anonymous code in the supplementary material.
+Unified multimodal models (UMMs) can integrate understanding and generation within a single backbone. However, it is commonly known that these two capabilities can cause conflicting representations, leading to a central question: how representation and computation should be shared across functionalities? Existing UMMs often rely on a largely fixed structure, where different inputs and functionalities follow the same depth and parameter-sharing pattern. We argue that this assumption is too restrictive: more effective unification requires sharing the computation that supports cross-functional communication while specializing the capacity that becomes task- or input-specific. We introduce FlexUMM, a flexible UMM framework that dynamically decides when to preserve shared computation, when to route specialized capacity, and when to stop further processing. Evidence shows that this flexible allocation improves UMMs along two complementary axes. It improves accuracy by reducing harmful competition between functionalities, and it improves efficiency by avoiding unnecessary computation once an input representation is sufficiently mature. Beyond simple architectural unification from the pre-trained models, FlexUMM works as a model-agnostic, functional plug-in to make existing UMMs more unified, stronger, and efficient. Code is available at: https://github.com/AIFrontierLab/TorchUMM/tree/main/src/umm/post_training/flexumm.
 
 **Why this may be relevant:**
 
-It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 9. MOSAIC: Multi-Scale Object-Centric Slot Adaptation with Image-Guided Prototype Conditioning for Remote Sensing Image Super-Resolution
-
-**Authors:** Liuqian Wang, Hanyu Xie, Rongzhen Zhao, Qi Ming, Chunjie Ma, Wentao Chao, Yufei Gao, Chengming Liu
-
-**Published:** 2026-10-09
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 20
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2610.13547v1
-
-**Paper link:** http://arxiv.org/abs/2610.13547v1
-
-**PDF link:** https://arxiv.org/pdf/2610.13547v1
-
-**Abstract:**
-
-Pretrained diffusion Transformers provide powerful generative priors for image restoration, yet adapting them to structure-sensitive tasks remains challenging. Existing methods mainly rely on dense low-resolution features as conditions, which often entangle salient objects with dominant backgrounds and provide limited abstraction for recurring structures across scales and samples. We propose MOSAIC, an object-centric representation learning framework that learns compact structural conditions for generative model adaptation. MOSAIC organizes degraded observations into structural slots that capture complementary object-level and layout-level evidence, integrates them across resolutions, and retrieves recurring priors from a shared prototype memory to complement incomplete image-specific information. The resulting representations are injected into selected layers of a frozen diffusion Transformer through lightweight residual modulation, preserving its pretrained generative prior. We instantiate MOSAIC for remote sensing image super-resolution, where small objects, repetitive structures, and large-scale variation provide a challenging testbed. Experiments on UCMerced, AID, and RSSCN7 show consistent PSNR improvements across $\times 2$ and $\times 4$ settings and favorable LPIPS results at $\times 4$. Qualitative results further demonstrate improved preservation of small objects, structural boundaries, and repetitive spatial patterns.
-
-**Why this may be relevant:**
-
-It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 10. How Many Significant LISA?: A multiple testing correction
-
-**Authors:** Giuseppe Arbia, Francesca Cardile, Vincenzo Nardelli, Niccolò Salvini
-
-**Published:** 2026-10-09
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 18
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2610.13472v1
-
-**Paper link:** http://arxiv.org/abs/2610.13472v1
-
-**PDF link:** https://arxiv.org/pdf/2610.13472v1
-
-**Abstract:**
-
-In spatial data analysis, global measures of spatial correlation provide useful insights into the general spatial patterns, but fail to capture local variations. Local Indicators of Spatial Association (LISA) address this limitation by identifying local clusters and spatial outliers, offering valuable applications in many fields of research such as public health, urban planning and environmental monitoring, to name only a few. However, the application of LISA tools in hypothesis testing is undermined by the presence of the multiple testing problem which dramatically increases the risk of committing Type I errors especially when dealing with very large datasets. Standard corrections procedure (like, e. g., Bonferroni and Benjamini-Hochberg procedures) fail to consider the spatial dependence among the various LISA tests and, furthermore, they are overly conservative. This paper proposes an adjustment that, by incorporating the notion of the "effective sample size", improves statistical inference balancing false discovery rate control and statistical power.
-
-**Why this may be relevant:**
-
-It is related to urban planning, infrastructure, or built-environment analysis.
+It connects to urban tree detection, canopy mapping, or vegetation analysis.
 
 ---
 
