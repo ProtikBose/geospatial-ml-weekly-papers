@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-10-12 to 2026-10-19
+**Search window:** 2026-10-19 to 2026-10-26
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,121 +12,181 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation
+### 1. Reuse, Don't Retrain: Efficient, Modality-Versatile Geospatial Foundation Models through Feature Distillation
 
-**Authors:** Cheng Fan, Han Wu, Tingzhang Luo, Minjing Dong, Yehui Tang, Jianyuan Guo
+**Authors:** Mario Hamon, Pierre Adorni, Minh-Tan Pham
 
-**Published:** 2026-10-16
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 52
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2610.23416v1
-
-**Paper link:** http://arxiv.org/abs/2610.23416v1
-
-**PDF link:** https://arxiv.org/pdf/2610.23416v1
-
-**Abstract:**
-
-Multimodal Large Language Models (MLLMs) have significantly advanced instruction-driven perception through the "Embedding-as-Mask" paradigm. However, extending this capability to Remote Sensing (RS) reasoning segmentation remains exceptionally challenging under cluttered geographical contexts and extreme scale variations, often leading to Spatial Fidelity Degradation and Target Misidentification. We identify a critical yet underexplored bottleneck: the sequential alienation of the segmentation token [SEG] from its initial visual grounding within the autoregressive generation paradigm. Produced only at the end of long reasoning chains, [SEG] relies on visual evidence that has been progressively diluted by linguistic abstraction and autoregressive noise. This information decay is particularly catastrophic for RS targets with minuscule pixel footprints, where even marginal fidelity loss leads to localization failure. To address these bottlenecks, we propose GeoReason, a novel framework designed to fortify logical deduction and preserve spatial integrity. First, we introduce an Anticipatory Prior mechanism that injects the [SEG] token directly into the initial user query, shifting it from a terminal output to a primary condition. This paradigm shift transforms the token into a persistent spatial anchor, preventing information decay during long-form linguistic inference. Second, we enhance visual reasoning via a Location-aware Chain-of-Thought (CoT) that enforces coarse-to-fine localization using bounding boxes, coupled with a Latent Patch-to-Token Alignment (PTA) Loss that explicitly aligns the latent segmentation token with physical RS textures. Extensive experiments demonstrate that GeoReason consistently outperforms state-of-the-art methods on the Earthreason and RRSIS-D benchmarks. Code is available at https://github.com/Fanc0126/GeoReason.
-
-**Why this may be relevant:**
-
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 2. Aero‐VLM: Vision‐Language Guided Oriented Aircraft Detection for Remote Sensing Imagery
-
-**Authors:** Faryal Aurooj Nasir, Khurram Khurshid, Syeda Khan, Madiha Tahir, Waqas ur Rahman, Syed Ali Irtaza
-
-**Published:** 2026-10-13
-
-**Venue:** Expert systems
-
-**Found via:** Semantic Scholar
-
-**My Score:** 51
-
-**Venue importance score included:** 0
-
-**Semantic Scholar citations:** 0
-
-**DOI:** 10.1111/exsy.70450
-
-**Paper link:** https://www.semanticscholar.org/paper/2b2a81ca407175d0adbb824dc70b9e87acf3b66b
-
-**PDF link:** https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/exsy.70450
-
-**Abstract:**
-
-Fine‐grained aircraft detection in remote sensing (RS) imagery is challenged by limited labelled data, domain shifts, high intra‐class similarity and complex environmental conditions. Conventional detectors rely heavily on dense supervision, whereas vision–language models (VLMs) often lack the geometric precision required for accurate localization in aerial scenes. To address these challenges, we propose Aero‐VLM, a hybrid CNN–Transformer framework that combines self‐supervised visual representation learning with pretrained vision–language semantic embeddings for data‐efficient fine‐grained aircraft detection. An oriented detection head with knowledge distillation is integrated with the vision–language representation to improve geometric localization and support efficient inference. We further introduce Aero‐RSI, a 10,000‐image high‐resolution benchmark comprising ten visually similar aircraft categories for fine‐grained detection. Aero‐VLM achieves 64.6% mAP@50 in zero‐shot evaluation on unseen classes, outperforming CLIP, BLIP‐2, Grounding DINO and VisionLLM by up to 44.1 percentage points. With only 10 labelled samples per class, Aero‐VLM improves mAP@50 by 16.1 percentage points, whereas competing models achieve gains of less than 10 percentage points. Cross‐domain evaluation on DOTA, MTARSI and FAIR1M demonstrates strong generalization without additional fine‐tuning, with Aero‐VLM achieving gains of up to 11.0 percentage points over CNN‐based detectors and up to 46.0 percentage points over adapted VLMs. Under full supervision, Aero‐VLM achieves 90.2% mAP@50, exceeding YOLOv11s by 2.5 percentage points and Grounding DINO by 39.7 percentage points. Despite a 33% increase in inference latency relative to YOLOv11s, Aero‐VLM requires approximately 45% less inference time than Grounding DINO, demonstrating a favourable accuracy–efficiency trade‐off.
-
-**Why this may be relevant:**
-
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows. It may help with cross-city, cross-region, or cross-sensor generalization.
-
----
-
-### 3. FloodVLM-Pix: Language-Guided Pixel-Level Flood Understanding
-
-**Authors:** Chengyang Zhang, Zhihao Wang, Zhiyu Long, Xueqian Wang, Quanming Yao, Wei Wu, Gang Li
-
-**Published:** 2026-10-16
+**Published:** 2026-10-23
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 40
+**My Score:** 49
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.23377v1
+**arXiv ID:** 2610.32566v1
 
-**Paper link:** http://arxiv.org/abs/2610.23377v1
+**Paper link:** http://arxiv.org/abs/2610.32566v1
 
-**PDF link:** https://arxiv.org/pdf/2610.23377v1
+**PDF link:** https://arxiv.org/pdf/2610.32566v1
 
 **Abstract:**
 
-As climate change intensifies, floods are becoming more frequent and destructive, making accurate flood understanding an urgent priority. However, existing vision-language models perform poorly on flood-related tasks, suffering from attentional bias and inaccurate descriptions of flood magnitude. To bridge this gap, we construct the first large-scale remote sensing flood multi-modal benchmark that supports language-level flood understanding and pixel-level flood segmentation. The benchmark contains 131,200 flood image patches and corresponding 443,100 textual descriptions for flood severity and evolution. Based on this benchmark, we propose FloodVLM-Pix, a language-guided pixel-level flood understanding model that includes a flood prior module and a multi-temporal flood pixel decoder to achieve accurate flood understanding. The flood prior module automatically distills sub-region flood spatial priors and inputs priors into FloodVLM-Pix, solving the attentional bias problem in flood language understanding. The flood pixel decoder introduces a novel general-specific feature fusion mechanism to address performance degradation caused by interference (e.g., clouds or mountain shadows) during flood segmentation. Experiments on FloodVL-Pix demonstrate that FloodVLM-Pix improves both flood description quality and pixel-level flood segmentation performance compared with state-of-the-art VLMs and flood segmentation models. Our code and data will be released at https://github.com/Haomiaoyanmeng/FloodPix.
+Geospatial foundation models (GeoFMs) are costly to pretrain, yet model families often repeat this process across backbone scales and sensing modalities. We investigate feature distillation as a more efficient way to reuse existing representations. First, we distill frozen CROMA and TerraMind teachers into smaller Vision Transformers through patch-level feature matching. Across nine PANGAEA tasks, distilled TerraMind Tiny, Small, and Base outperform their scale-matched released counterparts by 2.76, 3.02, and 1.87 mean IoU points, respectively; each also matches or exceeds the next-larger released model. Distilled CROMA-Base gains 2.05 points. TerraMind-Base required only 43 A6000 GPU-hours, approximately 0.5\% of the reported cost of independent pretraining. Second, we introduce TEDI, an unpaired multi-expert approach combining TerraMind for multispectral imagery and DINOv3 for high-resolution RGB. Separate patch embeddings route unpaired inputs into a shared Transformer trunk, removing the need for co-registered data. TEDI-Large achieves the highest single-model mean in our PANGAEA-9 comparison (62.51 mIoU), outperforming both teachers overall while retaining their modality-specific strengths. TEDI-Base reaches 61.75 mIoU with 72\% fewer parameters. These results show that distillation improves the GeoFM accuracy-compute frontier while consolidating complementary experts into a single versatile backbone.
 
 **Why this may be relevant:**
 
-It may be useful for multimodal geospatial understanding using image-text models. It is directly related to remote sensing or Earth observation workflows.
+It may help track foundation-model directions for Earth observation or geospatial AI.
 
 ---
 
-### 4. ShadowCast: On-the-Fly Context-Aware Shadow Augmentation for Remote Sensing Image Segmentation
+### 2. LoCA: Enabling Multi-Modality in Geospatial Location Encoders
 
-**Authors:** Yechan Kim, Dongho Yoon, Jongmin Joo, JongHyun Park, Moongu Jeon
+**Authors:** Panagiotis Koromilas, Eleanna Vali, Diogenis Antonopoulos, Eleni Saka, Dimitris Christofis, Nikolaos Ioannis Bountos, Konstantin Klemmer, Ioannis Papoutsis
 
-**Published:** 2026-10-16
+**Published:** 2026-10-23
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 29
+**My Score:** 39
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.23440v1
+**arXiv ID:** 2610.32894v1
 
-**Paper link:** http://arxiv.org/abs/2610.23440v1
+**Paper link:** http://arxiv.org/abs/2610.32894v1
 
-**PDF link:** https://arxiv.org/pdf/2610.23440v1
+**PDF link:** https://arxiv.org/pdf/2610.32894v1
 
 **Abstract:**
 
-Shadows cast by elevated objects alter the spectral appearance and obscure the boundaries of objects in remote sensing images, thereby degrading semantic segmentation performance. Most existing approaches handle shadows as degradations to be detected and removed, requiring additional costs from dedicated networks and shadow-specific annotations. We propose ShadowCast, which takes the opposite approach: it synthesizes shadows and injects them during training for remote sensing segmentation. It extracts masks of elevated objects, such as buildings and trees, directly from the segmentation labels and estimates an image-specific cast-shadow direction cue by probing the brightness around them. It then projects synthetic shadows along the inferred cast-shadow direction, requiring no learned network and no acquisition metadata. Experiments on three widely used remote sensing benchmarks, Vaihingen, Potsdam, and LoveDA, show that ShadowCast consistently outperforms the baseline across diverse state-of-the-art segmentation architectures. Moreover, it brings additional performance gains when combined with standard augmentation and regularization techniques, indicating that stochastic shadow injection serves as a simple and complementary augmentation strategy for remote sensing segmentation.
+Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of intrinsic dimension at most 2, regardless of architecture or bandwidth, which forces the contrastive loss to strictly exceed its asymptotic optimum. Empirically, joint training also collapses the encoder's embedding covariance to low rank. Although dimension-limited, current location encoders sidestep this spectral collapse by training against a frozen image encoder, which we reinterpret as a covariance regularizer that supplies a high-rank target for the location encoder to fold onto. However, extending this approach to multimodal inputs is challenging, as location encoders should simultaneously map a single location to multiple, potentially incompatible, descriptors. We identify two requirements a regularizer must satisfy for location encoding in multimodal regimes: co-alignment across modalities, since adapters alone cannot align independently pretrained encoders; and high effective rank, since the location encoder inherits its target's spectrum. We propose LoCA (Location Contrastive Alignment), a two-stage pipeline that satisfies both. Stage 1 jointly trains Sentinel-1 and Sentinel-2 encoders with contrastive learning, producing a co-aligned, high-rank multimodal target. Stage 2 freezes the image encoders and trains a location and a tabular metadata encoder as projection adapters with multi-view contrastive learning. Against five state-of-the-art encoders on 17 tasks ranging from land cover and wildfire forecasting to geophysical, socio-economic, biodiversity and climate applications, LoCA achieves the most task wins, is the only model to outperform every other on a majority of tasks, and wins 68.8% of all per-task comparisons.
+
+**Why this may be relevant:**
+
+It is directly related to remote sensing or Earth observation workflows.
+
+---
+
+### 3. DriveOSS: Dataset and Benchmark for 3D Anomaly Segmentation and Open-set Semantic Segmentation in Autonomous Driving
+
+**Authors:** Zhiran Yan, Savankumar Bhanderi, Sourabh Lolge, Rui Song, Girdharbhai Paneliya, Shiva Agrawal, Gordon Elger
+
+**Published:** 2026-10-23
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 31
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2610.32612v1
+
+**Paper link:** http://arxiv.org/abs/2610.32612v1
+
+**PDF link:** https://arxiv.org/pdf/2610.32612v1
+
+**Abstract:**
+
+Recent advances in 3D semantic segmentation have significantly improved scene understanding in autonomous driving. However, existing methods are typically developed under a closed-set assumption and evaluated under standard driving conditions, where all categories are known in advance. In real-world driving, autonomous vehicles inevitably encounter previously unseen objects, making closed-set perception insufficient for safe deployment. To address this challenge, we introduce DriveOSS, which, to the best of our knowledge, is the first real-world multimodal dataset and benchmark specifically designed for 3D anomaly segmentation and open-set semantic segmentation. It contains 12,661 synchronized and annotated frames captured using six surround-view RGB cameras, a 128-beam LiDAR, and a GPS/IMU unit. The dataset comprises 52 real-world driving scenes collected under clear, nighttime, cloudy, rainy, and snowy conditions and is organized into ID (in-distribution) and OOD (out-of-distribution) subsets. The ID scenes contain only known classes and are used for training, whereas the OOD scenes additionally contain unknown objects annotated as the outlier class and are used for validation and testing. Extensive experiments show that unseen objects remain a major challenge for current 3D perception systems. The dataset, benchmark protocols, and code are available at https://github.com/chrisyan/DriveOSS.
+
+**Why this may be relevant:**
+
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+
+---
+
+### 4. A Topology-Guided GeoAI Agentic Framework for Urban Flood Screening
+
+**Authors:** Yutian Tao, Haoan Feng, Xin Xu, Leila De Floriani
+
+**Published:** 2026-10-22
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 30
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2610.30660v1
+
+**Paper link:** http://arxiv.org/abs/2610.30660v1
+
+**PDF link:** https://arxiv.org/pdf/2610.30660v1
+
+**Abstract:**
+
+Open-world geographic artificial intelligence (GeoAI) agents can transform public geospatial data into accessible decision support for real-world challenges, but must balance autonomous reasoning with reliable spatial analysis and human oversight. We present a topology-guided GeoAI agentic framework for urban flood screening that takes a place name, drawn region, or uploaded boundary and returns ranked candidate basins with an interactive map and report. A deterministic controller retrieves public elevation, rainfall, soil, land-cover, exposure, and infrastructure layers, extracts terrain depressions with discrete Morse theory, and ranks basins with a relative flood-priority score. The language model acts only at recorded decision points: selecting a persistence threshold from a precomputed candidate table, drafting recommendations from computed evidence, and reviewing each recommendation against the same evidence. Three human-in-the-loop checkpoints let users revise the threshold, factor weights, or recommendation. In a College Park, Maryland case study, the selected threshold reduced 278 raw terrain minima to 70 basins, with 77% of these basins' lowest points also identified as sinks by a separately computed eight-direction (D8) flow-routing model. Across four further study areas, agreement ranged from 61% to 83%. By combining open data, explicit spatial reasoning, traceable evidence, and human oversight, the framework enables transparent first-pass flood screening while keeping consequential recommendations inspectable and user-controlled.
+
+**Why this may be relevant:**
+
+It is related to urban planning, infrastructure, or built-environment analysis.
+
+---
+
+### 5. Trusting the Tool: Asymmetric Deference of LLM Vulnerability Auditors to Static-Analysis Evidence
+
+**Authors:** ZhiHong Liu, Shuyao Gao
+
+**Published:** 2026-10-23
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 26
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2610.32876v1
+
+**Paper link:** http://arxiv.org/abs/2610.32876v1
+
+**PDF link:** https://arxiv.org/pdf/2610.32876v1
+
+**Abstract:**
+
+Pipelines that combine large language models (LLMs) with static analysis let the model consume the analyser's output as evidence, but whether the model distinguishes true from false evidence, and whether its scrutiny depends on what the evidence claims, has not been measured. We built an intraprocedural analyser for C/C++ that produces proof obligations and audited vulnerable and patched functions from PrimeVul under six evidence conditions that differ only in the notes, including fabricated assurances that a missing check exists and fabricated alarms that an added check is missing. The study covers 916 pairs in four disjoint sets, eleven model configurations from four vendors and 16,572 audits; no model is trained or fine-tuned. True evidence barely improved accuracy (+0.02). False evidence acted asymmetrically: relative to true notes about the same operations, false assurances lowered the detection of real vulnerabilities by up to 19 points, whereas false alarms never significantly lowered accuracy and were disputed far more often. An internally registered replication on seven new models confirmed that false assurances move verdicts towards their claim more than false alarms do (mean asymmetry +0.16, 95% CI +0.10 to +0.24). Instructions in the audit prompt did not reliably reduce deference; the best one failed to replicate. Verifying each claim in a separate call and showing the refuted claims raised accuracy under false assurances by 12 points in a pre-specified test (p=0.002) without loss under true evidence; for a second model the gain was smaller and not significant. Pipelines should therefore verify a tool's guarantees before the model relies on them, and studies should measure deference in a direction-aware way.
+
+**Why this may be relevant:**
+
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
+
+---
+
+### 6. GeoLEON-CLIP: Graph-Anchored Multimodal Contrastive Learning for Geographic Region Representation
+
+**Authors:** Radoslaw Malek, Szymon Soltysiak, Aleksandra Kawala-Sterniuk, Piotr Szymanski
+
+**Published:** 2026-10-23
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 25
+
+**Venue importance score included:** 0
+
+**DOI:** 10.1145/3849726.3856091
+
+**arXiv ID:** 2610.32311v1
+
+**Paper link:** http://arxiv.org/abs/2610.32311v1
+
+**PDF link:** https://arxiv.org/pdf/2610.32311v1
+
+**Abstract:**
+
+Geographic regions are multimodal: satellite imagery captures visual morphology, text conveys human-interpretable semantics, and map structures describe urban context. Existing geospatial contrastive methods typically align image-text or image-location pairs, underusing structured map data. We introduce GeoLEON-CLIP, a graph-anchored contrastive framework that aligns three views of each H3-indexed region: an OpenStreetMap-derived graph embedding, a satellite image crop, and a textual description. Frozen pretrained LEON graph embeddings provide a semantic anchor between vision and language. Frozen graph, image, and text encoders are connected by trainable residual projection heads and trained with a symmetric tri-modal contrastive objective. Experiments show strong graph-image and graph-text alignment; graph-image retrieval achieves the best cross-modal performance in a mixed-resolution pool. To evaluate the anchoring hypothesis, we propose chained cross-modal recall $\mathrm{R}@A@B$, which routes retrieval through the graph modality and compares it with direct retrieval under a matched candidate budget. At $\mathrm{R}@1@1$, image$\rightarrow$graph$\rightarrow$text and text$\rightarrow$graph$\rightarrow$image outperform direct image-text retrieval by 4.8 and 4.4 points, respectively, despite using a single intermediate cell. Downstream probes show task-dependent gains, with the largest improvements on Airbnb and Beijing housing. These results indicate that OpenStreetMap graph structure can anchor multimodal representations combining maps, imagery, and language.
 
 **Why this may be relevant:**
 
@@ -134,11 +194,11 @@ It is directly related to remote sensing or Earth observation workflows. It conn
 
 ---
 
-### 5. Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize
+### 7. MiD-VLM: Detecting and Grounding Global Semantic Misinformation in Image-Caption Pairs
 
-**Authors:** Chashi Mahiul Islam, Samuel Jacob Chacko, Mao Nishino, Canlin Zhang, Xiuwen Liu
+**Authors:** Tarunya Prasad, Bharatesh Chakravarthi
 
-**Published:** 2026-10-16
+**Published:** 2026-10-23
 
 **Venue:** arXiv
 
@@ -148,57 +208,27 @@ It is directly related to remote sensing or Earth observation workflows. It conn
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.23716v1
+**arXiv ID:** 2610.32967v1
 
-**Paper link:** http://arxiv.org/abs/2610.23716v1
+**Paper link:** http://arxiv.org/abs/2610.32967v1
 
-**PDF link:** https://arxiv.org/pdf/2610.23716v1
-
-**Abstract:**
-
-Deep neural networks demonstrate remarkable generalization despite being highly over-parameterized, challenging traditional statistical learning theories. While several theoretical paradigms such as margin-based bounds, PAC-Bayesian analyses, and neural tangent kernels provide global explanations, they often lack mechanistic insight into how generalization emerges from training dynamics. We introduce Neural Expansion, a unified geometric framework that characterizes generalization through the expansion of directionally-selective ray coverage in the input space. Using Generalization Intervals (GIs), we quantify direction-specific regions around training samples where the model's predictions remain stable. Our extensive empirical studies across diverse architectures and datasets reveal that training leads to progressive expansion of ray coverage, particularly along directions with low Jacobian singular values. This mechanism helps explain a large fraction of correctly classified test inputs, adversarial examples, and even mislabeled or out-of-distribution samples through the geometry of ray coverage rather than instance-level memorization. By connecting input-space curvature to predictive behavior, our framework provides a mechanistic foundation that complements existing global theories of deep learning.
-
-**Why this may be relevant:**
-
-It may help with cross-city, cross-region, or cross-sensor generalization.
-
----
-
-### 6. Fluid-Spatiotemporal Stochastic Geometry for Information Flow in Non-Stationary Fields: Kinematics and Field Reconstruction
-
-**Authors:** Wen-Yu Dong, Weiwei Jiang, Song Zhao, Qi Bi, Sheng Chen
-
-**Published:** 2026-10-16
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 19
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2610.23277v1
-
-**Paper link:** http://arxiv.org/abs/2610.23277v1
-
-**PDF link:** https://arxiv.org/pdf/2610.23277v1
+**PDF link:** https://arxiv.org/pdf/2610.32967v1
 
 **Abstract:**
 
-Classical stochastic geometry primarily addresses forward analysis by prescribing spatial point-process laws and mobility models. It does not directly address the inverse problem of recovering directional macroscopic transport from aggregate density evolution in non-stationary spatial networks. This paper develops the kinematic foundation of fluid-spatiotemporal stochastic geometry (F-STSG), representing an evolving mobile population by an intensity field under an assumed continuum limit while retaining the network infrastructure as a discrete spatial measure. We formulate macroscopic transport reconstruction as an inverse boundary value problem. Under a strictly positive bounded intensity and compatible source and boundary data, an instantaneous weighted minimum-energy criterion selects a unique velocity representative from the admissible class. The reconstruction reduces to a weighted elliptic Neumann problem and separates density-identifiable transport from weighted-solenoidal circulation that is not identifiable from density evolution alone. We further derive the information flux, interface transport, velocity-divergence relation, and centroid dynamics. Numerical experiments examine reconstruction consistency and sensitivity, while the public New Era of Urban Traffic Monitoring with Aerial Footage (pNEUMA) dataset provides held-out validation of internal transport. A separate unmanned aerial vehicle (UAV) study evaluates the centroid as a causal downstream control reference under observation delay, motion constraints, and execution perturbations.
+Semantic misinformation can arise when an authentic image is paired with a caption that changes or distorts its narrative. Because the image itself may contain no visible signs of manipulation, methods designed to detect pixel-level artifacts can miss these misleading image-caption pairs. We study this problem using DGM4+, a dataset designed to evaluate the detection of global scene and semantic inconsistencies. We propose a multimodal model that combines image-text representations from SigLIP with visual scene features from DINOv2 through a projection MLP, and adapts Qwen2-VL-7B using LoRA. The model jointly predicts whether an image-caption pair is authentic, identifies the manipulation type, and grounds the misleading caption tokens. On the DGM4+ validation split, the model achieves an F1 score of $0.9679$ for binary authenticity classification. These results suggest that parameter-efficient adaptation of vision-language models is promising for detecting semantic inconsistencies, while also motivating further work on precise token-level grounding.
 
 **Why this may be relevant:**
 
-It is related to urban planning, infrastructure, or built-environment analysis.
+It may be useful for multimodal geospatial understanding using image-text models.
 
 ---
 
-### 7. Beyond the Benchmark: Conditioning, Domains and Failure Modes of Qwen3-TTS
+### 8. Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox
 
-**Authors:** Séverin Baroudi, Yanis Labrak, Petr Motlicek, Hervé Bredin, Ricard Marxer
+**Authors:** Federico Lucca
 
-**Published:** 2026-10-16
+**Published:** 2026-10-23
 
 **Venue:** arXiv
 
@@ -208,15 +238,15 @@ It is related to urban planning, infrastructure, or built-environment analysis.
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.23678v1
+**arXiv ID:** 2610.32955v1
 
-**Paper link:** http://arxiv.org/abs/2610.23678v1
+**Paper link:** http://arxiv.org/abs/2610.32955v1
 
-**PDF link:** https://arxiv.org/pdf/2610.23678v1
+**PDF link:** https://arxiv.org/pdf/2610.32955v1
 
 **Abstract:**
 
-Qwen3-TTS reports state-of-the-art zero-shot voice cloning, but its technical report leaves open how the model should be conditioned, how it behaves outside read speech, and how it fails. We characterise its two cloning interfaces, in-context learning (ICL) and X-Vector, against Chatterbox, XTTS-v2 and F5-TTS on read, meeting, emotional and air-traffic-control (ATC) speech, using eighteen objective measures, an LLM judge, a spoofing countermeasure and a listening test. Neither interface dominates: ICL clones timbre more closely from correctly transcribed references, X-Vector clones timing, and ICL degrades sharply when a short reference transcript is wrong. Domain explains four times more variance than system choice. Qwen3-TTS leads on intelligibility and pitch register but trails on prosody, and the objective measures rank systems differently from listeners. An off-the-shelf countermeasure flags its clones no more often than genuine recordings, and on ATC radio it fails for every system. Code and audio are released.
+Personal email agents decide, for every message, what it is, whether it is urgent, whether to draft a reply, create a task, or ignore it. Their error rate is rarely measured: the stored labels were written by the system itself. We present Foyer, a self-hosted personal inbox agent in daily use, and a measurement protocol (stratified sampling, frozen snapshots, thread-grouped splits, pre-registered hypotheses, human labels in the agent's review loop) that yields ground truth before any training. On 739 real Italian/English emails labelled by the owner (231 unbiased, 500 adversarially sampled), we compare nine systems under thread-grouped cross-validation: the production keyword rules, a TF-IDF + logistic-regression baseline, local typed decision models (Tev1, Nimble), a hosted decision model (Nimble v4-max), and hosted generative LLMs (Qwen2.5-7B, Gemma 4 26B/31B). Four results. The production rules score 28% on message type against a 58% majority class: the field shown most prominently carried no information. With ~200 labels, logistic regression has the highest accuracy on every field (type 0.79, urgency 0.74, needs-reply 0.83, is-noise 0.90), though it never predicts the two rarest classes and is statistically tied with Gemma 4 on type; few-shot prompting does not close the gap. The sender's relationship (client, supplier, service) is recovered from other emails of the same contact with 98.6% accuracy where the contact has been seen, and is not inferable from a single message by any model: it belongs in the contact graph, not the prompt. Finally, accuracy is not the product metric: composed into actions, the most accurate system most often ignores emails needing action (18% vs 4% for the best LLM); a cost-chosen threshold on its noise probability halves that rate and makes it the cheapest system.
 
 **Why this may be relevant:**
 
@@ -224,11 +254,11 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 ---
 
-### 8. The Italian lawmaking process: a unified and structured dataset
+### 9. SkillRep: Characterizing and Understanding the Representation Design Space of Agent Skill Retrieval
 
-**Authors:** Matilde Contestabile, Chiara Ferrara, Giovanni Parrillo, Lorenzo Emer, Andrea Vandin
+**Authors:** Tianyi Sun, Pengfei Yao, Yanze Wang, Hongda Chen, Yunyun Han, Jun Sun, Chuanrui Hu, Yafeng Deng
 
-**Published:** 2026-10-16
+**Published:** 2026-10-23
 
 **Venue:** arXiv
 
@@ -238,15 +268,15 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.23741v1
+**arXiv ID:** 2610.32336v1
 
-**Paper link:** http://arxiv.org/abs/2610.23741v1
+**Paper link:** http://arxiv.org/abs/2610.32336v1
 
-**PDF link:** https://arxiv.org/pdf/2610.23741v1
+**PDF link:** https://arxiv.org/pdf/2610.32336v1
 
 **Abstract:**
 
-The Italian legislative process is documented in detailed parliamentary records hosted in institutional websites. However, much of this information is available only as unstructured text, limiting its systematic reuse. We applied a controlled, systematic LLM-based extraction procedure, validated against manually annotated records, to convert these texts into ordered and dated events including, e.g., bill introduction, committee examination, plenary examination, and approval. The resulting dataset reconstructs the procedural histories of all 5346 Italian laws enacted between 1985 and 2026, spanning parliamentary terms IX to XIX, for overall 101413 events. Each event records the activity, date, and chamber, with additional procedural details where available. The dataset supports research in the emerging fields of computational legal and legislative studies, potentially combined with process-oriented data science methods to examine procedural paths and legislative timing across parliamentary terms.
+Retrieving the right skill from a large library is essential for LLM agents, yet requests and skills are written for different purposes and in different words. Existing retrievers narrow this request-skill gap with one or two representation choices each, so it is unknown whether their gains hold in combination. No prior work measures the gap itself, so it is also unclear which part of it each choice narrows. We define a representation design space by five choices -- encoder fine-tuning, query-side and document-side expansion, background projection and a lexical channel -- and evaluate them together for the first time, as modules of one retriever, SkillRep. With a 0.6B encoder and LLM expansion, SkillRep improves MRR@10 on SRA-Bench over the strongest same-size retriever by 7.02 points with the official skill pool and 8.79 with UniPool, a 111,247-skill pool we build from public registries, and is best on SkillsBench. The value of each choice depends on the others. Fine-tuning, for instance, reverses the ranking of the four training-free modules and turns them from complementary into overlapping. To understand why, we measure the gap with three quantities: background, the embedding component that does not separate skills; unsaid vocabulary, the gold skill's content a request leaves unsaid; and dilution, the information lost when a skill is encoded into a single vector. They show which part each module narrows and by what mechanism. This reveals that modules narrowing the same part compete for it, while those narrowing different parts complement each other.
 
 **Why this may be relevant:**
 
@@ -254,63 +284,33 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 ---
 
-### 9. ScoutRoute: Efficient Mixture-of-Experts Routing Using Internal Language Model Signals
+### 10. When does boundary-condition uncertainty outweigh thermal and vegetation effects in street canyon flow? A global sensitivity analysis of input uncertainty
 
-**Authors:** Rajdeep Pandhare, Delzaan Bharucha
+**Authors:** Albert Moreno Català, Joan Calafell Sandiumenge, Nikolaj T. Mücke, Jan Mateu Armengol
 
-**Published:** 2026-10-16
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 17
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2610.23443v1
-
-**Paper link:** http://arxiv.org/abs/2610.23443v1
-
-**PDF link:** https://arxiv.org/pdf/2610.23443v1
-
-**Abstract:**
-
-Efficient expert routing is a fundamental challenge in Mixture-of-Experts (MoE) systems, particularly for heterogeneous collections of independently trained Large Language Mod els (LLMs). Existing routing approaches typically rely on jointly trained gating networks, prompt-based predictors, or computationally expensive multi-model inference, limiting their flexibility and efficiency. This paper presents ScoutRoute, a lightweight post-hoc routing framework that predicts expert competence using internal language model signals extracted from a single forward pass through an inexpensive scout model. Hidden-state representations are used to estimate cross-model competence through lightweight logistic probes, while logit-derived confidence measures are incorporated within a domain-aware routing strategy for efficient expert selec tion without modifying the underlying language models. ScoutRoute isevaluatedon fiveopen-weightlanguagemodels across fourbenchmark datasets covering mathematical reasoning, code generation, commonsense reasoning, and multidis ciplinary knowledge. Experimental results show that ScoutRoute consistently outperforms individual routing signals while requiring only a single scout-model inference. The proposed competence probes also achieve superior calibration compared with conventional confidence measures, demonstrating that internal language model representations provide transferable information for accurate and efficient expert routing across heterogeneous language models
-
-**Why this may be relevant:**
-
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
-
----
-
-### 10. FlexUMM: Flexible Representation Learning for Unified Multimodal Models
-
-**Authors:** Yinyi Luo, Haoyue Bai, Yi Ge, Nilton Cesar Rojas Vales, Marios Savvides, Jindong Wang
-
-**Published:** 2026-10-15
+**Published:** 2026-10-23
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 17
+**My Score:** 15
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.22682v1
+**arXiv ID:** 2610.32631v1
 
-**Paper link:** http://arxiv.org/abs/2610.22682v1
+**Paper link:** http://arxiv.org/abs/2610.32631v1
 
-**PDF link:** https://arxiv.org/pdf/2610.22682v1
+**PDF link:** https://arxiv.org/pdf/2610.32631v1
 
 **Abstract:**
 
-Unified multimodal models (UMMs) can integrate understanding and generation within a single backbone. However, it is commonly known that these two capabilities can cause conflicting representations, leading to a central question: how representation and computation should be shared across functionalities? Existing UMMs often rely on a largely fixed structure, where different inputs and functionalities follow the same depth and parameter-sharing pattern. We argue that this assumption is too restrictive: more effective unification requires sharing the computation that supports cross-functional communication while specializing the capacity that becomes task- or input-specific. We introduce FlexUMM, a flexible UMM framework that dynamically decides when to preserve shared computation, when to route specialized capacity, and when to stop further processing. Evidence shows that this flexible allocation improves UMMs along two complementary axes. It improves accuracy by reducing harmful competition between functionalities, and it improves efficiency by avoiding unnecessary computation once an input representation is sufficiently mature. Beyond simple architectural unification from the pre-trained models, FlexUMM works as a model-agnostic, functional plug-in to make existing UMMs more unified, stronger, and efficient. Code is available at: https://github.com/AIFrontierLab/TorchUMM/tree/main/src/umm/post_training/flexumm.
+Computational Fluid Dynamics (CFD) is increasingly used to resolve wind, heat, and pollution patterns in cities with high fidelity but high computational cost. Thermal effects and vegetation are often neglected despite being important drivers, yet their influence may be masked by variability from other uncertain inputs. This work determines how precisely model parameters and boundary conditions must be known for these effects to govern output uncertainty in the velocity, temperature, and concentration fields of a two-dimensional street canyon. A global Sobol analysis of 24 parameters is made tractable by a surrogate trained on Reynolds-Averaged Navier--Stokes (RANS) simulations, combining principal component analysis (PCA) with multilayer perceptrons (MLPs). Two ventilation regimes assess the variance due to thermal and vegetation parameters as uncertainty in all other inputs is progressively reduced. At typical uncertainty levels, turbulence closure constants and inflow turbulence profiles govern variability in all three fields in both regimes. Under weak ventilation, solar forcing becomes the main source of temperature variability once the remaining uncertainties are halved, and of concentration variance once they are reduced to a quarter (about $\pm11\%$ for the dominant closure constant and $\pm12\%$ for the emission rate). In contrast, vegetation contributes significantly at typical uncertainty levels. Under strong ventilation, however, the canopy never overtakes the closure constants, even when the dominant one is known to $\pm5\%$. Spatially, both effects peak at road level and along canyon walls, which influence outdoor exposure and indoor infiltration, suggesting that high-resolution exposure studies should account for them.
 
 **Why this may be relevant:**
 
-It connects to urban tree detection, canopy mapping, or vegetation analysis.
+It connects to urban tree detection, canopy mapping, or vegetation analysis. It is relevant to urban climate and heat-resilience research.
 
 ---
 
