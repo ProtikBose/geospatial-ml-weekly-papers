@@ -1,6 +1,6 @@
 # Weekly Geospatial ML Papers
 
-**Search window:** 2026-10-26 to 2026-11-02
+**Search window:** 2026-11-02 to 2026-11-09
 
 **Sources:** arXiv and Semantic Scholar
 
@@ -12,101 +12,103 @@ Only papers from the selected top journals, conferences, or workshops are includ
 
 ## Top Papers
 
-### 1. Geospatial analysis of urban heat exposure and environmental vulnerability using remote sensing in Khulna City, Bangladesh
+### 1. Using GeoAI and machine learning tools for consistent high-resolution land cover mapping based on time-series NAIP imagery
 
-**Authors:** Md Refath Hossan, Mohammad Ismail Hossain, Zahid Hassan Shaon, K. Hyakumura
+**Authors:** Jie Liu, Xusheng Tang, Chao Wang, Zhengxiao Yan, Yuchen Dai, Qi Zhang, Conghe Song
 
-**Published:** 2026-10-31
-
-**Venue:** GeoJournal
-
-**Found via:** Semantic Scholar
-
-**My Score:** 52
-
-**Venue importance score included:** 0
-
-**Semantic Scholar citations:** 0
-
-**DOI:** 10.1007/s10708-026-11726-0
-
-**Paper link:** https://www.semanticscholar.org/paper/de42cf1e4b57803a7d0a2dc2473c3f5177537b81
-
-**Abstract:**
-
-No abstract available.
-
-**Why this may be relevant:**
-
-It is directly related to remote sensing or Earth observation workflows. It is relevant to urban climate and heat-resilience research.
-
----
-
-### 2. Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos
-
-**Authors:** Wendong Bu, Tinghong Ye, Qizhou Wang, Jiacheng Li, Zhiqi Ge, Yuze Lin, Zhongqi Yue, Yi Su
-
-**Published:** 2026-10-30
+**Published:** 2026-11-03
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 31
+**My Score:** 38
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.41877v1
+**DOI:** 10.1007/s10980-026-02358-3
 
-**Paper link:** http://arxiv.org/abs/2610.41877v1
+**arXiv ID:** 2611.04470v1
 
-**PDF link:** https://arxiv.org/pdf/2610.41877v1
+**Paper link:** http://arxiv.org/abs/2611.04470v1
+
+**PDF link:** https://arxiv.org/pdf/2611.04470v1
 
 **Abstract:**
 
-Scaling humanoid motion foundation models is constrained by the scarcity of diverse, robot-executable data and by the difficulty of jointly learning from heterogeneous multimodal inputs while supporting real-time closed-loop control. We present Movens-5M, constructed from raw Internet videos through clip generation, quality filtering, semantic annotation, motion recovery, and physical refinement with humanoid retargeting and execution verification. It contains 15 million human-motion sequences and 5 million physically executable humanoid-motion sequences spanning over 10,000 hours, aligned with text, RGB video, speech, and music. Building on this data, we introduce Movens-Zero, a scalable understanding-generation-execution architecture that supports joint learning across modalities and real-time closed-loop execution. Task-mixed flow-matching training jointly optimizes a single action expert across seven generation tasks, enabling direct motion generation from text, speech, music, and video. Multimodal Real-Time Chunking connects overlapping chunks under continuously updated instructions and robot states for continuous closed-loop execution. We further introduce Movens-Intent, a four-track benchmark with 8,192 expert-verified condition-motion pairs across text, speech, music, and video. Experiments show consistent gains across all four modalities when scaling execution-verified data from 1% to 100% and action-expert capacity from 64M to 911M parameters, while demonstrating that data quality and cross-modal supervision improve generation and execution.
+High-resolution land-cover maps support ecological monitoring, but consistent historical time series remain scarce because aerial imagery varies across years and sensors. We developed a dual-track workflow to produce temporally coherent 1-m land-cover maps from National Agricultural Imagery Program (NAIP) imagery without historical training samples. For higher-quality imagery from 2009-2017, we used a pretrained U-Net/ResNet-34 model and refined boundaries with the Segment Anything Model (SAM). For lower-quality imagery from 2004-2008, we reconstructed land cover through an NLCD-based spatiotemporal bridging and label back-casting pipeline. Evaluation across six counties in North Carolina and Pennsylvania yielded overall accuracies of 0.887 (2014), 0.886 (2017), and 0.733 (2004). Structure, Water, Wetland, and Cropland consistently achieved high F1-scores. The workflow integrates GeoAI and multiple data sources to address temporal heterogeneity in historical aerial imagery, supporting high-resolution land-change analysis and landscape planning across the conterminous United States.
 
 **Why this may be relevant:**
 
-It may help track foundation-model directions for Earth observation or geospatial AI.
+It matched the geospatial machine learning search criteria and may be worth screening.
 
 ---
 
-### 3. An Empirical Study on Learning Rooftop Solar Potential from Satellite Imagery Directly Without Explicit Geometry
+### 2. ROAM: Retrieval-Augmented Optimization for Feasible Multi-Day Itinerary Planning
 
-**Authors:** Joshua Lee
+**Authors:** Ye Zihao, Lin Xiaoheng
 
-**Published:** 2026-10-30
+**Published:** 2026-11-06
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 27
+**My Score:** 37
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.41111v1
+**arXiv ID:** 2611.09407v1
 
-**Paper link:** http://arxiv.org/abs/2610.41111v1
+**Paper link:** http://arxiv.org/abs/2611.09407v1
 
-**PDF link:** https://arxiv.org/pdf/2610.41111v1
+**PDF link:** https://arxiv.org/pdf/2611.09407v1
 
 **Abstract:**
 
-Rooftop solar potential estimation often relies on LiDAR, digital surface models (DSMs), or pipelines that explicitly reconstruct roof geometry before estimating solar potential. We propose Direct Rooftop Solar Prediction (DRSP), an end-to-end formulation that maps satellite imagery and coarse regional sunlight information directly to application-level solar outputs. DRSP neither requires explicit geometric representations as input nor predicts roof orientation, slope, height, DSMs, or other geometric quantities as intermediate outputs, and therefore requires no geometric intermediate supervision. To enable large-scale study of this formulation, we develop a programmatic data-curation pipeline that converts per-panel information from the Google Solar API into usable-rooftop masks and spatial solar-energy targets, yielding two geographically distinct datasets containing approximately 60K rooftops from the U.S. Midwest and 87K from Texas. We demonstrate the feasibility of DRSP and systematically characterize the effects of geographic training distribution, model depth, image resolution, regional sunlight conditioning, and heatmap regression objectives. Overall, our results suggest that useful rooftop-scale solar information can be learned directly from 2D imagery without explicit geometric intermediate representations, offering a simpler path toward large-scale solar assessment. Our code and dataset are available at https://github.com/joshualee124/direct_rooftop_solar_prediction.
+Large language models (LLMs) can draft plausible travel itineraries, but the plans they produce are frequently infeasible: attractions are grouped into days without regard for geography, opening hours are ignored, and a single generation pass cannot reliably organize a multi-day trip. We present ROAM, a retrieval-augmented agentic framework for spontaneous multi-day itinerary planning that couples semantic preference retrieval with explicit spatiotemporal optimization. ROAM embeds the natural-language request, retrieves a compact candidate set from a curated point-of-interest (POI) database, partitions candidates into day groups through maximal-clique analysis and K-means, orders each day with a quality-biased simulated-annealing TSP solver, and repairs hard opening-hour violations with greedy exchange. A spatiotemporal retrieval layer injects weather forecasts, real road distances and POI operating hours into the prompt, after which the LLM renders a structured, map-ready itinerary; an interactive ReAct-style replanning agent then supports natural-language edits while re-checking feasibility. Across four Chinese cities and 510 POIs, ROAM produces 27.5 POIs per three-day plan versus 19.3 for a bare LLM and 17.0 for a retrieval-only baseline (+42% and +62%), while reducing route dispersion from 2,101 to 677 (3.1x). Ablations show that spatial optimization is the dominant driver of route efficiency and that hard time-window repair prevents roughly 30% of attractions from violating operating hours.
 
 **Why this may be relevant:**
 
-It is directly related to remote sensing or Earth observation workflows. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It is relevant to urban climate and heat-resilience research.
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
 
 ---
 
-### 4. SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification
+### 3. AnimWeb-Bench: Benchmarking Animated Webpage Code Generation from Videos
 
-**Authors:** Jieqiu Wang, Yuhan Zhang, Bo Zheng, Shaoming Zhang
+**Authors:** Zhongyi Zhang, Jingyu Xiao, Shuqing Li, Michael R. Lyu
 
-**Published:** 2026-10-30
+**Published:** 2026-11-06
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 29
+
+**Venue importance score included:** 0
+
+**arXiv ID:** 2611.09769v1
+
+**Paper link:** http://arxiv.org/abs/2611.09769v1
+
+**PDF link:** https://arxiv.org/pdf/2611.09769v1
+
+**Abstract:**
+
+Animation is pervasive on the Web, the CSS animation property alone appears on over three-quarters of webpages. Yet existing webpage code generation benchmarks target static screenshots, user-triggered interactions, or isolated motion graphics, leaving the ability of multimodal large language models (MLLMs) and coding agents to reconstruct complete animated webpages largely unexplored. To fill this gap, we introduce AnimWeb-Bench, the first benchmark for animated webpage code generation from videos. It comprises 124 real-world webpages spanning 7 application domains and 33 animation types, with 91.9% of pages combining multiple types, each paired with a reference video and the static assets of the original webpage. We further propose a human-aligned, two-dimensional evaluation protocol: Static Appearance Fidelity measures structure, text, color, and visual similarity on aligned keyframes, while Animation Fidelity tracks UI components across frames and compares their position, size, velocity, and appearance with those in the reference video. Evaluating 14 MLLMs and three coding agents reveals: (1) reproducing webpage animations is substantially more difficult than reproducing static appearance; (2) explicit frame inspection and render feedback improve the reconstruction quality of coding agents; and (3) rapid, continuous changes are harder to reproduce than discrete state transitions. Our code and dataset are available at https://starry1001.github.io/AnimWeb-Bench-website/ .
+
+**Why this may be relevant:**
+
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
+
+---
+
+### 4. Assessing the Impact of Retrieval-Augmented Generation on Algorithmic Problem-Solving
+
+**Authors:** Gabriel Souza Baggio, Gabriel Machado Lunardi, Guilherme Medeiros Machado, Subhankar Maity, Faiza Belbachir, José Palazzo Moreira de Oliveira
+
+**Published:** 2026-11-06
 
 **Venue:** arXiv
 
@@ -116,27 +118,59 @@ It is directly related to remote sensing or Earth observation workflows. It may 
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.41728v1
+**arXiv ID:** 2611.09791v1
 
-**Paper link:** http://arxiv.org/abs/2610.41728v1
+**Paper link:** http://arxiv.org/abs/2611.09791v1
 
-**PDF link:** https://arxiv.org/pdf/2610.41728v1
+**PDF link:** https://arxiv.org/pdf/2611.09791v1
 
 **Abstract:**
 
-Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labeled samples. Although self-supervised pre-training mitigates label dependency in remote sensing, existing frameworks primarily target optical imagery or generic spatial SAR scenes, underutilizing temporal backscatter dynamics and polarimetric scattering mechanisms. We propose SAR-TS-BERT, a physics-guided BERT-style self-supervised pre-training framework for SAR time-series crop classification. SAR-TS-BERT integrates backscatter intensities and polarimetric ratio features (VV, VH, and VV/VH) with dual-polarimetric Cloude-Pottier decomposition parameters ($H/α/A$) into a six-band input representation through two core designs: 1) a physics-guided span masking strategy (SpanPhysics) that adaptively selects contiguous masked spans based on temporal backscatter change rates to prioritize key phenological transitions; and 2) a dual-branch cross-modal fusion encoder that models backscatter and polarimetric decomposition features through separate Transformer branches followed by bidirectional cross-attention fusion. On independent test sets in Estonia (EuroCropsML) and the USA (California CDL), SAR-TS-BERT achieves overall accuracies (OAs) of 96.78% and 87.29%, respectively, and attains a mean monthly OA of 99.37% on Chongming Island, Shanghai. On the Estonia benchmark, pre-training improves OA and Macro F1 by 1.17 and 1.59 percentage points over training from scratch under full supervision, and by 2.58 and 5.19 percentage points using only 1% labeled data. Incorporating SAR scattering physics into temporal self-supervised pre-training effectively enhances crop classification accuracy, parcel-level mapping consistency, and few-shot transferability.
+Competitive programming problems pose distinctive challenges for Large Language Models, as they demand not only proficient code generation but also advanced algorithmic reasoning. This study presents a Retrieval-Augmented Generation approach specifically designed to enhance the capacity of Large Language Models to address such problems. Our approach integrates an embedding-based retrieval mechanism and a similarity search algorithm to identify analogous problems within a knowledge database, employing a dynamically adjusted threshold to mitigate retrieval noise. We conducted an evaluation using the CodeContests dataset, focusing on the test split problems that exhibit similarity to instances from the training split. The experimental framework considered three conditions: (i) problems provided solely with their original descriptions, (ii) problems supplemented with randomly selected examples from the training split, and (iii) problems augmented with similar examples retrieved through the proposed method. In addition, we incorporated a Min-K membership inference analysis to examine whether the generated code solutions were influenced by potential memorization of training data within the evaluated Large Language Models. This complementary perspective enables a deeper understanding of model behavior by distinguishing genuine generalization through retrieval from implicit recall of pretraining samples. Performance was assessed using both pass rates and the CodeForces Elo rating of the problems. The results provide empirical evidence that similarity-based retrieval substantially enhances Large Language Models performance in competitive programming scenarios, offering an scalable framework for improving code generation in algorithmic problem-solving contexts.
 
 **Why this may be relevant:**
 
-It is directly related to remote sensing or Earth observation workflows.
+It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis. It may help with cross-city, cross-region, or cross-sensor generalization.
 
 ---
 
-### 5. Spectral Haar Binarizer: Compact Boolean Contrast Representations for Hyperspectral Classification
+### 5. Dual Architecture Fusion Vehicle Lidar 3D Target Detection
 
-**Authors:** Michał Romaszewski, Przemysław Głomb
+**Authors:** Muyun Li, Weizheng Jin, Yuan Sun
 
-**Published:** 2026-10-30
+**Published:** 2026-11-06
+
+**Venue:** arXiv
+
+**Found via:** arXiv
+
+**My Score:** 23
+
+**Venue importance score included:** 0
+
+**DOI:** 10.1109/CAIBDA70336.2026.11621474
+
+**arXiv ID:** 2611.09664v1
+
+**Paper link:** http://arxiv.org/abs/2611.09664v1
+
+**PDF link:** https://arxiv.org/pdf/2611.09664v1
+
+**Abstract:**
+
+In this paper, a 3D backbone network (SpconvTransformer) based on the fusion of convolutional architecture branch and Transformer architecture branch is proposed. The convolution branch uses 3D sparse convolution and submanifold convolution to learn local voxel features and semantic information, and the Transformer branch uses the self-attention mechanism to model the remote relationship between voxels, uses the broad receptive field to capture rich context information, and complementing the advantages of the two architectures by fusing the local features extracted from the two branches and the global features solves the problem of limited receptive fields of 3D convolutional neural networks. The experimental results show that the average accuracy of SpconvTransformer in 3D object detection and bird's-eye view detection tasks reaches 81.45% and 88.09%, respectively, and the average directional similarity reaches 91.10%, which is significantly better than other existing algorithms.
+
+**Why this may be relevant:**
+
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
+
+---
+
+### 6. Fixed-point acceleration on Neural Wasserstein manifolds
+
+**Authors:** Vitalii Aksenov, Sebastian Gutierrez Hernandez
+
+**Published:** 2026-11-06
 
 **Venue:** arXiv
 
@@ -146,57 +180,57 @@ It is directly related to remote sensing or Earth observation workflows.
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.41478v1
+**arXiv ID:** 2611.09723v1
 
-**Paper link:** http://arxiv.org/abs/2610.41478v1
+**Paper link:** http://arxiv.org/abs/2611.09723v1
 
-**PDF link:** https://arxiv.org/pdf/2610.41478v1
+**PDF link:** https://arxiv.org/pdf/2611.09723v1
 
 **Abstract:**
 
-Tsetlin Machines offer an interpretable, hardware-friendly alternative to conventional machine learning models, but applying them to continuous hyperspectral measurements requires converting spectral signals into Boolean representations. Standard binarisation methods typically discretise each spectral band independently, potentially discarding important relationships between neighbouring wavelengths. In this paper, we introduce the Spectral Haar Binarizer (SHB), a contrast-based spectral representation method that constructs Boolean predicates from differences between selected spectral intervals. Inspired by Haar-like contrast features, the method uses an AdaBoost-style selection procedure to obtain a compact set of discriminative spectral predicates. We evaluate SHB on five heterogeneous hyperspectral datasets covering forensic blood detection, agricultural and urban remote sensing, and rainforest tree-species classification. Across binary and multiclass tasks, SHB consistently outperforms standard per-band binarisation strategies and provides the strongest or near-strongest results across classifiers. In binary tasks, TM-SHB achieves the best average performance, while RF-SHB is strongest in multiclass settings. Bayesian and rank-based analyses confirm that SHB's advantage is robust across datasets and not driven by isolated cases. The results show that representing continuous hyperspectral measurements is a central processing step for efficient classification. That contrast-based Boolean features provide an effective bridge between information-rich sensor measurements and compact, logic-based processing.
+We propose a fixed-point acceleration method for optimization over probability measures, applicable to a variety of machine learning problems. We represent probability measures as pushforwards of a reference distribution through a neural network map and equip the parameter space with the induced pullback Wasserstein metric. This geometric structure allows natural gradient descent to be interpreted as a fixed-point iteration on a Riemannian manifold. We accelerate this iteration using Riemannian Anderson mixing method, which exploits historical residuals to capture approximate second-order information without forming Hessians. In the present parametric setting, the manifold is represented by Euclidean coordinates endowed with a point-dependent metric, simplifying retraction and vector transport. We evaluate the method on multimodal sampling, PDE-based inverse problems, aggregation dynamics, Bayesian logistic regression, and generative modeling. Across the tested tasks, Anderson mixing reduces the number of natural-gradient iterations and achieves competitive performance relative to SGD and Adam in terms of both loss-gradient evaluations and wall-clock time. These results suggest that fixed-point acceleration is an efficient tool for improving the computational efficiency of training on parametric Wasserstein methods.
 
 **Why this may be relevant:**
 
-It is directly related to remote sensing or Earth observation workflows. It connects to urban tree detection, canopy mapping, or vegetation analysis.
+It matched the geospatial machine learning search criteria and may be worth screening.
 
 ---
 
-### 6. TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents
+### 7. FIND: Frequency Invariance Disentanglement for Test-Time Adaptation in LiDAR 3D Detection
 
-**Authors:** Xiangyu Kong, Ruirui Yang, Xia Hou
+**Authors:** Dongxiao Li, Zixuan Hu, Ling-Yu Duan
 
-**Published:** 2026-10-30
+**Published:** 2026-11-06
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 21
+**My Score:** 22
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.42004v1
+**arXiv ID:** 2611.09170v1
 
-**Paper link:** http://arxiv.org/abs/2610.42004v1
+**Paper link:** http://arxiv.org/abs/2611.09170v1
 
-**PDF link:** https://arxiv.org/pdf/2610.42004v1
+**PDF link:** https://arxiv.org/pdf/2611.09170v1
 
 **Abstract:**
 
-Multi-turn negotiation remains a challenging problem for large language model (LLM) agents. While LLMs can conduct natural-language dialogue, existing benchmarks predominantly assess only agreement rates, overlooking whether negotiated commitments actually create value once executed. To address this gap, we introduce TradeWar, a multi-country simulation benchmark that translates negotiation dialogues into concrete tariff and trade-share policies, enforces capacity and network constraints during settlement, and evaluates outcomes via an Economic Health Index (EHI). To solve this execution-grounded task, we propose TACTIC (Trade-aware Adaptive Consolidation and Theory-of-mind for International Commerce), an agent that iteratively refines its negotiation strategy across episodes-without updating base LLM weights-by leveraging prior experience, opponent behavior, and past settlement outcomes. Despite using zero-shot chain-of-thought (CoT) prompting, PromptLLM attains a 75% agreement rate but only 57.1 final EHI (*100), whereas TACTIC reaches 68.8. Across 20 sequential episodes and three seeds, TACTIC's final EHI improves from 58.2 to 73.2, compared with 65.2 for an ablation without cross-episode updates. Under technology-controls and energy-crisis shocks, TACTIC also exhibits smaller performance degradation than PromptLLM and MemoryLLM. These results indicate that CoT deliberation and interaction memory alone do not fully address delayed execution feedback, whereas settlement-grounded adaptation improves long-horizon negotiation in TradeWar.
+LiDAR-based 3D Object Detection (L3OD) is a fundamental 3D perception task, yet its performance is often compromised by domain shifts arising from diverse sensor configurations and environmental conditions. Existing Test-Time Adaptation (TTA) methods primarily leverage self-supervision in the spatial domain, yet they frequently confound semantic content with domain style due to the sparse, non-Euclidean nature of point clouds. To overcome this limitation, we propose FIND (Frequency INvariance Disentanglement), a novel TTA framework that precisely disentangles domain-invariant content from domain-specific interference within the frequency domain. Our methodology utilizes B-Spline fitting to construct locally adaptive filters integrated into a dual-stream architecture: an Invariant Stream extracts robust features to guide pseudo-labeling, while a Specific Stream enforces consistency against domain perturbations. By combining invariance-driven alignment with stability-guided regularization, our approach dynamically extracts robust domain-invariant features while suppressing domain-specific interference. Extensive experiments on cross-dataset adaptation and robust corruption benchmarks demonstrate that FIND significantly outperforms state-of-the-art methods. The source code is publicly available at https://github.com/llldx03/FIND.
 
 **Why this may be relevant:**
 
-It connects to the use of LLMs for spatial reasoning, urban planning, or geospatial analysis.
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
 
 ---
 
-### 7. SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning
+### 8. MV-IVF: Multi-Vector Retrieval via Multi-Vector Clustering
 
-**Authors:** Ioannis Dravilas, Miruna Stoicescu, Roope Tervo, Carlos Horn, Oriol Hinojo Comellas, Sina Montazeri, Andrea Meraner, Ana Lucic
+**Authors:** Kishen N Gowda, Laxman Dhulipala, Lars Gottesbüren, Rajesh Jayaram
 
-**Published:** 2026-10-30
+**Published:** 2026-11-06
 
 **Venue:** arXiv
 
@@ -206,87 +240,57 @@ It connects to the use of LLMs for spatial reasoning, urban planning, or geospat
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.42111v1
+**arXiv ID:** 2611.09040v1
 
-**Paper link:** http://arxiv.org/abs/2610.42111v1
+**Paper link:** http://arxiv.org/abs/2611.09040v1
 
-**PDF link:** https://arxiv.org/pdf/2610.42111v1
+**PDF link:** https://arxiv.org/pdf/2611.09040v1
 
 **Abstract:**
 
-Atmospheric fronts are associated with much of the high-impact weather in the mid-latitudes, yet their identification and classification remain largely manual and subjective. Existing deep learning approaches rely primarily on gridded reanalysis or forecast data, limiting their applicability to satellite observations available for time-critical applications. We introduce SATFRONT, a machine learning framework for detecting cold, warm, and occluded fronts over Europe from geostationary satellite observations, with reanalysis data as an optional additional input. The model is trained on frontal analyses from five European national meteorological services and evaluated against UK Met Office analyses for 2024. Using satellite observations alone, SATFRONT achieves a Critical Success Index (CSI) of 0.428 at a 150 km tolerance, within the range of agreement between analyses from different meteorological services (0.277-0.501) and higher than that of an operational rule-based front detector that uses satellite data (0.133). Adding ERA5 reanalysis increases the CSI to 0.591. ERA5 substantially improves the placement of individual fronts, although its effect on their annual spatial distribution varies by front type. These results demonstrate that cold, warm, and occluded fronts can be detected directly from geostationary satellite observations, providing a basis for automated frontal analyses at the high temporal frequency required for time-critical applications.
+Multi-vector retrieval represents each query and document as a set of embeddings and scores relevance via fine-grained set-to-set interactions such as MaxSim (Chamfer similarity). This expressiveness improves retrieval quality over single-vector representations, but makes search substantially more expensive. Existing systems address this challenge primarily through proxy representations or filter-and-rerank pipelines that reduce candidate generation to single-vector search. We study the complementary direction of building a native IVF-style index directly over multi-vector data. We introduce MV-IVF, an inverted-file index for multi-vector retrieval built on MV-Lloyd, a new Lloyd-style algorithm for clustering point clouds under a Chamfer objective. Our key observation is that once point clouds are assigned to clusters, the center-update step reduces to standard single-vector clustering over the flattened embeddings in each cluster. This enables efficient construction of a hierarchical IVF tree with center point clouds at internal nodes. At query time, MV-IVF performs best-first beam search over the tree to identify promising leaf clusters, then scores the documents in those leaves. We further accelerate search using low-bit quantization, query compression, and cache-efficient batched search. We implement MV-IVF in MVSIC, an optimized C++ library and unified evaluation framework for multi-vector retrieval that includes several major approaches. Across BEIR and LoTTE text retrieval benchmarks, MV-IVF achieves strong latency--recall tradeoffs, the best batched throughput frontiers, and favorable build-time and index-size profiles. At $90\%$ Recall-$10$@$10$, MV-IVF achieves up to $8.03\times$ lower single-query latency and up to $173.5\times$ higher QPS than the baselines, demonstrating that native IVF-style indexing is practical and effective for scalable multi-vector retrieval.
 
 **Why this may be relevant:**
 
-It is directly related to remote sensing or Earth observation workflows.
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis. It connects to urban tree detection, canopy mapping, or vegetation analysis.
 
 ---
 
-### 8. RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks
+### 9. Extrapolation Matters: Sparse-Only Depth Completion Beyond LiDAR Coverage
 
-**Authors:** Xin Ming Li, Peng Hu
+**Authors:** Maximilian Jansen, Gasser Elazab, Praveen Kulkarni
 
-**Published:** 2026-10-30
+**Published:** 2026-11-05
 
 **Venue:** arXiv
 
 **Found via:** arXiv
 
-**My Score:** 18
+**My Score:** 20
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.42068v1
+**arXiv ID:** 2611.08782v1
 
-**Paper link:** http://arxiv.org/abs/2610.42068v1
+**Paper link:** http://arxiv.org/abs/2611.08782v1
 
-**PDF link:** https://arxiv.org/pdf/2610.42068v1
-
-**Abstract:**
-
-Low-Earth orbit (LEO) satellite networks present a challenging routing environment due to rapidly changing topology, traffic, and link conditions. Existing deep reinforcement learning (DRL) routing methods typically rely on current observations and information encoded in network weights, limiting their ability to exploit successful past experiences. We propose RAMA, a retrieval-augmented multi-agent DRL framework with Approximate Information State (AIS), in which each satellite combines its local observation, recent routing history, neighboring state information, and retrieved entries from a per-satellite episodic memory. Retrieved experiences are integrated through a Transformer-based decision network trained with AIS-based auxiliary objectives. With weights frozen in a 140-satellite Kepler constellation, RAMA reduces mean end-to-end latency by 13.4% and 99th-percentile latency by 66.7% relative to the state-of-theart double deep Q-network (DDQN) routing method, mainly by avoiding long detours. Updated online, RAMA remains stable while DDQN degrades. On the 1,584-satellite Starlink shell 1, the reduction in mean latency grows to 93.2%, and updating RAMA online lowers its mean latency by a further 25.5%. These results demonstrate the effectiveness of retrieval-augmented memory for scalable decentralized routing in LEO satellite networks.
-
-**Why this may be relevant:**
-
-It is directly related to remote sensing or Earth observation workflows.
-
----
-
-### 9. SketchMate: Agentic Geometric Reasoning for Zero-Shot Precision Insertion
-
-**Authors:** Jiaming Wang
-
-**Published:** 2026-10-30
-
-**Venue:** arXiv
-
-**Found via:** arXiv
-
-**My Score:** 17
-
-**Venue importance score included:** 0
-
-**arXiv ID:** 2610.41844v1
-
-**Paper link:** http://arxiv.org/abs/2610.41844v1
-
-**PDF link:** https://arxiv.org/pdf/2610.41844v1
+**PDF link:** https://arxiv.org/pdf/2611.08782v1
 
 **Abstract:**
 
-Inserting an unseen part requires sub-millimetre precision and the correct orientation of keyed features. Current zero-shot agentic manipulation methods built on vision-language models (VLMs) produce spatial outputs that are far too coarse for this. We propose to let a VLM build a sketch model of the task, i.e., a few geometric primitives and two mate frames, which a VLM agent measures with geometric tools in multi-view depth and which a standard planner and compliant controller execute. Because a sketch describes the parts independently of their placement, the robot needs to build it only once per task. A sketch memory stores each agent run and transfers the stored sketch to later placements by point-cloud registration, so that the VLM is called only for unfamiliar parts. After grasping the part, the robot inspects both mating faces at close range and corrects the sketch by shape matching. On 69 simulated insertion episodes, our method inserts 88% of the parts at the assembled pose in a strict kinematic test, while ReKep and MOKA with the same VLM insert none. On new placements of eight tasks, reusing one stored run inserts as many parts as calling the agent in each episode, and it produces the sketch in 3.4 s instead of about 90 s.
+Extrapolation beyond LiDAR coverage is an important yet under-evaluated challenge of depth completion. In real camera--LiDAR systems, partial sensor overlap, occlusions, and limited field coverage often leave large image regions weakly observed or completely unobserved by LiDAR. Thus, we investigate depth completion in this beyond-coverage regime using only sparse supervision from raw single-sweep LiDAR, without dense depth labels, LiDAR accumulation, or pseudo-LiDAR generation. Our approach leverages a frozen monocular depth foundation model, lightweight per-frame alignment to sparse LiDAR geometry, and a refinement module that fuses the aligned prior with sparse LiDAR anchors to predict dense metric depth. To regularize learning under raw sparse supervision, we introduce a high-frequency normal-consistency loss defined as the image-space gradient of the per-pixel normal cosine discrepancy. This term penalizes spatial variation in scalar angular error; it does not directly match changes in neighboring normal vectors. We further introduce an evaluation protocol that explicitly separates LiDAR-supported and beyond-coverage regions, revealing extrapolative behavior that conventional depth-completion metrics can obscure. Our method achieves strong depth accuracy beyond LiDAR coverage while remaining competitive in LiDAR-covered regions, providing a practical way to deploy monocular foundation priors in multi-sensor systems.
 
 **Why this may be relevant:**
 
-It may be useful for multimodal geospatial understanding using image-text models.
+It may help track foundation-model directions for Earth observation or geospatial AI. It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
 
 ---
 
-### 10. Quantitative Ultrasound Characterizes Perfusion Trajectories in Healthy and Inflamed Gingival Wound Healing
+### 10. Lightweight Path-Aware Frontier Re-ranking for LiDAR-Based UAV Exploration
 
-**Authors:** Haowei Tai, Oscar Duran-Garnica, Karen Villarreal, Hsun-Liang Chan, Oliver D. Kripfgans
+**Authors:** Duc Manh Do, Thanh Nguyen Canh, Ngoc Minh Do, Mai Thanh Thai, Xiem HoangVan
 
-**Published:** 2026-10-30
+**Published:** 2026-11-06
 
 **Venue:** arXiv
 
@@ -296,19 +300,19 @@ It may be useful for multimodal geospatial understanding using image-text models
 
 **Venue importance score included:** 0
 
-**arXiv ID:** 2610.41897v1
+**arXiv ID:** 2611.09561v1
 
-**Paper link:** http://arxiv.org/abs/2610.41897v1
+**Paper link:** http://arxiv.org/abs/2611.09561v1
 
-**PDF link:** https://arxiv.org/pdf/2610.41897v1
+**PDF link:** https://arxiv.org/pdf/2611.09561v1
 
 **Abstract:**
 
-Rationale and Objectives: Visual examination of extraction-site healing provides limited insight into underlying vascular recovery. We developed a quantitative ultrasound framework to assess gingival perfusion and persistent inflammation. Materials and Methods: Patients (n = 51) undergoing extraction and socket preservation were imaged longitudinally using color-flow ultrasound and laser speckle contrast analysis (LASCA) from 2 weeks to 3 months after extraction. Pre-scan-converted Total Recall Imaging (TRI) data with phase information were processed using scan conversion, bilateral filtering, and power estimation to derive velocity-weighted color pixel density (CPDvel). Gingival regions of interest were automatically segmented using deep learning and assessed with Dice and Bland-Altman analyses. CPDvel was compared between healthy and inflamed visits in early ( 35 days) periods and with LASCA. Results: Segmentation achieved a mean Dice score of 0.98 and median of 0.99 (IQR, 0.98-0.99), with minimal area bias (-0.005%; 95% limits of agreement, -1.68% to 1.67%). Median CPDvel decreased by 81% between early and recovery periods in healthy visits (p = 0.01), compared with a nonsignificant 26% reduction in inflamed visits (p = 0.31). During recovery, CPDvel was higher in inflamed than healthy visits (0.12 vs 0.03 cm/s; p = 0.04). LASCA showed smaller reductions (13% and 9%, respectively). CPDvel was positively correlated with LASCA in healthy (one-sided p = 0.03) and inflamed visits (one-sided p = 0.13). Conclusions: TRI-based quantitative ultrasound enabled automated perfusion assessment with reduced dependence on scanner display settings. Distinct perfusion patterns and more pronounced temporal changes than LASCA support its potential for noninvasive monitoring of oral wound healing and persistent inflammation.
+Autonomous 3D exploration with UAVs requires efficient target selection under limited flight time and onboard computation. In conventional Euclidean-distance-based frontier pipelines, geometric distance may poorly represent the actual collision-free travel cost in cluttered environments, leading to inefficient frontier choices. This paper presents a lightweight path-aware frontier re-ranking method for LiDAR-based UAV exploration. The method first retains a small top-N set of promising frontier candidates using a lightweight utility function and then applies time-bounded RRT* planning to estimate their feasible path costs for re-ranking. The path generated for the selected frontier is further reused for navigation to reduce redundant global planning. Experiments in three warehouse-like environments show that the proposed method consistently produces shorter exploration trajectories than conventional frontier baselines, with traveled-distance reductions of up to 14.1%, while reducing exploration time by up to 9.5% in two environments and remaining competitive in the third. The method maintains map detail comparable to the conventional OctoMap-based baseline, demonstrating an effective trade-off between exploration efficiency and mapping quality.
 
 **Why this may be relevant:**
 
-It matched the geospatial machine learning search criteria and may be worth screening.
+It may be useful for LiDAR-based tree inventory, urban structure mapping, or 3D geospatial analysis.
 
 ---
 
